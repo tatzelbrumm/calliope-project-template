@@ -15,7 +15,7 @@ MicroBit uBit;
 int main(void) {
     uBit.init();
     uBit.serial.baud(115200);
-    uBit.serial.send("Calliope mini template v1.0\r\n");
+    uBit.serial.send("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
 
-    uBit.serial.send("Hello world!\r\n");
+    uBit.serial.send("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
 }
