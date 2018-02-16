@@ -22,8 +22,11 @@ int main(void) {
   printf("%08lx\r\n", gpiobase->DIR);
   printf("In   %08lx: ", uint32_t(&gpiobase->IN));
   printf("%08lx\r\n", gpiobase->IN);
-  printf("Set LED directions to output\r\n");
-  gpiobase->DIRSET= 0xFFF0UL;
+
+  printf("Configure LED pins\r\n");
+  for (int p= 4; p < 13; gpiobase->PIN_CNF[p++]= 0x70fUL);
+  for (int p= 13; p < 16; gpiobase->PIN_CNF[p++]= 0x507UL);
+
   printf("Dir  %08lx: ", uint32_t(&gpiobase->DIR));
   printf("%08lx\r\n", gpiobase->DIR);
   printf("In   %08lx: ", uint32_t(&gpiobase->IN));
