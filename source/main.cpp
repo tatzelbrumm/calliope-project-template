@@ -35,8 +35,11 @@ int main(void) {
   printf("In   %08lx: ", uint32_t(&gpiobase->IN));
   printf("%08lx\r\n", gpiobase->IN);
 
-  gpiobase->OUTSET= 0xe000UL;
-  gpiobase->OUTCLR= 0x1ff0UL; 
+  for (int n= 0; n < 32768; n++)
+  {
+    gpiobase->OUTSET= 0xe000UL;
+    gpiobase->OUTCLR= 0x1ff0UL;
+  }
 
   printf("Dir  %08lx: ", uint32_t(&gpiobase->DIR));
   printf("%08lx\r\n", gpiobase->DIR);
