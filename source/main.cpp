@@ -24,11 +24,10 @@ int main(void)
     {
       uint32_t clr= ((~r&7)<<13)|(c<<4); 
       uint32_t set= (r<<13)|((~c&0x1ffUL)<<4);
-      for (uint32_t n= 0; n < 131072; n++)
-      {
-	gpiobase->OUTSET= set;
-	gpiobase->OUTCLR= clr;
-      }
+      for (volatile uint32_t n= 0; n < 131072; n++);
+
+      gpiobase->OUTSET= set;
+      gpiobase->OUTCLR= clr;
     }
   }
 }
