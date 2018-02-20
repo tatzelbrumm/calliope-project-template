@@ -17,6 +17,14 @@ class Cereal : public mbed::SerialBase
 {
 public:
   Cereal(PinName tx, PinName rx) : mbed::SerialBase(tx, rx) {}
+
+  void puts(const char* string)
+  {
+    while (*string)
+    {
+      _base_putc(*string++);
+    }
+  }
 };
   
 Cereal cereal(USBTX, USBRX);
@@ -25,7 +33,7 @@ int main(void) {
   NRF_GPIO_Type *gpiobase= (NRF_GPIO_Type *)NRF_GPIO_BASE;
 
   cereal.baud(115200);
-  printf("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
+  cereal.puts("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
 
   for (int p= 4; p < 13; gpiobase->PIN_CNF[p++]= 0x70dUL);
   for (int p= 13; p < 16; gpiobase->PIN_CNF[p++]= 0x505UL);
@@ -42,5 +50,5 @@ int main(void) {
       gpiobase->OUTCLR= clr;
     }
   }
-  printf("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
+  cereal.puts("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
 }
