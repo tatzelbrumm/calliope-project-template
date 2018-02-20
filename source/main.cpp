@@ -8,15 +8,18 @@
  * Licensed under the Apache License 2.0
  */
 
-#include <MicroBitSerial.h>
+/*
+ * yotta_modules/mbed-classic/api/mbed.h
+ */
+#include <mbed.h> // RawSerial.h isn't sufficient
 
-MicroBitSerial cereal(USBTX, USBRX);
+RawSerial cereal(USBTX, USBRX);
 
 int main(void) {
   NRF_GPIO_Type *gpiobase= (NRF_GPIO_Type *)NRF_GPIO_BASE;
 
   cereal.baud(115200);
-  cereal.send("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
+  cereal.printf("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
 
   printf("Base %08lx\r\n", uint32_t(gpiobase));
   printf("Dir  %08lx: ", uint32_t(&gpiobase->DIR));
@@ -46,5 +49,5 @@ int main(void) {
     }
   }
 
-  cereal.send("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
+  cereal.printf("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
 }
