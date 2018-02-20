@@ -9,11 +9,11 @@
  */
 
 /*
- * yotta_modules/mbed-classic/api/mbed.h
+ * yotta_modules/mbed-classic/api/RawSerial.h
  */
-#include <mbed.h> // RawSerial.h isn't sufficient
+#include <RawSerial.h>
 
-RawSerial cereal(USBTX, USBRX);
+mbed::RawSerial cereal(USBTX, USBRX);
 
 int main(void) {
   NRF_GPIO_Type *gpiobase= (NRF_GPIO_Type *)NRF_GPIO_BASE;
