@@ -9,7 +9,16 @@
  * Licensed under the Apache License 2.0
  */
 
+/*
+Not sure to which the following #include points, they're both identical
+./yotta_modules/mbed-classic/targets/cmsis/TARGET_NORDIC/TARGET_MCU_NRF51822/nrf51.h
+./yotta_modules/nrf51-sdk/source/nordic_sdk/components/device/nrf51.h
+ */
 #include <nrf51.h>
+/*
+./yotta_modules/mbed-classic/targets/cmsis/core_cm0.h
+ */
+#include <core_cm0.h>
 
 int main(void)
 {
