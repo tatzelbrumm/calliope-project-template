@@ -35,11 +35,10 @@ int main(void) {
       uint32_t set= (r<<13)|((~c&0x1ffUL)<<4);
       printf("rows: %1lx ", r);
       printf("cols: %03lx\r\n", c);
-      for (int n= 0; n < 32768; n++)
-      {
-	gpiobase->OUTSET= set;
-	gpiobase->OUTCLR= clr;
-      }
+      for (volatile uint32_t n= 0; n < 131072; n++);
+
+      gpiobase->OUTSET= set;
+      gpiobase->OUTCLR= clr;
       printf("Dir  %08lx: ", uint32_t(&gpiobase->DIR));
       printf("%08lx\r\n", gpiobase->DIR);
       printf("In   %08lx: ", uint32_t(&gpiobase->IN));
