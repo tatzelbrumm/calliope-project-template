@@ -9,17 +9,23 @@
  */
 
 /*
- * yotta_modules/mbed-classic/api/RawSerial.h
+ * yotta_modules/mbed-classic/api/SerialBase.h
  */
-#include <RawSerial.h>
+#include <SerialBase.h>
 
-mbed::RawSerial cereal(USBTX, USBRX);
+class Cereal : public mbed::SerialBase
+{
+public:
+  Cereal(PinName tx, PinName rx) : mbed::SerialBase(tx, rx) {}
+};
+  
+Cereal cereal(USBTX, USBRX);
 
 int main(void) {
   NRF_GPIO_Type *gpiobase= (NRF_GPIO_Type *)NRF_GPIO_BASE;
 
   cereal.baud(115200);
-  cereal.printf("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
+  printf("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
 
   printf("Base %08lx\r\n", uint32_t(gpiobase));
   printf("Dir  %08lx: ", uint32_t(&gpiobase->DIR));
@@ -49,5 +55,5 @@ int main(void) {
     }
   }
 
-  cereal.printf("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
+  printf("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
 }
