@@ -25,6 +25,21 @@ public:
       _base_putc(*string++);
     }
   }
+
+  void puthex(uint32_t datum, unsigned int digits=1)
+  {
+    char dig[8];
+    unsigned int d= 0;
+    while (d < digits || datum) {
+      char c= datum & 0xF;
+      c+= c<10? '0' : 'A'-10;
+      dig[d++]= c;
+      datum >>= 4;
+    }
+    while (d-- > 0) {
+      _base_putc(dig[d]);
+    }
+  }
 };
   
 Cereal cereal(USBTX, USBRX);
@@ -44,10 +59,17 @@ int main(void) {
     {
       uint32_t clr= ((~r&7)<<13)|(c<<4); 
       uint32_t set= (r<<13)|((~c&0x1ffUL)<<4);
-      for (volatile uint32_t n= 0; n < 131072; n++);
 
       gpiobase->OUTSET= set;
       gpiobase->OUTCLR= clr;
+
+      cereal.puts("row ");
+      cereal.puthex(r);
+      cereal.puts(" col ");
+      cereal.puthex(c, 3);
+      cereal.puts("\r\n");
+
+      for (volatile uint32_t n= 0; n < 131072; n++);
     }
   }
   cereal.puts("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
