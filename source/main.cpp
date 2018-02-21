@@ -10,14 +10,11 @@
  * Licensed under the Apache License 2.0
  */
 
-/**
- To show the difference in the interrupt configuration, include MicroBit.h
- */
-#include <MicroBit.h>
-
 #include <cereal.h>
-  
-Cereal cereal(USBTX, USBRX);
+
+MicroBit uBit;  // instantiate MicroBit
+
+Cereal cereal(&uBit);
 
 void putIRQenables(void) {
   cereal.putreg(&NVIC->ISER, "NVIC->ISER\t");
@@ -68,8 +65,9 @@ void putIRQenables(void) {
 int main(void) {
   NRF_GPIO_Type *gpiobase= (NRF_GPIO_Type *)NRF_GPIO_BASE;
 
-  cereal.baud(115200);
-  cereal.puts("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
+  uBit.init();
+  uBit.serial.baud(115200);
+  uBit.serial.send("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
 
   cereal.putreg(&gpiobase->DIR, "Dir  ");
   cereal.putreg(&gpiobase->IN, "In   ");
@@ -98,6 +96,6 @@ int main(void) {
       for (volatile uint32_t n= 0; n < 131072; n++);
     }
   }
-  cereal.puts("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
+  uBit.serial.send("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
   putIRQenables();
 }

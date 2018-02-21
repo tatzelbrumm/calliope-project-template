@@ -10,12 +10,18 @@
 
 #include <cereal.h>
 
-Cereal::Cereal(PinName tx, PinName rx) : mbed::SerialBase(tx, rx) {}
+Cereal::Cereal(MicroBit *ubit) {
+  this->ubit= ubit;
+}
+
+void Cereal::putc(char c) {
+  ubit->serial.putc(c);
+}
 
 void Cereal::puts(const char* string)
 {
   while (*string) {
-      _base_putc(*string++);
+    putc(*string++);
   }
 }
 
@@ -30,7 +36,7 @@ void Cereal::puthex(uint32_t datum, unsigned int digits)
     datum >>= 4;
   }
   while (d-- > 0) {
-    _base_putc(dig[d]);
+    putc(dig[d]);
   }
 }
 

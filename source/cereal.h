@@ -8,16 +8,19 @@
  * Licensed under the Apache License 2.0
  */
 
-/*
- * yotta_modules/mbed-classic/api/SerialBase.h
+/**
+ To show the difference in the interrupt configuration, include MicroBit.h
  */
-#include <SerialBase.h>
+#include <MicroBit.h>
 
-class Cereal : public mbed::SerialBase
+class Cereal
 {
 public:
-  Cereal(PinName tx, PinName rx);
+  MicroBit *ubit;
 
+  Cereal(MicroBit *ubit);
+
+  void putc(char c);
   void puts(const char* string);
   void puthex(uint32_t datum, unsigned int digits=1);
   void putreg(volatile void *reg, const char* name);
