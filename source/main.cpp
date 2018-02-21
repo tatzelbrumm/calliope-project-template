@@ -1,5 +1,7 @@
 /**
- * This is a simple template for use with Calliope mini.
+ * This is an minimialistic Proof-of-Concept
+ * of direct register level programming
+ * that bypasses all higher level libraries and runtimes
  *
  * @copyright (c) Christoph Maier
  * @author Christoph Maier.
@@ -11,36 +13,7 @@
 /*
  * yotta_modules/mbed-classic/api/SerialBase.h
  */
-#include <SerialBase.h>
-
-class Cereal : public mbed::SerialBase
-{
-public:
-  Cereal(PinName tx, PinName rx) : mbed::SerialBase(tx, rx) {}
-
-  void puts(const char* string)
-  {
-    while (*string)
-    {
-      _base_putc(*string++);
-    }
-  }
-
-  void puthex(uint32_t datum, unsigned int digits=1)
-  {
-    char dig[8];
-    unsigned int d= 0;
-    while (d < digits || datum) {
-      char c= datum & 0xF;
-      c+= c<10? '0' : 'A'-10;
-      dig[d++]= c;
-      datum >>= 4;
-    }
-    while (d-- > 0) {
-      _base_putc(dig[d]);
-    }
-  }
-};
+#include <cereal.h>
   
 Cereal cereal(USBTX, USBRX);
 
