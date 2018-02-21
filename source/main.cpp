@@ -23,16 +23,8 @@ int main(void) {
   cereal.baud(115200);
   cereal.puts("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
 
-  cereal.puts("Dir  ");
-  cereal.puthex(uint32_t(&gpiobase->DIR),8);
-  cereal.puts("  ");
-  cereal.puthex(gpiobase->DIR,8);
-  cereal.puts("\r\n");
-  cereal.puts("In   ");
-  cereal.puthex(uint32_t(&gpiobase->IN),8);
-  cereal.puts("  ");
-  cereal.puthex(gpiobase->IN,8);
-  cereal.puts("\r\n");
+  cereal.putreg(&gpiobase->DIR, "Dir  ");
+  cereal.putreg(&gpiobase->IN, "In   ");
 
   for (int p= 4; p < 13; gpiobase->PIN_CNF[p++]= 0x70dUL);
   for (int p= 13; p < 16; gpiobase->PIN_CNF[p++]= 0x505UL);
@@ -47,21 +39,13 @@ int main(void) {
       cereal.puthex(r);
       cereal.puts(" cols: ");
       cereal.puthex(c, 3);
-      cereal.puts("\r\n");
+      cereal.crlf();
 
       gpiobase->OUTSET= set;
       gpiobase->OUTCLR= clr;
 
-      cereal.puts("Dir  ");
-      cereal.puthex(uint32_t(&gpiobase->DIR),8);
-      cereal.puts("  ");
-      cereal.puthex(gpiobase->DIR,8);
-      cereal.puts("\r\n");
-      cereal.puts("In   ");
-      cereal.puthex(uint32_t(&gpiobase->IN),8);
-      cereal.puts("  ");
-      cereal.puthex(gpiobase->IN,8);
-      cereal.puts("\r\n");
+      cereal.putreg(&gpiobase->DIR, "Dir  ");
+      cereal.putreg(&gpiobase->IN, "In   ");
 
       for (volatile uint32_t n= 0; n < 131072; n++);
     }

@@ -34,3 +34,15 @@ void Cereal::puthex(uint32_t datum, unsigned int digits)
   }
 }
 
+void Cereal::putreg(volatile void *reg, const char* name) {
+  uint32_t *ptr= (uint32_t *)reg;
+  puts(name);
+  puthex(uint32_t(ptr),8);
+  puts("  ");
+  puthex(*ptr,8);
+  crlf();
+}
+
+void Cereal::crlf(void) {
+  puts("\r\n");  
+}
