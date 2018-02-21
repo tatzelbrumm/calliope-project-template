@@ -29,9 +29,9 @@ int main(void) {
   for (int p= 4; p < 13; gpiobase->PIN_CNF[p++]= 0x70dUL);
   for (int p= 13; p < 16; gpiobase->PIN_CNF[p++]= 0x505UL);
 
-  for (uint32_t r= 1; r < (1<<3); r++)
+  for (uint32_t r= 1; r < (1<<3); r<<=1)
   {
-    for (uint32_t c= 0; c < (1<<9); c++)
+    for (uint32_t c= 1; c < (1<<9); c<<=1)
     {
       uint32_t clr= ((~r&7)<<13)|(c<<4); 
       uint32_t set= (r<<13)|((~c&0x1ffUL)<<4);
