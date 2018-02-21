@@ -10,9 +10,6 @@
  * Licensed under the Apache License 2.0
  */
 
-/*
- * yotta_modules/mbed-classic/api/SerialBase.h
- */
 #include <cereal.h>
   
 Cereal cereal(USBTX, USBRX);
