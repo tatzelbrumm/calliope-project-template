@@ -10,6 +10,11 @@
  * Licensed under the Apache License 2.0
  */
 
+/**
+ To show the difference in the interrupt configuration, include MicroBit.h
+ */
+#include <MicroBit.h>
+
 #include <cereal.h>
   
 Cereal cereal(USBTX, USBRX);
