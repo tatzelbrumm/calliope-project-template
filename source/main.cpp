@@ -90,10 +90,10 @@ int main(void) {
       gpiobase->OUTSET= set;
       gpiobase->OUTCLR= clr;
 
+      for (volatile uint32_t n= 0; n < 131072; n++);
+
       cereal.putreg(&gpiobase->DIR, "Dir  ");
       cereal.putreg(&gpiobase->IN, "In   ");
-
-      for (volatile uint32_t n= 0; n < 131072; n++);
     }
   }
   uBit.serial.send("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
