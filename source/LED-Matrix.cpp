@@ -119,11 +119,11 @@ void HT1632C_Read_DATA(unsigned char Addr)
     HT_CS=1;
 }
 
-int main()
+void sinobitLED()
 {
     HT1632C_Init();
     HT1632C_clr();
-    uBit.init();
+    //uBit.init();
     for(int i=0; i<12; i++) {
         HT1632C_Write_DAT(com[i],show,i+1);
     }
