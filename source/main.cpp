@@ -10,6 +10,7 @@
  * Licensed under the Apache License 2.0
  */
 
+#include <nrf51.h>	// eclipse seems to need this
 #include <cereal.h>
   
 Cereal cereal(USBTX, USBRX);
