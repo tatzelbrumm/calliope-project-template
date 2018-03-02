@@ -11,10 +11,9 @@
  */
 
 #include <cereal.h>
-//#include <LED-Matrix.h>
+#include <LED-Matrix.h>
 
 Cereal cereal(USBTX, USBRX);
-//Cereal cereal(&uBit);
 
 void putIRQenables(void) {
   cereal.putreg(&NVIC->ISER, "NVIC->ISER\t");
@@ -70,10 +69,8 @@ int main(void) {
   cereal.putreg(&gpiobase->DIR, "Dir  ");
   cereal.putreg(&gpiobase->IN, "In   ");
 
-  for (int p= 4; p < 13; gpiobase->PIN_CNF[p++]= 0x70dUL);
-  for (int p= 13; p < 16; gpiobase->PIN_CNF[p++]= 0x505UL);
+  sinobitLED();
 
-  //sinobitLED();
   cereal.putreg(&gpiobase->DIR, "Dir  ");
   cereal.putreg(&gpiobase->IN, "In   ");
 
