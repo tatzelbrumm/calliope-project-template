@@ -96,4 +96,15 @@ int main(void) {
   }
   cereal.puts("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
   putIRQenables();
+
+  uint32_t r= 0b111;
+  uint32_t c= 0b111111111;
+  uint32_t clr= ((~r&7)<<13)|(c<<4); 
+  uint32_t set= (r<<13)|((~c&0x1ffUL)<<4);
+
+  gpiobase->OUTSET= set;
+  gpiobase->OUTCLR= clr;
+
+  cereal.putreg(&gpiobase->DIR, "Dir  ");
+  cereal.putreg(&gpiobase->IN, "In   ");
 }
