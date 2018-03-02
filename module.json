@@ -1,11 +1,12 @@
 {
-  "name": "calliope-project-template",
-  "version": "1.0.0",
-  "description": "Calliope Project Template",
-  "license": "Apache 2.0",
+  "name": "sinobit-project-template",
+  "version": "0.0.1",
+  "bin": "./source",
+  "private": true,
+  "description": "sino:bit project template",
+  "author": "Christoph Maier",
+  "license": "Apache-2.0",
   "dependencies": {
-    "microbit": "calliope-mini/microbit#v2.0.0-rc8-calliope-1.0.3"
-  },
-  "targetDependencies": {},
-  "bin": "./source"
+    "microbit": "lancaster-university/microbit"
+  }
 }
