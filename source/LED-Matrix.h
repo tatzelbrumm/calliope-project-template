@@ -1,2 +1,2 @@
-extern MicroBit uBit;
-extern void sinobitLED(void);
+//extern MicroBit uBit;
+//extern void sinobitLED(void);

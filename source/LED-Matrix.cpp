@@ -1,7 +1,8 @@
+/*
 #include "MicroBit.h"
 
 MicroBit uBit;
-
+*/
 /******************指令表/Instructions**********************/
 #define SYS_DIS 0x00                //关闭系统震荡/Turn off system shock
 #define SYS_EN  0x01                //打开系统震荡/Turn on  system shock
@@ -14,7 +15,7 @@ MicroBit uBit;
 #define COM_OPTION  0x24            //24:16COM，NMOS。C：COM，PMOS。
 #define PWM_DUTY    0xAF            //PWM亮度控制 /PWM Brightness Control
 /****************引脚定义 I/O definition**********************/
-
+/*
 DigitalOut HT_CS(P0_16);
 DigitalOut HT_RD(P0_22);
 DigitalOut HT_WR(P0_23);
@@ -135,3 +136,4 @@ void sinobitLED()
     }
 
 }
+*/

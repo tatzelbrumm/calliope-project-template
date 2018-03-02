@@ -11,9 +11,10 @@
  */
 
 #include <cereal.h>
-#include <LED-Matrix.h>
+//#include <LED-Matrix.h>
 
-Cereal cereal(&uBit);
+Cereal cereal(USBTX, USBRX);
+//Cereal cereal(&uBit);
 
 void putIRQenables(void) {
   cereal.putreg(&NVIC->ISER, "NVIC->ISER\t");
@@ -64,10 +65,18 @@ void putIRQenables(void) {
 int main(void) {
   NRF_GPIO_Type *gpiobase= (NRF_GPIO_Type *)NRF_GPIO_BASE;
 
-  uBit.init();
-  uBit.serial.baud(115200);
-  uBit.serial.send("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
+  cereal.baud(115200);
+  cereal.puts("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
+  cereal.putreg(&gpiobase->DIR, "Dir  ");
+  cereal.putreg(&gpiobase->IN, "In   ");
+
+  for (int p= 4; p < 13; gpiobase->PIN_CNF[p++]= 0x70dUL);
+  for (int p= 13; p < 16; gpiobase->PIN_CNF[p++]= 0x505UL);
+
   //sinobitLED();
-  uBit.serial.send("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
+  cereal.putreg(&gpiobase->DIR, "Dir  ");
+  cereal.putreg(&gpiobase->IN, "In   ");
+
+  cereal.puts("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
   putIRQenables();
 }
