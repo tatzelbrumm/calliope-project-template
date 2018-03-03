@@ -31,38 +31,23 @@ inline void DATA1(void) { gpiobase->OUTSET= 1<<HT_DATA; }
 inline void RDdata(void) { gpiobase->DIRCLR= 1<<HT_DATA; }
 inline void WRdata(void) { gpiobase->DIRSET= 1<<HT_DATA; }
 
-static unsigned char show[24] = {
-  0b00011111, 0b10000000,
-  0b00100000, 0b01000000,
-  0b01001011, 0b00100000,
-  0b10000000, 0b00010000,
-  0b10100010, 0b01010000,
-  0b10101110, 0b00010000,
-  0b10000111, 0b01010000,
-  0b10100100, 0b01010000,
-  0b10000000, 0b00010000,
-  0b01001101, 0b00100000,
-  0b00100000, 0b01000000,
-  0b00011111, 0b10000000
-};
-
 static unsigned char com[12] = {
   0x00, 0x04, 0x08, 0x0C, 0x10, 0x14, 0x18, 0x1C, 0x20, 0x24, 0x28, 0x2C
 };
 
 void HT1632C_Write(unsigned char Data, unsigned char cnt)      //MCU向HT1632C写数据函数，高位在前/MCU writes the data to ht1632c, and the high position is in front
 {
-    unsigned char i;
-    for(i=0; i<cnt; i++) {
-        WRon();
-        if(Data&0x80) {
-            DATA1();
-	} else {
-            DATA0();
-	}
-        Data<<=1;
-        WRoff();
+  unsigned char i;
+  for(i=0; i<cnt; i++) {
+    WRon();
+    if(Data&0x80) {
+      DATA1();
+    } else {
+      DATA0();
     }
+    Data<<=1;
+    WRoff();
+  }
 }
 
 void HT1632C_Write_CMD(unsigned char cmd)                     //MCU向HT1632c写命令/MCU writes commands to ht1632c
@@ -74,49 +59,50 @@ void HT1632C_Write_CMD(unsigned char cmd)                     //MCU向HT1632c写
   CSoff();
 }
 
-void HT1632C_Write_DAT(unsigned char Addr, unsigned char data[], unsigned char num)
+void HT1632C_Write_DAT(unsigned char Addr, const unsigned char data[], unsigned char num)
 {
-    unsigned char i;
-    WRdata();
-    CSon();
-    HT1632C_Write(0xa0,3);                                    //ID:101
-    HT1632C_Write(Addr<<1,7);
+  WRdata();
+  CSon();
+  HT1632C_Write(0xa0,3);                                    //ID:101
+  HT1632C_Write(Addr<<1,7);
 
-    for(i=0; i<8; i++) {
-        WRon();
-        if(data[2*(num-1)]&0x80) {
-            DATA1();
-        } else {
-            DATA0();
-	}
-        data[2*(num-1)]<<=1;
-        WRoff();
+  unsigned char d= data[num<<1];
+  for(unsigned char i=0; i<8; i++) {
+    WRon();
+    if(d&0x80) {
+      DATA1();
+    } else {
+      DATA0();
     }
+    d<<=1;
+    WRoff();
+  }
 
-    for(i=0; i<4; i++) {
-        WRon();
-        if(data[2*num-1]&0x80) {
-            DATA1();
-        } else {
-            DATA0();
-	}
-        data[2*num-1]<<=1;
-        WRoff();
+  d= data[(num<<1)+1];
+  for(unsigned char i=0; i<4; i++) {
+    WRon();
+    if(d&0x80) {
+      DATA1();
+    } else {
+      DATA0();
     }
-    CSoff();
+    d<<=1;
+    WRoff();
+  }
+  CSoff();
 }
 
 void HT1632C_clr(void)  //清屏函数/Clear function
 {
-    unsigned char i;
-    WRdata();
-    CSon();
-    HT1632C_Write(0xa0,3);
-    HT1632C_Write(0x00,7);
-    for(i=0; i<48; i++) {
-        HT1632C_Write(0,8);
-    }
-    CSoff();
+  unsigned char i;
+  WRdata();
+  CSon();
+  HT1632C_Write(0xa0,3);
+  HT1632C_Write(0x00,7);
+  for(i=0; i<48; i++) {
+    HT1632C_Write(0,8);
+  }
+  CSoff();
 }
 
 void HT1632C_Init(void)                 //HT1632C初始化函数/HT1632C Init Function
@@ -138,30 +124,22 @@ void HT1632C_Init(void)                 //HT1632C初始化函数/HT1632C Init Fu
 
 void HT1632C_Read_DATA(unsigned char Addr)
 {
-    unsigned char i;
-    RDdata();
-    CSon();
-    HT1632C_Write(0xc0,3);                                    //ID:101
-    HT1632C_Write(Addr<<1,7);
-    for(i=0; i<12; i++) {
-        RDon();
-        asm("nop");
-        RDoff();
-    }
-    CSoff();
+  unsigned char i;
+  RDdata();
+  CSon();
+  HT1632C_Write(0xc0,3);                                    //ID:101
+  HT1632C_Write(Addr<<1,7);
+  for(i=0; i<12; i++) {
+    RDon();
+    asm("nop");
+    RDoff();
+  }
+  CSoff();
 }
 
-void sinobitLED()
+void HT1632C_Write_Pattern(const unsigned char pattern[])
 {
-    HT1632C_Init();
-    HT1632C_clr();
-
-    for(int i=0; i<12; i++) {
-        HT1632C_Write_DAT(com[i],show,i+1);
-    }
-    while(0) {
-        for(int i=0; i<12; i++) {
-            HT1632C_Read_DATA(com[i]);
-        }
-    }
+  for (int col=0; col<12; col++) {
+    HT1632C_Write_DAT(com[col],pattern,col);
+  }
 }
