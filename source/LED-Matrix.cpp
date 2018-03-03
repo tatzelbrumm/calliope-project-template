@@ -59,29 +59,17 @@ void HT1632C_Write_CMD(unsigned char cmd)                     //MCU向HT1632c写
   CSoff();
 }
 
-void HT1632C_Write_DAT(unsigned char Addr, const unsigned char data[], unsigned char num)
+void HT1632C_Write_DAT(unsigned char Addr, const uint16_t data[], unsigned char num)
 {
   WRdata();
   CSon();
   HT1632C_Write(0xa0,3);                                    //ID:101
   HT1632C_Write(Addr<<1,7);
 
-  unsigned char d= data[num<<1];
-  for(unsigned char i=0; i<8; i++) {
+  uint16_t d= data[num];
+  for(unsigned char i=0; i<12; i++) {
     WRon();
-    if(d&0x80) {
-      DATA1();
-    } else {
-      DATA0();
-    }
-    d<<=1;
-    WRoff();
-  }
-
-  d= data[(num<<1)+1];
-  for(unsigned char i=0; i<4; i++) {
-    WRon();
-    if(d&0x80) {
+    if(d&0x8000) {
       DATA1();
     } else {
       DATA0();
@@ -137,7 +125,7 @@ void HT1632C_Read_DATA(unsigned char Addr)
   CSoff();
 }
 
-void HT1632C_Write_Pattern(const unsigned char pattern[])
+void HT1632C_Write_Pattern(const uint16_t pattern[])
 {
   for (int col=0; col<12; col++) {
     HT1632C_Write_DAT(com[col],pattern,col);
