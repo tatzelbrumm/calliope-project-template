@@ -31,6 +31,8 @@ static uint16_t show[13] = {
   0b0000000000000000
 };
 
+void delay(uint32_t count) { for (volatile uint32_t t=count; --t; ); }
+
 void putIRQenables(void) {
   cereal.putreg(&NVIC->ISER, "NVIC->ISER\t");
   cereal.putreg(&NVIC->ICER, "NVIC->ICER\t");
@@ -95,11 +97,18 @@ int main(void) {
   cereal.putreg(&gpiobase->DIR, "Dir  ");
   cereal.putreg(&gpiobase->IN, "In   ");
 
-  HT1632C_Write_Pattern(show);
+  cereal.puts("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
+  putIRQenables();
+
+  unsigned int ofs=0;
+ considered_harmful:
+  HT1632C_Write_Pattern(show+ofs);
+  cereal.puthex(ofs= 1-ofs);
+  cereal.crlf();
+  delay(1<<20);
 
   cereal.putreg(&gpiobase->DIR, "Dir  ");
   cereal.putreg(&gpiobase->IN, "In   ");
 
-  cereal.puts("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
-  putIRQenables();
+  goto considered_harmful;
 }
