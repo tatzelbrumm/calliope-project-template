@@ -15,6 +15,21 @@
 
 Cereal cereal(USBTX, USBRX);
 
+static unsigned char show[24] = {
+  0b00011111, 0b10000000,
+  0b00100000, 0b01000000,
+  0b01001011, 0b00100000,
+  0b10000000, 0b00010000,
+  0b10100010, 0b01010000,
+  0b10101110, 0b00010000,
+  0b10000111, 0b01010000,
+  0b10100100, 0b01010000,
+  0b10000000, 0b00010000,
+  0b01001101, 0b00100000,
+  0b00100000, 0b01000000,
+  0b00011111, 0b10000000
+};
+
 void putIRQenables(void) {
   cereal.putreg(&NVIC->ISER, "NVIC->ISER\t");
   cereal.putreg(&NVIC->ICER, "NVIC->ICER\t");
@@ -69,7 +84,17 @@ int main(void) {
   cereal.putreg(&gpiobase->DIR, "Dir  ");
   cereal.putreg(&gpiobase->IN, "In   ");
 
-  sinobitLED();
+  HT1632C_Init();
+
+  cereal.putreg(&gpiobase->DIR, "Dir  ");
+  cereal.putreg(&gpiobase->IN, "In   ");
+
+  HT1632C_clr();
+
+  cereal.putreg(&gpiobase->DIR, "Dir  ");
+  cereal.putreg(&gpiobase->IN, "In   ");
+
+  HT1632C_Write_Pattern(show);
 
   cereal.putreg(&gpiobase->DIR, "Dir  ");
   cereal.putreg(&gpiobase->IN, "In   ");
