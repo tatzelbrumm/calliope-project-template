@@ -110,24 +110,33 @@ void HT1632C_Init(void)                 //HT1632C初始化函数/HT1632C Init Fu
   HT1632C_Write_CMD(LED_ON);          //打开LED显示/ Turn on LED display
 }
 
-void HT1632C_Read_DATA(unsigned char Addr)
+uint16_t HT1632C_Read_DATA(unsigned char Addr)
 {
-  unsigned char i;
   RDdata();
   CSon();
   HT1632C_Write(0xc0,3);                                    //ID:101
   HT1632C_Write(Addr<<1,7);
-  for(i=0; i<12; i++) {
+  uint16_t datum= 0;
+  for(unsigned char i=0; i<12; i++) {
     RDon();
-    asm("nop");
+    datum<<=1;
+    datum|= (gpiobase->IN & (1<<HT_DATA))>>(HT_DATA-4);
     RDoff();
   }
   CSoff();
+  return datum;
 }
 
 void HT1632C_Write_Pattern(const uint16_t pattern[])
 {
   for (int col=0; col<12; col++) {
     HT1632C_Write_DAT(com[col],pattern,col);
+  }
+}
+
+void HT1632C_Read_Pattern(uint16_t pattern[])
+{
+  for (int col=0; col<12; col++) {
+    pattern[col]= HT1632C_Read_DATA(com[col]);
   }
 }
