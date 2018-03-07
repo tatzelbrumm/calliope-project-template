@@ -31,13 +31,16 @@ $ arm-none-eabi-gdb build/calliope-mini-classic-gcc/source/calliope-project-temp
 (gdb) c
 ```
 
+[ddd](debug.md) can be used as GUI for gdb.
+
 
 # License
 
 This template is available under the [Apache License](LICENSE)
 
 ```
-Copyright 2017 Calliope gGmbH
+Copyright 2018 Christoph Maier
+based on work by Calliope gGmbH
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -50,7 +53,7 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-````
+```
 
 
 
