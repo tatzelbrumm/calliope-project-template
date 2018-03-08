@@ -125,7 +125,7 @@ void putIRQenables(void) {
 void printpattern(const uint16_t pattern[]) {
   for (int r=16; r-->4; ) {
     for (int c=0; c<12; c++) {
-      cereal.puts(pattern[c]&(1<<r)? "*":" ");
+      cereal.puts(pattern[c]&(1<<r)? "#":".");
     }
     cereal.crlf();
   }
