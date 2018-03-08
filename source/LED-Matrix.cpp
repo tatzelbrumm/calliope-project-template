@@ -112,10 +112,11 @@ void HT1632C_Init(void) //HT1632C Init Function
 
 uint16_t HT1632C_Read_DATA(unsigned char Addr)
 {
-  RDdata();
+  WRdata();
   CSon();
   HT1632C_Write(0xc0,3);
   HT1632C_Write(Addr<<1,7);
+  RDdata();
   uint16_t datum= 0;
   for(unsigned char i=0; i<12; i++) {
     RDon();
