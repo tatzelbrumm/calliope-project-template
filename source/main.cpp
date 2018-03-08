@@ -72,6 +72,8 @@ static const char *meditations[4]= {
   OM, MANI, PADME, HUM
 };
 
+uint16_t readpattern[12]; // pattern read back
+
 void delay(uint32_t count) { for (volatile uint32_t t=count; --t; ); }
 
 void putIRQenables(void) {
@@ -120,6 +122,15 @@ void putIRQenables(void) {
   cereal.putreg(&NRF_LPCOMP->INTENCLR,"NRF_LPCOMP->INTENCLR\t");
 }
 
+void printpattern(const uint16_t pattern[]) {
+  for (int r=16; r-->4; ) {
+    for (int c=0; c<12; c++) {
+      cereal.puts(pattern[c]&(1<<r)? "*":" ");
+    }
+    cereal.crlf();
+  }
+}
+
 int main(void) {
   NRF_GPIO_Type *gpiobase= (NRF_GPIO_Type *)NRF_GPIO_BASE;
 
@@ -148,6 +159,10 @@ int main(void) {
   //cereal.puthex(ofs++);
   //cereal.crlf();
   ofs%=4;
+
+  HT1632C_Read_Pattern(readpattern);
+  printpattern(readpattern);
+
   delay(1<<22);
 
   cereal.putreg(&gpiobase->DIR, "Dir  ");
