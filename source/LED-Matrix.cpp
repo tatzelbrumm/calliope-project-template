@@ -20,16 +20,18 @@
 
 static NRF_GPIO_Type *gpiobase= (NRF_GPIO_Type *)NRF_GPIO_BASE;
 
-inline void CSon(void) { gpiobase->OUTCLR= 1<<HT_CS; }
-inline void CSoff(void) { gpiobase->OUTSET= 1<<HT_CS; }
-inline void RDon(void) { gpiobase->OUTCLR= 1<<HT_RD; }
-inline void RDoff(void) { gpiobase->OUTSET= 1<<HT_RD; }
-inline void WRon(void) { gpiobase->OUTCLR= 1<<HT_WR; }
-inline void WRoff(void) { gpiobase->OUTSET= 1<<HT_WR; }
-inline void DATA0(void) { gpiobase->OUTCLR= 1<<HT_DATA; }
-inline void DATA1(void) { gpiobase->OUTSET= 1<<HT_DATA; }
-inline void RDdata(void) { gpiobase->DIRCLR= 1<<HT_DATA; }
-inline void WRdata(void) { gpiobase->DIRSET= 1<<HT_DATA; }
+static inline void CSon(void) { gpiobase->OUTCLR= 1<<HT_CS; }
+static inline void CSoff(void) { gpiobase->OUTSET= 1<<HT_CS; }
+static inline void RDon(void) { gpiobase->OUTCLR= 1<<HT_RD; }
+static inline void RDoff(void) { gpiobase->OUTSET= 1<<HT_RD; }
+static inline void WRon(void) { gpiobase->OUTCLR= 1<<HT_WR; }
+static inline void WRoff(void) { gpiobase->OUTSET= 1<<HT_WR; }
+static inline void DATA0(void) { gpiobase->OUTCLR= 1<<HT_DATA; }
+static inline void DATA1(void) { gpiobase->OUTSET= 1<<HT_DATA; }
+static inline void RDdata(void) { gpiobase->DIRCLR= 1<<HT_DATA; }
+static inline void WRdata(void) { gpiobase->DIRSET= 1<<HT_DATA; }
+
+static uint16_t image[12][12];          // image buffer (brightness scaled)
 
 static unsigned char com[12] = {
   0x00, 0x04, 0x08, 0x0C, 0x10, 0x14, 0x18, 0x1C, 0x20, 0x24, 0x28, 0x2C
@@ -140,4 +142,37 @@ void HT1632C_Read_Pattern(uint16_t pattern[])
   for (int col=0; col<12; col++) {
     pattern[col]= HT1632C_Read_DATA(com[col]);
   }
+}
+
+void select_by_brightness(uint16_t brightness)
+{
+    static uint16_t framebuffer[12] = {0};  // frame buffer (binary data)
+    for (uint16_t c = 0; c < 12; c++) {
+        uint16_t column = 0;
+        for (uint16_t r = 0; r < 12; r++) {
+            column = (column << 1) | (image[r][c] < brightness ? 0 : 1);
+        }
+        framebuffer[c] = column << 4;
+    }
+    HT1632C_Write_Pattern(framebuffer);
+}
+
+/*
+ * callback function of brightness timer
+ */
+static const uint16_t Display_Ticker_Slot = 1;
+static const uint16_t Max_Brightness = 9;
+static const uint16_t render_timings[] = {
+    0, 2, 2, 4, 7, 13, 25, 49, 97
+};
+
+static int32_t callback(void) {
+    uint16_t brightness = previous_brightness;
+    int32_t delay = render_timings[brightness];
+    select_by_brightness(brightness++);
+    if (Max_Brightness == brightness) {
+        clear_ticker_callback(Display_Ticker_Slot);
+        delay = -1;
+    }
+    return delay;
 }
