@@ -13,6 +13,9 @@
 #define PWM_DUTY    0xAF            //PWM Brightness Control
 /****************I/O definition**********************/
 
+/*
+ * Low level peripheral register definitions
+ */
 #define HT_CS 16
 #define HT_DATA 21
 #define HT_RD 22
@@ -31,11 +34,24 @@ static inline void DATA1(void) { gpiobase->OUTSET= 1<<HT_DATA; }
 static inline void RDdata(void) { gpiobase->DIRCLR= 1<<HT_DATA; }
 static inline void WRdata(void) { gpiobase->DIRSET= 1<<HT_DATA; }
 
-static uint16_t image[12][12];          // image buffer (brightness scaled)
-
 static unsigned char com[12] = {
   0x00, 0x04, 0x08, 0x0C, 0x10, 0x14, 0x18, 0x1C, 0x20, 0x24, 0x28, 0x2C
 };
+
+/*
+ * Greyscale display definitions
+ */
+static const uint16_t Display_Ticker_Slot = 1;
+static const uint16_t Max_Brightness = 9;
+static const uint16_t render_timings[Max_Brightness] = {
+    0, 2, 2, 4, 7, 13, 25, 49, 97
+};
+
+static const uint16_t DisplayGreyscaleBitDepth = 8;
+static uint16_t timingCount = 0;
+//static uint16_t greyscaleBitMsk= 1;
+
+static uint16_t image[12][12];          // image buffer (brightness scaled)
 
 void HT1632C_Write(unsigned char Data, unsigned char cnt)      //MCU writes the data to ht1632c, and the high position is in front
 {
@@ -160,12 +176,6 @@ void select_by_brightness(uint16_t brightness)
 /*
  * callback function of brightness timer
  */
-static const uint16_t Display_Ticker_Slot = 1;
-static const uint16_t Max_Brightness = 9;
-static const uint16_t render_timings[] = {
-    0, 2, 2, 4, 7, 13, 25, 49, 97
-};
-
 static int32_t callback(void) {
     uint16_t brightness = previous_brightness;
     int32_t delay = render_timings[brightness];
@@ -175,4 +185,13 @@ static int32_t callback(void) {
         delay = -1;
     }
     return delay;
+}
+
+void renderGreyscale(void)
+{
+    select_by_brightness(brightness);
+    if (DisplayGreyscaleBitDepth > timingCount) {
+        //greyscaleBitMsk <<= 1;
+        renderTimer.attach_us(this, &renderGreyscale, render_timings[timingCount++]);
+    }
 }
