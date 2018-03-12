@@ -1,0 +1,1711 @@
+Archive member included to satisfy reference by file (symbol)
+
+ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+                              source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o (mbed::SerialBase::SerialBase(PinName, PinName))
+ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o (__wrap_main)
+ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+                              ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o) (error)
+ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+                              ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o) (wait_us)
+ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+                              ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o) (mbed_die)
+ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+                              ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o) (us_ticker_read)
+ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+                              ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o) (serial_init)
+ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+                              (Reset_Handler)
+ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+                              ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o) (mbed::FilePath::FilePath(char const*))
+ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+                              ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o) (mbed::FileBase::lookup(char const*, unsigned int))
+ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+                              ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o) (mbed::FileSystemLike::opendir())
+ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+                              ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o) (us_ticker_irq_handler)
+ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+                              ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o) (ticker_irq_handler)
+ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+                              ym/mbed-classic/existing/mbed-classic.a(board.c.o) (gpio_init_out)
+ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+                              ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o) (pin_mode)
+ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+                              ym/mbed-classic/existing/mbed-classic.a(gpio.c.o) (gpio_init)
+ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+                              ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj) (SystemInit)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(errno.o)
+                              ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o) (errno)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(atexit_arm.o)
+                              source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o (__aeabi_atexit)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(del_op.o)
+                              source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o (operator delete(void*))
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_op.o)
+                              ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o) (operator new(unsigned int))
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_handler.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_op.o) (std::get_new_handler())
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_divsi3.o)
+                              ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o) (__aeabi_idiv)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_divsi3.o) (__aeabi_idiv0)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(mulsf3.o)
+                              ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o) (__aeabi_fmul)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(fixsfsi.o)
+                              ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o) (__aeabi_f2iz)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(mulsf3.o) (__clzsi2)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-abort.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_op.o) (abort)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-cxa_atexit.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(atexit_arm.o) (__cxa_atexit)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+                              ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o) (__errno)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o (exit)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgetc.o)
+                              ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o) (fgetc)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgets.o)
+                              ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o) (fgets)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgetc.o) (__sinit)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fwalk.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o) (_fwalk)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o (__libc_init_array)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-malloc.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_op.o) (malloc)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memchr-stub.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgets.o) (memchr)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+                              ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o) (memcpy)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o (memset)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-freer.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-malloc.o) (_free_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o) (_malloc_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-on_exit_args.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-cxa_atexit.o) (__on_exit_args)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-refill.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgets.o) (__srefill_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-rget.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgetc.o) (__srget_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sbrkr.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setbuf.o)
+                              ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o) (setbuf)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setvbuf.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setbuf.o) (setvbuf)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-abort.o) (raise)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signalr.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o) (_kill_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sscanf.o)
+                              ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o) (sscanf)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o) (__sread)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strcmp.o)
+                              ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o) (strcmp)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strlen.o)
+                              ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o) (strlen)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncmp.o)
+                              ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o) (strncmp)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncpy.o)
+                              ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o) (strncpy)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-writer.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o) (_write_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-closer.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o) (_close_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fflush.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-refill.o) (__sflush_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-lseekr.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o) (_lseek_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-makebuf.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setvbuf.o) (__swhatbuf_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-freer.o) (__malloc_lock)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sscanf.o) (__ssvfscanf_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o) (_scanf_chars)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-readr.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o) (_read_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sccl.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o) (__sccl)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtol.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o) (_strtol_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtoul.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o) (_strtoul_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ungetc.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o) (__submore)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fstatr.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-makebuf.o) (_fstat_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-isattyr.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-makebuf.o) (_isatty_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtol.o) (__global_locale)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mbtowc_r.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o) (__ascii_mbtowc)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-reallocr.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ungetc.o) (_realloc_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-wctomb_r.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o) (__ascii_wctomb)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ctype_.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o) (_ctype_)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-msizer.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtoul.o) (__aeabi_uidiv)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(getpid.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signalr.o) (_getpid)
+/usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(kill.o)
+                              /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signalr.o) (_kill)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(errno.o)
+stdio_uart          0x8               ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crti.o
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crti.o
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crti.o
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .group         0x0000000000000000       0x10 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .group         0x0000000000000000        0xc source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .text          0x0000000000000000        0x0 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .data          0x0000000000000000        0x0 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .bss           0x0000000000000000        0x0 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .group         0x0000000000000000       0x10 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .text          0x0000000000000000        0x0 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .data          0x0000000000000000        0x0 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .bss           0x0000000000000000        0x0 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .text._ZN6CerealD2Ev
+                0x0000000000000000        0x2 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .text._ZN6CerealD0Ev
+                0x0000000000000000        0xc source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .group         0x0000000000000000       0x10 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .group         0x0000000000000000        0xc ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .text._ZN4mbed10SerialBase6formatEiNS0_6ParityEi
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .text._ZN4mbed10SerialBase8readableEv
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .text._ZN4mbed10SerialBase9writeableEv
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .text._ZN4mbed10SerialBase6attachEPFvvENS0_7IrqTypeE
+                0x0000000000000000       0x2a ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .text._ZN4mbed10SerialBase10_base_getcEv
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .text._ZN4mbed10SerialBase10send_breakEv
+                0x0000000000000000       0x24 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .group         0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._ZN4mbed10FileHandle4flenEv
+                0x0000000000000000       0x34 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._ZL11init_serialv
+                0x0000000000000000       0x20 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._ZN4mbed10FileHandleD2Ev
+                0x0000000000000000       0x2c ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._ZN4mbed10FileHandleD0Ev
+                0x0000000000000000       0x12 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._open    0x0000000000000000       0xd8 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._close   0x0000000000000000       0x2c ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._write   0x0000000000000000       0x54 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._read    0x0000000000000000       0x48 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._isatty  0x0000000000000000       0x28 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._lseek   0x0000000000000000       0x28 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._fstat   0x0000000000000000       0x24 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.remove   0x0000000000000000       0x2c ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.rename   0x0000000000000000       0x4e ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.tmpnam   0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.tmpfile  0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.opendir  0x0000000000000000       0x38 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.readdir  0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.closedir
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.rewinddir
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.telldir  0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.seekdir  0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.mkdir    0x0000000000000000       0x30 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._ZN9__gnu_cxx27__verbose_terminate_handlerEv
+                0x0000000000000000       0x10 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text.__cxa_pure_virtual
+                0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._sbrk    0x0000000000000000       0x28 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._ZN4mbed26mbed_set_unbuffered_streamEP7__sFILE
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._ZN4mbed9mbed_getcEP7__sFILE
+                0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text._ZN4mbed9mbed_getsEPciP7__sFILE
+                0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .bss._ZL11filehandles
+                0x0000000000000000      0x100 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .data._ZZ5_sbrkE4heap
+                0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .rodata._ZN9__gnu_cxx27__verbose_terminate_handlerEv.str1.1
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .rodata._ZTVN4mbed10FileHandleE
+                0x0000000000000000       0x2c ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .rodata.__stderr_name
+                0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .rodata.__stdin_name
+                0x0000000000000000        0x7 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .rodata.__stdout_name
+                0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .rodata._open.str1.1
+                0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .text.error    0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .debug_info    0x0000000000000000      0x913 ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .debug_abbrev  0x0000000000000000      0x1e8 ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .debug_aranges
+                0x0000000000000000       0x20 ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .debug_ranges  0x0000000000000000       0x10 ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .debug_line    0x0000000000000000      0x215 ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .debug_str     0x0000000000000000      0x63b ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .comment       0x0000000000000000       0x7f ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .debug_frame   0x0000000000000000       0x2c ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .ARM.attributes
+                0x0000000000000000       0x31 ym/mbed-classic/existing/mbed-classic.a(error.c.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .text.wait     0x0000000000000000       0x18 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .text.nrf_delay_us.constprop.0
+                0x0000000000000000       0x26 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .text.tmr1_stop
+                0x0000000000000000       0x34 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .text.serial_free
+                0x0000000000000000       0x10 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .text.serial_format
+                0x0000000000000000       0x14 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .text.serial_irq_set
+                0x0000000000000000       0x8c ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .text.serial_getc
+                0x0000000000000000       0x1a ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .text.serial_readable
+                0x0000000000000000        0xe ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .text.serial_writable
+                0x0000000000000000        0xe ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .text.serial_break_set
+                0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .text.serial_break_clear
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .text.serial_set_flow_control
+                0x0000000000000000       0x9c ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .text.serial_clear
+                0x0000000000000000        0x2 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+ .ARM.extab     0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .text._ZN4mbed8FilePathC2EPKc
+                0x0000000000000000       0x3e ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .text._ZN4mbed8FilePath8fileNameEv
+                0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .text._ZN4mbed8FilePath12isFileSystemEv
+                0x0000000000000000       0x1a ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .text._ZN4mbed8FilePath10fileSystemEv
+                0x0000000000000000       0x12 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .text._ZN4mbed8FilePath6isFileEv
+                0x0000000000000000       0x18 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .text._ZN4mbed8FilePath4fileEv
+                0x0000000000000000       0x18 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .text._ZN4mbed8FilePath6existsEv
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .debug_info    0x0000000000000000     0x160b ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .debug_abbrev  0x0000000000000000      0x401 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .debug_loc     0x0000000000000000      0x20d ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .debug_aranges
+                0x0000000000000000       0x50 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .debug_ranges  0x0000000000000000       0x88 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .debug_line    0x0000000000000000      0x3f2 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .debug_str     0x0000000000000000      0xa92 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .comment       0x0000000000000000       0x7f ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .debug_frame   0x0000000000000000       0xa8 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .ARM.attributes
+                0x0000000000000000       0x31 ym/mbed-classic/existing/mbed-classic.a(FilePath.cpp.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .text._ZN4mbed8FileBaseD2Ev
+                0x0000000000000000       0x30 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .text._ZN4mbed8FileBaseD0Ev
+                0x0000000000000000       0x12 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .text._ZN4mbed8FileBaseC2EPKcNS_8PathTypeE
+                0x0000000000000000       0x24 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .text._ZN4mbed8FileBase6lookupEPKcj
+                0x0000000000000000       0x38 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .text._ZN4mbed8FileBase3getEi
+                0x0000000000000000       0x1c ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .text._ZN4mbed8FileBase7getNameEv
+                0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .text._ZN4mbed8FileBase11getPathTypeEv
+                0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .bss._ZN4mbed8FileBase5_headE
+                0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .rodata._ZTVN4mbed8FileBaseE
+                0x0000000000000000       0x10 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .debug_info    0x0000000000000000     0x1942 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .debug_abbrev  0x0000000000000000      0x51c ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .debug_loc     0x0000000000000000      0x121 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .debug_aranges
+                0x0000000000000000       0x50 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .debug_ranges  0x0000000000000000       0x40 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .debug_line    0x0000000000000000      0x480 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .debug_str     0x0000000000000000      0xd01 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .comment       0x0000000000000000       0x7f ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .debug_frame   0x0000000000000000       0x98 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .ARM.attributes
+                0x0000000000000000       0x31 ym/mbed-classic/existing/mbed-classic.a(FileBase.cpp.o)
+ .group         0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .group         0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .group         0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .group         0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .group         0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .group         0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .group         0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .group         0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .group         0x0000000000000000       0x10 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .group         0x0000000000000000        0xc ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .group         0x0000000000000000        0xc ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed14FileSystemLike6removeEPKc
+                0x0000000000000000        0x6 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed14FileSystemLike6renameEPKcS2_
+                0x0000000000000000        0x6 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed14FileSystemLike7opendirEPKc
+                0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed14FileSystemLike5mkdirEPKcm
+                0x0000000000000000        0x6 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed13BaseDirHandle8closedirEv
+                0x0000000000000000        0xc ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed13BaseDirHandle7telldirEv
+                0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed13BaseDirHandle7seekdirEl
+                0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed13BaseDirHandle9rewinddirEv
+                0x0000000000000000        0x6 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed13BaseDirHandleD2Ev
+                0x0000000000000000        0x2 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed13BaseDirHandleD0Ev
+                0x0000000000000000        0xc ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed13BaseDirHandle7readdirEv
+                0x0000000000000000       0x2a ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed14FileSystemLikeC2EPKc
+                0x0000000000000000       0x18 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed14FileSystemLikeD2Ev
+                0x0000000000000000       0x18 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed14FileSystemLikeD0Ev
+                0x0000000000000000       0x12 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text._ZN4mbed14FileSystemLike7opendirEv
+                0x0000000000000000       0x28 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .rodata._ZTVN4mbed13BaseDirHandleE
+                0x0000000000000000       0x24 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .rodata._ZTVN4mbed14FileSystemLikeE
+                0x0000000000000000       0x24 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .debug_info    0x0000000000000000     0x1d1b ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .debug_abbrev  0x0000000000000000      0x5d2 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .debug_loc     0x0000000000000000      0x200 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .debug_aranges
+                0x0000000000000000       0x90 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .debug_ranges  0x0000000000000000       0x98 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .debug_line    0x0000000000000000      0x49a ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .debug_str     0x0000000000000000      0xecb ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .comment       0x0000000000000000       0x7f ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .debug_frame   0x0000000000000000      0x13c ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .ARM.attributes
+                0x0000000000000000       0x31 ym/mbed-classic/existing/mbed-classic.a(FileSystemLike.cpp.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .text.get_us_ticker_data
+                0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .text.ticker_set_handler
+                0x0000000000000000       0x12 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .text.ticker_insert_event
+                0x0000000000000000       0x38 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .text.ticker_remove_event
+                0x0000000000000000       0x38 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .text.ticker_read
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .text.ticker_get_next_timestamp
+                0x0000000000000000       0x14 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .text._gpio_init_in
+                0x0000000000000000       0x22 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .text.gpio_init_in
+                0x0000000000000000        0xa ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .text.gpio_init_in_ex
+                0x0000000000000000        0x8 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .text.gpio_init_inout
+                0x0000000000000000       0x3c ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .text.pin_function
+                0x0000000000000000        0x2 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+ .text          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+ .data          0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+ .bss           0x0000000000000000        0x0 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+ .text.SystemCoreClockUpdate
+                0x0000000000000000       0x10 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+ .data.SystemCoreClock
+                0x0000000000000000        0x4 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(errno.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(errno.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(errno.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(errno.o)
+ COMMON         0x0000000000000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(errno.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(atexit_arm.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(atexit_arm.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(atexit_arm.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(del_op.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(del_op.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(del_op.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_op.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_op.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_op.o)
+ .text._Znwj    0x0000000000000000       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_op.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_op.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_op.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_handler.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_handler.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_handler.o)
+ .text._ZSt15set_new_handlerPFvvE
+                0x0000000000000000       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_handler.o)
+ .text._ZSt15get_new_handlerv
+                0x0000000000000000        0xc /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_handler.o)
+ .bss._ZN12_GLOBAL__N_113__new_handlerE
+                0x0000000000000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_handler.o)
+ .rodata._ZSt7nothrow
+                0x0000000000000000        0x1 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_handler.o)
+ .debug_frame   0x0000000000000000       0x30 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_handler.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(new_handler.o)
+ .text          0x0000000000000000      0x1d4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .text          0x0000000000000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+ .text          0x0000000000000000      0x264 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(mulsf3.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(mulsf3.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(mulsf3.o)
+ .rodata        0x0000000000000000       0x40 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(mulsf3.o)
+ .debug_frame   0x0000000000000000       0x3c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(mulsf3.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(mulsf3.o)
+ .text          0x0000000000000000       0x40 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(fixsfsi.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(fixsfsi.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(fixsfsi.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(fixsfsi.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(fixsfsi.o)
+ .text          0x0000000000000000       0x3c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-abort.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-abort.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-abort.o)
+ .text.abort    0x0000000000000000        0xe /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-abort.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-abort.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-abort.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-cxa_atexit.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-cxa_atexit.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-cxa_atexit.o)
+ .rodata.__cxa_atexit_dummy
+                0x0000000000000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-cxa_atexit.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .text.__errno  0x0000000000000000        0xc /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgetc.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgetc.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgetc.o)
+ .text._fgetc_r
+                0x0000000000000000       0x5c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgetc.o)
+ .text.fgetc    0x0000000000000000       0x14 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgetc.o)
+ .debug_frame   0x0000000000000000       0x44 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgetc.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgetc.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgets.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgets.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgets.o)
+ .text._fgets_r
+                0x0000000000000000       0xcc /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgets.o)
+ .text.fgets    0x0000000000000000       0x18 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgets.o)
+ .debug_frame   0x0000000000000000       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgets.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fgets.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_lock
+                0x0000000000000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.std      0x0000000000000000       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text._cleanup_r
+                0x0000000000000000       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_unlock
+                0x0000000000000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.__sfmoreglue
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text._cleanup
+                0x0000000000000000       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.__sinit  0x0000000000000000       0x68 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.__sfp    0x0000000000000000       0x7c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.__sfp_lock_acquire
+                0x0000000000000000        0x2 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.__sfp_lock_release
+                0x0000000000000000        0x2 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.__sinit_lock_acquire
+                0x0000000000000000        0x2 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.__sinit_lock_release
+                0x0000000000000000        0x2 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_lock_all
+                0x0000000000000000       0x18 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_unlock_all
+                0x0000000000000000       0x18 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fwalk.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fwalk.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fwalk.o)
+ .text._fwalk   0x0000000000000000       0x38 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fwalk.o)
+ .text._fwalk_reent
+                0x0000000000000000       0x42 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x0000000000000000       0x58 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fwalk.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fwalk.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-malloc.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-malloc.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-malloc.o)
+ .text.malloc   0x0000000000000000       0x14 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-malloc.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memchr-stub.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memchr-stub.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memchr-stub.o)
+ .text.memchr   0x0000000000000000       0x16 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memchr-stub.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memchr-stub.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memchr-stub.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-freer.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-freer.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-freer.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o)
+ .text._malloc_r
+                0x0000000000000000       0xbc /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o)
+ .bss.__malloc_sbrk_start
+                0x0000000000000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-on_exit_args.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-on_exit_args.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-on_exit_args.o)
+ .bss._on_exit_args_instance
+                0x0000000000000000      0x108 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-on_exit_args.o)
+ .rodata.__on_exit_args
+                0x0000000000000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-on_exit_args.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-on_exit_args.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-refill.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-refill.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-refill.o)
+ .text.lflush   0x0000000000000000       0x18 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-refill.o)
+ .text.__srefill_r
+                0x0000000000000000      0x124 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-refill.o)
+ .debug_frame   0x0000000000000000       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-refill.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-refill.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-rget.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-rget.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-rget.o)
+ .text.__srget_r
+                0x0000000000000000       0x60 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-rget.o)
+ .text.__srget  0x0000000000000000       0x14 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-rget.o)
+ .debug_frame   0x0000000000000000       0x44 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-rget.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-rget.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sbrkr.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sbrkr.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x0000000000000000       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sbrkr.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setbuf.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setbuf.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setbuf.o)
+ .text.setbuf   0x0000000000000000       0x12 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setbuf.o)
+ .debug_frame   0x0000000000000000       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setbuf.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setbuf.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setvbuf.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setvbuf.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setvbuf.o)
+ .text.setvbuf  0x0000000000000000      0x158 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setvbuf.o)
+ .debug_frame   0x0000000000000000       0x30 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setvbuf.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-setvbuf.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .text._init_signal_r
+                0x0000000000000000       0x2a /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .text._signal_r
+                0x0000000000000000       0x32 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .text._raise_r
+                0x0000000000000000       0x54 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .text.__sigtramp_r
+                0x0000000000000000       0x46 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .text.raise    0x0000000000000000       0x14 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .text.signal   0x0000000000000000       0x14 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .text._init_signal
+                0x0000000000000000       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .text.__sigtramp
+                0x0000000000000000       0x14 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .debug_frame   0x0000000000000000       0xe0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signal.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signalr.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signalr.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signalr.o)
+ .text._kill_r  0x0000000000000000       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signalr.o)
+ .text._getpid_r
+                0x0000000000000000        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signalr.o)
+ .debug_frame   0x0000000000000000       0x44 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signalr.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-signalr.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sscanf.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sscanf.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sscanf.o)
+ .text.sscanf   0x0000000000000000       0x50 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sscanf.o)
+ .text._sscanf_r
+                0x0000000000000000       0x4c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sscanf.o)
+ .debug_frame   0x0000000000000000       0x58 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sscanf.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sscanf.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o)
+ .text.__sread  0x0000000000000000       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o)
+ .text.__seofread
+                0x0000000000000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o)
+ .text.__swrite
+                0x0000000000000000       0x38 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o)
+ .text.__sseek  0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o)
+ .text.__sclose
+                0x0000000000000000        0xc /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o)
+ .debug_frame   0x0000000000000000       0x90 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-stdio.o)
+ .text          0x0000000000000000       0x14 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strcmp.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strcmp.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strcmp.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x0000000000000000       0x1c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strcmp.o)
+ .text          0x0000000000000000        0xe /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strlen.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x0000000000000000       0x1c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strlen.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncmp.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncmp.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncmp.o)
+ .text.strncmp  0x0000000000000000       0x22 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncmp.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncmp.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncmp.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncpy.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncpy.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncpy.o)
+ .text.strncpy  0x0000000000000000       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncpy.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncpy.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strncpy.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-writer.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-writer.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-writer.o)
+ .text._write_r
+                0x0000000000000000       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-writer.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-writer.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-writer.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-closer.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-closer.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-closer.o)
+ .text._close_r
+                0x0000000000000000       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-closer.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-closer.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-closer.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fflush.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fflush.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fflush.o)
+ .text.__sflush_r
+                0x0000000000000000      0x114 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fflush.o)
+ .text._fflush_r
+                0x0000000000000000       0x58 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fflush.o)
+ .text.fflush   0x0000000000000000       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fflush.o)
+ .debug_frame   0x0000000000000000       0x68 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fflush.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fflush.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-lseekr.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-lseekr.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-lseekr.o)
+ .text._lseek_r
+                0x0000000000000000       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-lseekr.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-lseekr.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-makebuf.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-makebuf.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-makebuf.o)
+ .text.__swhatbuf_r
+                0x0000000000000000       0x50 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-makebuf.o)
+ .text.__smakebuf_r
+                0x0000000000000000       0x88 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x0000000000000000       0x54 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-makebuf.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-makebuf.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o)
+ .text._sungetc_r
+                0x0000000000000000       0x78 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o)
+ .text.__ssrefill_r
+                0x0000000000000000       0x3e /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o)
+ .text.__ssvfscanf_r
+                0x0000000000000000      0x2fc /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o)
+ .rodata.__ssvfscanf_r.str1.1
+                0x0000000000000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o)
+ .debug_frame   0x0000000000000000       0x68 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfscanf.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+ .text._scanf_chars
+                0x0000000000000000       0xca /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+ .text._scanf_i
+                0x0000000000000000      0x204 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+ .rodata        0x0000000000000000        0xc /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+ .rodata._scanf_i.str1.1
+                0x0000000000000000       0x12 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+ .rodata.str1.1
+                0x0000000000000000        0x9 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+ .debug_frame   0x0000000000000000       0x54 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-readr.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-readr.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-readr.o)
+ .text._read_r  0x0000000000000000       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-readr.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-readr.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-readr.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sccl.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sccl.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sccl.o)
+ .text.__sccl   0x0000000000000000       0x60 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sccl.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sccl.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sccl.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtol.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtol.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtol.o)
+ .text._strtol_l.isra.0
+                0x0000000000000000      0x104 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtol.o)
+ .text._strtol_r
+                0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtol.o)
+ .text.strtol_l
+                0x0000000000000000       0x18 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtol.o)
+ .text.strtol   0x0000000000000000       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtol.o)
+ .debug_frame   0x0000000000000000       0x88 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtol.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtol.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtoul.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtoul.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtoul.o)
+ .text._strtoul_l.isra.0
+                0x0000000000000000      0x106 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtoul.o)
+ .text._strtoul_r
+                0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtoul.o)
+ .text.strtoul_l
+                0x0000000000000000       0x18 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtoul.o)
+ .text.strtoul  0x0000000000000000       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtoul.o)
+ .debug_frame   0x0000000000000000       0x88 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtoul.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-strtoul.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ungetc.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ungetc.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ungetc.o)
+ .text.__submore
+                0x0000000000000000       0x7c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ungetc.o)
+ .text._ungetc_r
+                0x0000000000000000       0xe4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ungetc.o)
+ .text.ungetc   0x0000000000000000       0x14 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ungetc.o)
+ .debug_frame   0x0000000000000000       0x6c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ungetc.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ungetc.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fstatr.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fstatr.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fstatr.o)
+ .text._fstat_r
+                0x0000000000000000       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fstatr.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-fstatr.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-isattyr.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-isattyr.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-isattyr.o)
+ .text._isatty_r
+                0x0000000000000000       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-isattyr.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-isattyr.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .text._setlocale_r
+                0x0000000000000000       0x40 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .text.__locale_mb_cur_max
+                0x0000000000000000       0x1c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .text.__locale_ctype_ptr_l
+                0x0000000000000000        0x6 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .text.__locale_ctype_ptr
+                0x0000000000000000       0x1c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .text.setlocale
+                0x0000000000000000       0x14 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .bss._PathLocale
+                0x0000000000000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .data.__global_locale
+                0x0000000000000000      0x16c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .rodata._setlocale_r.str1.1
+                0x0000000000000000        0x9 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .rodata.str1.1
+                0x0000000000000000        0x2 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .debug_frame   0x0000000000000000       0x74 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-locale.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mbtowc_r.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mbtowc_r.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mbtowc_r.o)
+ .text._mbtowc_r
+                0x0000000000000000       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mbtowc_r.o)
+ .text.__ascii_mbtowc
+                0x0000000000000000       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x0000000000000000       0x44 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mbtowc_r.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mbtowc_r.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-reallocr.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-reallocr.o)
+ .text._realloc_r
+                0x0000000000000000       0x4c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x0000000000000000       0x30 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-reallocr.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-reallocr.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-wctomb_r.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-wctomb_r.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-wctomb_r.o)
+ .text._wctomb_r
+                0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-wctomb_r.o)
+ .text.__ascii_wctomb
+                0x0000000000000000       0x18 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-wctomb_r.o)
+ .debug_frame   0x0000000000000000       0x38 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-wctomb_r.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-wctomb_r.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ctype_.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ctype_.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ctype_.o)
+ .rodata._ctype_
+                0x0000000000000000      0x101 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-ctype_.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-msizer.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-msizer.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-msizer.o)
+ .text._malloc_usable_size_r
+                0x0000000000000000       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-msizer.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-msizer.o)
+ .text          0x0000000000000000      0x114 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(getpid.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(getpid.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(getpid.o)
+ .stab          0x0000000000000000       0x24 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(getpid.o)
+ .text._getpid  0x0000000000000000       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(getpid.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(getpid.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(getpid.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(kill.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(kill.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(kill.o)
+ .stab          0x0000000000000000       0x18 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(kill.o)
+                                         0x24 (size before relaxing)
+ .text._kill    0x0000000000000000       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(kill.o)
+ .debug_frame   0x0000000000000000       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(kill.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(kill.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtend.o
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtend.o
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtn.o
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x0000000000000000 0x0000000000040000 xr
+RAM              0x0000000020000000 0x0000000000004000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crti.o
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtbegin.o
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+START GROUP
+LOAD source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+LOAD source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+LOAD ym/microbit/source/microbit.a
+LOAD ym/microbit-dal/source/microbit-dal.a
+LOAD ym/ble/source/ble.a
+LOAD ym/ble-nrf51822/source/ble-nrf51822.a
+LOAD ym/ble/source/ble.a
+LOAD ym/ble-nrf51822/source/ble-nrf51822.a
+LOAD ym/nrf51-sdk/source/nrf51-sdk.a
+LOAD ym/mbed-classic/existing/mbed-classic.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libsupc++_nano.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libsupc++_nano.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a
+END GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a
+START GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/libgcc.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a
+END GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtend.o
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtn.o
+
+.text           0x0000000000000000     0x12d0
+ *(SORT_BY_ALIGNMENT(.Vectors))
+ .Vectors       0x0000000000000000       0xc0 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+                0x0000000000000000                __Vectors
+ *(SORT_BY_ALIGNMENT(.text*))
+ .text          0x00000000000000c0       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtbegin.o
+ .text          0x0000000000000108       0x78 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+                0x0000000000000108                _mainCRTStartup
+                0x0000000000000108                _start
+ .text._ZN6CerealC2E7PinNameS0_
+                0x0000000000000180       0x14 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                0x0000000000000180                Cereal::Cereal(PinName, PinName)
+                0x0000000000000180                Cereal::Cereal(PinName, PinName)
+ .text._ZN6Cereal4crlfEv
+                0x0000000000000194       0x10 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                0x0000000000000194                Cereal::crlf()
+ .text._ZN6Cereal6putregEPVvPKc
+                0x00000000000001a4       0x34 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                0x00000000000001a4                Cereal::putreg(void volatile*, char const*)
+ .text._Z13putIRQenablesv
+                0x00000000000001d8      0x2b0 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+                0x00000000000001d8                putIRQenables()
+ .text.startup.main
+                0x0000000000000488      0x180 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+                0x0000000000000488                main
+ .text.startup._GLOBAL__sub_I_cereal
+                0x0000000000000608       0x28 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .text._ZN4mbed10SerialBaseC2E7PinNameS1_
+                0x0000000000000630       0x3c ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+                0x0000000000000630                mbed::SerialBase::SerialBase(PinName, PinName)
+                0x0000000000000630                mbed::SerialBase::SerialBase(PinName, PinName)
+ .text.tmr1_getCounter64
+                0x000000000000066c       0x50 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .text.TIMER1_IRQHandler
+                0x00000000000006bc       0x50 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+                0x00000000000006bc                TIMER1_IRQHandler
+ .text.us_ticker_init
+                0x000000000000070c       0x8c ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+                0x000000000000070c                us_ticker_init
+ .text.us_ticker_read
+                0x0000000000000798       0x18 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+                0x0000000000000798                us_ticker_read
+ .text.us_ticker_set_interrupt
+                0x00000000000007b0       0x54 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+                0x00000000000007b0                us_ticker_set_interrupt
+ .text.serial_baud.part.0
+                0x0000000000000804       0x38 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .text.serial_init
+                0x000000000000083c       0xb8 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+                0x000000000000083c                serial_init
+ .text.serial_baud
+                0x00000000000008f4       0x20 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+                0x00000000000008f4                serial_baud
+ .text.UART0_IRQHandler
+                0x0000000000000914       0x4c ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+                0x0000000000000914                UART0_IRQHandler
+ .text.serial_irq_handler
+                0x0000000000000960       0x18 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+                0x0000000000000960                serial_irq_handler
+ .text.serial_putc
+                0x0000000000000978       0x1c ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+                0x0000000000000978                serial_putc
+ .text          0x0000000000000994       0x48 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+                0x0000000000000994                Reset_Handler
+                0x00000000000009d0                NMI_Handler
+                0x00000000000009d2                HardFault_Handler
+                0x00000000000009d4                SVC_Handler
+                0x00000000000009d6                PendSV_Handler
+                0x00000000000009d8                SysTick_Handler
+                0x00000000000009da                TIMER2_IRQHandler
+                0x00000000000009da                SPI0_TWI0_IRQHandler
+                0x00000000000009da                RTC0_IRQHandler
+                0x00000000000009da                GPIOTE_IRQHandler
+                0x00000000000009da                POWER_CLOCK_IRQHandler
+                0x00000000000009da                RADIO_IRQHandler
+                0x00000000000009da                LPCOMP_IRQHandler
+                0x00000000000009da                SWI4_IRQHandler
+                0x00000000000009da                TEMP_IRQHandler
+                0x00000000000009da                QDEC_IRQHandler
+                0x00000000000009da                SWI5_IRQHandler
+                0x00000000000009da                TIMER0_IRQHandler
+                0x00000000000009da                SWI0_IRQHandler
+                0x00000000000009da                ECB_IRQHandler
+                0x00000000000009da                Default_Handler
+                0x00000000000009da                ADC_IRQHandler
+                0x00000000000009da                SWI3_IRQHandler
+                0x00000000000009da                CCM_AAR_IRQHandler
+                0x00000000000009da                WDT_IRQHandler
+                0x00000000000009da                SWI2_IRQHandler
+                0x00000000000009da                RNG_IRQHandler
+                0x00000000000009da                SPI1_TWI1_IRQHandler
+                0x00000000000009da                RTC1_IRQHandler
+                0x00000000000009da                SWI1_IRQHandler
+ .text.us_ticker_irq_handler
+                0x00000000000009dc       0x10 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+                0x00000000000009dc                us_ticker_irq_handler
+ .text.gpio_init
+                0x00000000000009ec       0x30 ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+                0x00000000000009ec                gpio_init
+ .text.SystemInit
+                0x0000000000000a1c       0xac ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+                0x0000000000000a1c                SystemInit
+ .text.__cxa_atexit
+                0x0000000000000ac8       0x1c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-cxa_atexit.o)
+                0x0000000000000ac8                __cxa_atexit
+ .text.exit     0x0000000000000ae4       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+                0x0000000000000ae4                exit
+ .text.__libc_init_array
+                0x0000000000000b10       0x48 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+                0x0000000000000b10                __libc_init_array
+ .text.free     0x0000000000000b58       0x14 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-malloc.o)
+                0x0000000000000b58                free
+ .text._free_r  0x0000000000000b6c       0x94 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-freer.o)
+                0x0000000000000b6c                _free_r
+ .text._ZN6CerealD2Ev
+                0x0000000000000c00        0x2 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                0x0000000000000c00                Cereal::~Cereal()
+                0x0000000000000c00                Cereal::~Cereal()
+ .text._ZN6CerealD0Ev
+                0x0000000000000c02        0xc source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                0x0000000000000c02                Cereal::~Cereal()
+ .text._ZN6Cereal4putsEPKc
+                0x0000000000000c0e       0x18 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                0x0000000000000c0e                Cereal::puts(char const*)
+ .text._ZN6Cereal6puthexEmj
+                0x0000000000000c26       0x42 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                0x0000000000000c26                Cereal::puthex(unsigned long, unsigned int)
+ .text._ZN4mbed10SerialBaseD2Ev
+                0x0000000000000c68        0x2 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+                0x0000000000000c68                mbed::SerialBase::~SerialBase()
+                0x0000000000000c68                mbed::SerialBase::~SerialBase()
+ .text._ZN4mbed10SerialBase12_irq_handlerEm9SerialIrq
+                0x0000000000000c6a       0x2c ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+                0x0000000000000c6a                mbed::SerialBase::_irq_handler(unsigned long, SerialIrq)
+ .text._ZN4mbed10SerialBaseD0Ev
+                0x0000000000000c96        0xc ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+                0x0000000000000c96                mbed::SerialBase::~SerialBase()
+ .text._ZN4mbed10SerialBase4baudEi
+                0x0000000000000ca2       0x10 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+                0x0000000000000ca2                mbed::SerialBase::baud(int)
+ .text._ZN4mbed10SerialBase10_base_putcEi
+                0x0000000000000cb2        0xe ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+                0x0000000000000cb2                mbed::SerialBase::_base_putc(int)
+ .text.mbed_main
+                0x0000000000000cc0        0x2 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+                0x0000000000000cc0                mbed_main
+ .text.mbed_sdk_init
+                0x0000000000000cc2        0x2 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+                0x0000000000000cc2                mbed_sdk_init
+ .text.__wrap_main
+                0x0000000000000cc4       0x10 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+                0x0000000000000cc4                __wrap_main
+ .text._exit    0x0000000000000cd4        0xc ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+                0x0000000000000cd4                _exit
+ .text.wait_us  0x0000000000000ce0       0x16 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+                0x0000000000000ce0                wait_us
+ .text.wait_ms  0x0000000000000cf6        0xe ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+                0x0000000000000cf6                wait_ms
+ .text.mbed_die
+                0x0000000000000d04       0x68 ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+                0x0000000000000d04                mbed_die
+ .text.us_ticker_disable_interrupt
+                0x0000000000000d6c        0x2 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+                0x0000000000000d6c                us_ticker_disable_interrupt
+ .text.us_ticker_clear_interrupt
+                0x0000000000000d6e        0x2 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+                0x0000000000000d6e                us_ticker_clear_interrupt
+ .text.ticker_irq_handler
+                0x0000000000000d70       0x44 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+                0x0000000000000d70                ticker_irq_handler
+ .text._gpio_init_out.part.1
+                0x0000000000000db4       0x26 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .text.gpio_init_out_ex
+                0x0000000000000dda       0x1c ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+                0x0000000000000dda                gpio_init_out_ex
+ .text.gpio_init_out
+                0x0000000000000df6        0xa ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+                0x0000000000000df6                gpio_init_out
+ .text.pin_mode
+                0x0000000000000e00       0x20 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+                0x0000000000000e00                pin_mode
+ .text.gpio_mode
+                0x0000000000000e20        0xc ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+                0x0000000000000e20                gpio_mode
+ .text.gpio_dir
+                0x0000000000000e2c       0x1c ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+                0x0000000000000e2c                gpio_dir
+ .text.__aeabi_atexit
+                0x0000000000000e48        0xe /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(atexit_arm.o)
+                0x0000000000000e48                __aeabi_atexit
+ .text._ZdlPv   0x0000000000000e56        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(del_op.o)
+                0x0000000000000e56                operator delete(void*)
+ .text.memcpy   0x0000000000000e5e       0x12 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+                0x0000000000000e5e                memcpy
+ .text.memset   0x0000000000000e70       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+                0x0000000000000e70                memset
+ .text.__malloc_lock
+                0x0000000000000e80        0x2 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
+                0x0000000000000e80                __malloc_lock
+ .text.__malloc_unlock
+                0x0000000000000e82        0x2 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
+                0x0000000000000e82                __malloc_unlock
+ *(SORT_BY_ALIGNMENT(.init))
+ .init          0x0000000000000e84        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crti.o
+                0x0000000000000e84                _init
+ .init          0x0000000000000e88        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtn.o
+ *(SORT_BY_ALIGNMENT(.fini))
+ .fini          0x0000000000000e90        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crti.o
+                0x0000000000000e90                _fini
+ .fini          0x0000000000000e94        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtn.o
+ *crtbegin.o(SORT_BY_ALIGNMENT(.ctors))
+ *crtbegin?.o(SORT_BY_ALIGNMENT(.ctors))
+ *(SORT_BY_ALIGNMENT(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors))
+ *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.ctors.*)))
+ *(SORT_BY_ALIGNMENT(.ctors))
+ *crtbegin.o(SORT_BY_ALIGNMENT(.dtors))
+ *crtbegin?.o(SORT_BY_ALIGNMENT(.dtors))
+ *(SORT_BY_ALIGNMENT(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors))
+ *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.dtors.*)))
+ *(SORT_BY_ALIGNMENT(.dtors))
+ *(SORT_BY_ALIGNMENT(.rodata*))
+ .rodata._ZTV6Cereal
+                0x0000000000000e9c       0x10 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                0x0000000000000e9c                vtable for Cereal
+ .rodata._ZTVN4mbed10SerialBaseE
+                0x0000000000000eac       0x10 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+                0x0000000000000eac                vtable for mbed::SerialBase
+ .rodata.acceptedSpeeds
+                0x0000000000000ebc       0x88 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .rodata.us_data
+                0x0000000000000f44        0x8 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .rodata.us_interface
+                0x0000000000000f4c       0x14 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .rodata.__sf_fake_stderr
+                0x0000000000000f60       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+                0x0000000000000f60                __sf_fake_stderr
+ .rodata.__sf_fake_stdin
+                0x0000000000000f80       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+                0x0000000000000f80                __sf_fake_stdin
+ .rodata.__sf_fake_stdout
+                0x0000000000000fa0       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+                0x0000000000000fa0                __sf_fake_stdout
+ .rodata._global_impure_ptr
+                0x0000000000000fc0        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+                0x0000000000000fc0                _global_impure_ptr
+ .rodata._ZN6Cereal4crlfEv.str1.1
+                0x0000000000000fc4        0x0 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                                          0x3 (size before relaxing)
+ .rodata._ZN6Cereal6putregEPVvPKc.str1.1
+                0x0000000000000fc4        0x0 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                                          0x3 (size before relaxing)
+ .rodata._Z13putIRQenablesv.str1.1
+                0x0000000000000fc4      0x288 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+                                        0x28b (size before relaxing)
+ .rodata.main.str1.1
+                0x000000000000124c       0x7e source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ *(SORT_BY_ALIGNMENT(.eh_frame*))
+ *fill*         0x00000000000012ca        0x2 
+ .eh_frame      0x00000000000012cc        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtbegin.o
+ .eh_frame      0x00000000000012cc        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtend.o
+
+.glue_7         0x00000000000012d0        0x0
+ .glue_7        0x00000000000012d0        0x0 linker stubs
+
+.glue_7t        0x00000000000012d0        0x0
+ .glue_7t       0x00000000000012d0        0x0 linker stubs
+
+.vfp11_veneer   0x00000000000012d0        0x0
+ .vfp11_veneer  0x00000000000012d0        0x0 linker stubs
+
+.v4_bx          0x00000000000012d0        0x0
+ .v4_bx         0x00000000000012d0        0x0 linker stubs
+
+.iplt           0x00000000000012d0        0x0
+ .iplt          0x00000000000012d0        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtbegin.o
+
+.ARM.extab
+ *(SORT_BY_ALIGNMENT(.ARM.extab*) SORT_BY_ALIGNMENT(.gnu.linkonce.armextab.*))
+                0x00000000000012d0                __exidx_start = .
+
+.ARM.exidx      0x00000000000012d0        0x8
+ *(SORT_BY_ALIGNMENT(.ARM.exidx*) SORT_BY_ALIGNMENT(.gnu.linkonce.armexidx.*))
+ .ARM.exidx     0x00000000000012d0        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .ARM.exidx     0x00000000000012d8        0x0 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+                                          0x8 (size before relaxing)
+                0x00000000000012d8                __exidx_end = .
+                0x00000000000012d8                __etext = .
+
+.rel.dyn        0x00000000000012d8        0x0
+ .rel.iplt      0x00000000000012d8        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtbegin.o
+
+.data           0x0000000020000000       0x74 load address 0x00000000000012d8
+                0x0000000020000000                __data_start__ = .
+ *(SORT_BY_ALIGNMENT(vtable))
+ *(SORT_BY_ALIGNMENT(.data*))
+ .data          0x0000000020000000        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtbegin.o
+                0x0000000020000000                __dso_handle
+ .data._impure_ptr
+                0x0000000020000004        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+                0x0000000020000004                _impure_ptr
+ .data.impure_data
+                0x0000000020000008       0x60 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+                0x0000000020000068                . = ALIGN (0x4)
+                0x0000000020000068                PROVIDE (__preinit_array_start, .)
+ *(SORT_BY_ALIGNMENT(.preinit_array))
+                0x0000000020000068                PROVIDE (__preinit_array_end, .)
+                0x0000000020000068                . = ALIGN (0x4)
+                0x0000000020000068                PROVIDE (__init_array_start, .)
+ *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.init_array.*)))
+ *(SORT_BY_ALIGNMENT(.init_array))
+ .init_array    0x0000000020000068        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtbegin.o
+ .init_array    0x000000002000006c        0x4 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+                0x0000000020000070                PROVIDE (__init_array_end, .)
+                0x0000000020000070                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__fini_array_start, .)
+ *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.fini_array.*)))
+ *(SORT_BY_ALIGNMENT(.fini_array))
+ .fini_array    0x0000000020000070        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end, .)
+ *(SORT_BY_ALIGNMENT(.jcr))
+                0x0000000020000074                . = ALIGN (0x4)
+                0x0000000020000074                __data_end__ = .
+
+.igot.plt       0x0000000020000074        0x0 load address 0x000000000000134c
+ .igot.plt      0x0000000020000074        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtbegin.o
+
+.bss            0x0000000020000074       0x88 load address 0x000000000000134c
+                0x0000000020000074                . = ALIGN (0x4)
+                0x0000000020000074                __bss_start__ = .
+ *(SORT_BY_ALIGNMENT(.bss*))
+ .bss           0x0000000020000074       0x1c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtbegin.o
+ .bss.cereal    0x0000000020000090       0x40 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+                0x0000000020000090                cereal
+ .bss.overflowCount
+                0x00000000200000d0        0x4 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .bss.us_ticker_callbackTimestamp
+                0x00000000200000d4        0x4 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .bss.irq_handler
+                0x00000000200000d8        0x4 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .bss.serial_irq_ids
+                0x00000000200000dc        0x4 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .bss.stdio_uart_inited
+                0x00000000200000e0        0x4 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+                0x00000000200000e0                stdio_uart_inited
+ .bss.events    0x00000000200000e4        0x8 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .bss.__malloc_free_list
+                0x00000000200000ec        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o)
+                0x00000000200000ec                __malloc_free_list
+ .bss.us_ticker_callbackPending
+                0x00000000200000f0        0x1 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .bss.us_ticker_inited
+                0x00000000200000f1        0x1 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ *(SORT_BY_ALIGNMENT(COMMON))
+ *fill*         0x00000000200000f2        0x2 
+ COMMON         0x00000000200000f4        0x8 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+                0x00000000200000f4                stdio_uart
+                0x00000000200000fc                . = ALIGN (0x4)
+                0x00000000200000fc                __bss_end__ = .
+
+.heap           0x0000000020000100      0x800
+                0x0000000020000100                __end__ = .
+                0x0000000020000100                end = __end__
+ *(SORT_BY_ALIGNMENT(.heap*))
+ .heap          0x0000000020000100      0x800 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+                0x0000000020000100                __HeapBase
+                0x0000000020000900                __HeapLimit = .
+
+.stack_dummy    0x0000000020000100      0x800
+ *(SORT_BY_ALIGNMENT(.stack*))
+ .stack         0x0000000020000100      0x800 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+                0x0000000020004000                __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
+                0x0000000020003800                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
+                0x0000000020004000                PROVIDE (__stack, __StackTop)
+                0x0000000000000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
+OUTPUT(source/calliope-project-template elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x28
+ .ARM.attributes
+                0x0000000000000000       0x1e /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x1b /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o
+ .ARM.attributes
+                0x0000000000000065       0x31 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .ARM.attributes
+                0x0000000000000096       0x31 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .ARM.attributes
+                0x00000000000000c7       0x31 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .ARM.attributes
+                0x00000000000000f8       0x31 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .ARM.attributes
+                0x0000000000000129       0x31 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .ARM.attributes
+                0x000000000000015a       0x31 ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .ARM.attributes
+                0x000000000000018b       0x31 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .ARM.attributes
+                0x00000000000001bc       0x31 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .ARM.attributes
+                0x00000000000001ed       0x1b ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+ .ARM.attributes
+                0x0000000000000208       0x31 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .ARM.attributes
+                0x0000000000000239       0x31 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .ARM.attributes
+                0x000000000000026a       0x31 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .ARM.attributes
+                0x000000000000029b       0x31 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .ARM.attributes
+                0x00000000000002cc       0x31 ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+ .ARM.attributes
+                0x00000000000002fd       0x31 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+ .ARM.attributes
+                0x000000000000032e       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(atexit_arm.o)
+ .ARM.attributes
+                0x000000000000035a       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(del_op.o)
+ .ARM.attributes
+                0x0000000000000386       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-cxa_atexit.o)
+ .ARM.attributes
+                0x00000000000003b2       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000000000003de       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .ARM.attributes
+                0x000000000000040a       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000436       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000462       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-malloc.o)
+ .ARM.attributes
+                0x000000000000048e       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000000000004ba       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000000000004e6       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-freer.o)
+ .ARM.attributes
+                0x0000000000000512       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o)
+ .ARM.attributes
+                0x000000000000053e       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x000000000000056a       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtend.o
+ .ARM.attributes
+                0x0000000000000596       0x1e /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v6-m/crtn.o
+
+.comment        0x0000000000000000       0x7e
+ .comment       0x0000000000000000       0x7e source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                                         0x7f (size before relaxing)
+ .comment       0x000000000000007e       0x7f source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+ .comment       0x000000000000007e       0x7f ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+
+.debug_info     0x0000000000000000    0x10716
+ .debug_info    0x0000000000000000     0x20fb source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .debug_info    0x00000000000020fb     0x4afd source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .debug_info    0x0000000000006bf8     0x221a ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .debug_info    0x0000000000008e12     0x2ee0 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .debug_info    0x000000000000bcf2      0x15a ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .debug_info    0x000000000000be4c      0x5ec ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .debug_info    0x000000000000c438      0xb0e ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .debug_info    0x000000000000cf46     0x1a03 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .debug_info    0x000000000000e949       0x26 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+ .debug_info    0x000000000000e96f      0x270 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .debug_info    0x000000000000ebdf      0x418 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .debug_info    0x000000000000eff7      0x8d3 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .debug_info    0x000000000000f8ca      0x4c4 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .debug_info    0x000000000000fd8e      0x595 ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+ .debug_info    0x0000000000010323      0x3f3 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+
+.debug_abbrev   0x0000000000000000     0x2b6d
+ .debug_abbrev  0x0000000000000000      0x547 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .debug_abbrev  0x0000000000000547      0x626 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .debug_abbrev  0x0000000000000b6d      0x57b ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .debug_abbrev  0x00000000000010e8      0x7a6 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .debug_abbrev  0x000000000000188e       0xd0 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .debug_abbrev  0x000000000000195e      0x16d ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .debug_abbrev  0x0000000000001acb      0x2ea ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .debug_abbrev  0x0000000000001db5      0x4a5 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .debug_abbrev  0x000000000000225a       0x14 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+ .debug_abbrev  0x000000000000226e      0x120 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .debug_abbrev  0x000000000000238e      0x1bf ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .debug_abbrev  0x000000000000254d      0x1ec ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .debug_abbrev  0x0000000000002739      0x163 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .debug_abbrev  0x000000000000289c      0x18d ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+ .debug_abbrev  0x0000000000002a29      0x144 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+
+.debug_loc      0x0000000000000000     0x24a9
+ .debug_loc     0x0000000000000000      0x27c source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .debug_loc     0x000000000000027c      0x1e4 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .debug_loc     0x0000000000000460      0x487 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .debug_loc     0x00000000000008e7      0xaf5 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .debug_loc     0x00000000000013dc       0x83 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .debug_loc     0x000000000000145f      0x14c ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .debug_loc     0x00000000000015ab       0xda ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .debug_loc     0x0000000000001685      0x53a ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .debug_loc     0x0000000000001bbf      0x2fb ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .debug_loc     0x0000000000001eba      0x540 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .debug_loc     0x00000000000023fa       0x6d ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .debug_loc     0x0000000000002467       0x42 ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+
+.debug_aranges  0x0000000000000000      0x4b8
+ .debug_aranges
+                0x0000000000000000       0x50 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .debug_aranges
+                0x0000000000000050       0x40 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .debug_aranges
+                0x0000000000000090       0x78 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .debug_aranges
+                0x0000000000000108      0x110 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .debug_aranges
+                0x0000000000000218       0x30 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .debug_aranges
+                0x0000000000000248       0x20 ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .debug_aranges
+                0x0000000000000268       0x58 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .debug_aranges
+                0x00000000000002c0       0x98 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .debug_aranges
+                0x0000000000000358       0x20 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+ .debug_aranges
+                0x0000000000000378       0x28 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .debug_aranges
+                0x00000000000003a0       0x48 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .debug_aranges
+                0x00000000000003e8       0x50 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .debug_aranges
+                0x0000000000000438       0x28 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .debug_aranges
+                0x0000000000000460       0x30 ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+ .debug_aranges
+                0x0000000000000490       0x28 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+
+.debug_ranges   0x0000000000000000      0x5d0
+ .debug_ranges  0x0000000000000000       0x58 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .debug_ranges  0x0000000000000058       0x78 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .debug_ranges  0x00000000000000d0       0x88 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .debug_ranges  0x0000000000000158      0x100 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .debug_ranges  0x0000000000000258       0x20 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .debug_ranges  0x0000000000000278       0x40 ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .debug_ranges  0x00000000000002b8       0xd8 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .debug_ranges  0x0000000000000390       0xf8 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .debug_ranges  0x0000000000000488       0x18 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .debug_ranges  0x00000000000004a0       0x50 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .debug_ranges  0x00000000000004f0       0x70 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .debug_ranges  0x0000000000000560       0x18 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .debug_ranges  0x0000000000000578       0x20 ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+ .debug_ranges  0x0000000000000598       0x38 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+
+.debug_line     0x0000000000000000     0x3db0
+ .debug_line    0x0000000000000000      0x5ab source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .debug_line    0x00000000000005ab      0x6d8 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .debug_line    0x0000000000000c83      0x658 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .debug_line    0x00000000000012db      0x930 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .debug_line    0x0000000000001c0b      0x231 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .debug_line    0x0000000000001e3c      0x405 ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .debug_line    0x0000000000002241      0x42f ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .debug_line    0x0000000000002670      0x5d6 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .debug_line    0x0000000000002c46      0x106 ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+ .debug_line    0x0000000000002d4c      0x219 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .debug_line    0x0000000000002f65      0x350 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .debug_line    0x00000000000032b5      0x3db ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .debug_line    0x0000000000003690      0x289 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .debug_line    0x0000000000003919      0x31d ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+ .debug_line    0x0000000000003c36      0x17a ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+
+.debug_str      0x0000000000000000     0x3318
+ .debug_str     0x0000000000000000     0x1014 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+                                       0x11e0 (size before relaxing)
+ .debug_str     0x0000000000001014      0xa47 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+                                       0x1d31 (size before relaxing)
+ .debug_str     0x0000000000001a5b      0x1da ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+                                       0x1274 (size before relaxing)
+ .debug_str     0x0000000000001c35      0x885 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+                                       0x1582 (size before relaxing)
+ .debug_str     0x00000000000024ba      0x153 ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+                                        0x271 (size before relaxing)
+ .debug_str     0x000000000000260d       0xb5 ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+                                        0x48b (size before relaxing)
+ .debug_str     0x00000000000026c2      0x437 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+                                        0x875 (size before relaxing)
+ .debug_str     0x0000000000002af9      0x1eb ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+                                        0xec3 (size before relaxing)
+ .debug_str     0x0000000000002ce4       0xbc ym/mbed-classic/existing/mbed-classic.a(startup_NRF51822.S.obj)
+                                        0x11e (size before relaxing)
+ .debug_str     0x0000000000002da0      0x112 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+                                        0x37f (size before relaxing)
+ .debug_str     0x0000000000002eb2       0xe1 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+                                        0x3c5 (size before relaxing)
+ .debug_str     0x0000000000002f93      0x10a ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+                                        0x53c (size before relaxing)
+ .debug_str     0x000000000000309d       0xa7 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+                                        0x4e2 (size before relaxing)
+ .debug_str     0x0000000000003144       0x91 ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+                                        0x537 (size before relaxing)
+ .debug_str     0x00000000000031d5      0x143 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+                                        0x482 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0xde4
+ .debug_frame   0x0000000000000000       0xc4 source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp.o
+ .debug_frame   0x00000000000000c4       0x8c source/CMakeFiles/calliope-project-template.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp.o
+ .debug_frame   0x0000000000000150      0x138 ym/mbed-classic/existing/mbed-classic.a(SerialBase.cpp.o)
+ .debug_frame   0x0000000000000288      0x320 ym/mbed-classic/existing/mbed-classic.a(retarget.cpp.o)
+ .debug_frame   0x00000000000005a8       0x5c ym/mbed-classic/existing/mbed-classic.a(wait_api.c.o)
+ .debug_frame   0x0000000000000604       0x2c ym/mbed-classic/existing/mbed-classic.a(board.c.o)
+ .debug_frame   0x0000000000000630       0xe4 ym/mbed-classic/existing/mbed-classic.a(us_ticker.c.o)
+ .debug_frame   0x0000000000000714      0x158 ym/mbed-classic/existing/mbed-classic.a(serial_api.c.o)
+ .debug_frame   0x000000000000086c       0x38 ym/mbed-classic/existing/mbed-classic.a(us_ticker_api.c.o)
+ .debug_frame   0x00000000000008a4       0xa4 ym/mbed-classic/existing/mbed-classic.a(ticker_api.c.o)
+ .debug_frame   0x0000000000000948       0xc8 ym/mbed-classic/existing/mbed-classic.a(gpio.c.o)
+ .debug_frame   0x0000000000000a10       0x38 ym/mbed-classic/existing/mbed-classic.a(pinmap.c.o)
+ .debug_frame   0x0000000000000a48       0x48 ym/mbed-classic/existing/mbed-classic.a(gpio_api.c.o)
+ .debug_frame   0x0000000000000a90       0x38 ym/mbed-classic/existing/mbed-classic.a(system_nrf51.c.o)
+ .debug_frame   0x0000000000000ac8       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(atexit_arm.o)
+ .debug_frame   0x0000000000000af0       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libstdc++_nano.a(del_op.o)
+ .debug_frame   0x0000000000000b18       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-cxa_atexit.o)
+ .debug_frame   0x0000000000000b40       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000b68      0x140 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x0000000000000ca8       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000000cd4       0x40 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-malloc.o)
+ .debug_frame   0x0000000000000d14       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000d3c       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000d5c       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000000d88       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000000000000db4       0x30 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
+
+.stabstr        0x0000000000000000       0x76
+ .stabstr       0x0000000000000000       0x76 /usr/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a(getpid.o)
