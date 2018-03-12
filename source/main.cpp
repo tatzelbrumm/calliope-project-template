@@ -14,6 +14,7 @@
 #include <cereal.h>
   
 Cereal cereal(USBTX, USBRX);
+static NRF_GPIO_Type *gpiobase= (NRF_GPIO_Type *)NRF_GPIO_BASE;
 
 void putIRQenables(void) {
   cereal.putreg(&NVIC->ISER, "NVIC->ISER\t");
@@ -61,24 +62,14 @@ void putIRQenables(void) {
   cereal.putreg(&NRF_LPCOMP->INTENCLR,"NRF_LPCOMP->INTENCLR\t");
 }
 
-int main(void) {
-  NRF_GPIO_Type *gpiobase= (NRF_GPIO_Type *)NRF_GPIO_BASE;
-
-  cereal.baud(115200);
-  cereal.puts("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
-
-  cereal.putreg(&gpiobase->DIR, "Dir  ");
-  cereal.putreg(&gpiobase->IN, "In   ");
-
-  for (int p= 4; p < 13; gpiobase->PIN_CNF[p++]= 0x70dUL);
-  for (int p= 13; p < 16; gpiobase->PIN_CNF[p++]= 0x505UL);
-
+void cycleLEDs(void) {
   for (uint32_t r= 1; r < (1<<3); r<<=1)
   {
     for (uint32_t c= 1; c < (1<<9); c<<=1)
     {
       uint32_t clr= ((~r&7)<<13)|(c<<4); 
       uint32_t set= (r<<13)|((~c&0x1ffUL)<<4);
+
       cereal.puts("rows: ");
       cereal.puthex(r);
       cereal.puts(" cols: ");
@@ -94,6 +85,20 @@ int main(void) {
       for (volatile uint32_t n= 0; n < 131072; n++);
     }
   }
+}
+
+int main(void) {
+  cereal.baud(115200);
+  cereal.puts("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
+
+  cereal.putreg(&gpiobase->DIR, "Dir  ");
+  cereal.putreg(&gpiobase->IN, "In   ");
+
+  for (int p= 4; p < 13; gpiobase->PIN_CNF[p++]= 0x70dUL);
+  for (int p= 13; p < 16; gpiobase->PIN_CNF[p++]= 0x505UL);
+
+  cycleLEDs();
+
   cereal.puts("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
   putIRQenables();
 
@@ -107,4 +112,8 @@ int main(void) {
 
   cereal.putreg(&gpiobase->DIR, "Dir  ");
   cereal.putreg(&gpiobase->IN, "In   ");
+  while (1)
+  {
+    cycleLEDs();
+  }
 }
