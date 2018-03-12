@@ -1,0 +1,1957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>calliope-project-template-RelWithDebInfo@calliope-mini-classic-gcc-nosd</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.makeBuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.append_environment</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.stopOnError</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enabledIncrementalBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.command</key>
+					<value>/usr/bin/make</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.contents</key>
+					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.inc</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.arguments</key>
+					<value>-j8</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildLocation</key>
+					<value>/home/cmaier/Hackerspaces/calliope/calliope-project-template/build/calliope-mini-classic-gcc-nosd</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.environment</key>
+					<value>VERBOSE=1|CMAKE_NO_VERBOSE=1|</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.auto</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.clean</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildArguments</key>
+					<value></value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.location</key>
+					<value>/home/cmaier/Hackerspaces/calliope/calliope-project-template/build/calliope-mini-classic-gcc-nosd</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.core.errorOutputParser</key>
+					<value>org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.ScannerConfigBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.make.core.makeNature</nature>
+		<nature>org.eclipse.cdt.make.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>calliope-project-template-source</name>
+			<type>2</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/source</location>
+		</link>
+		<link>
+			<name>[Subprojects]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Subprojects]/ble</name>
+			<type>2</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/build/calliope-mini-classic-gcc-nosd/ym/ble</location>
+		</link>
+		<link>
+			<name>[Subprojects]/ble-nrf51822</name>
+			<type>2</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/build/calliope-mini-classic-gcc-nosd/ym/ble-nrf51822</location>
+		</link>
+		<link>
+			<name>[Subprojects]/mbed-classic</name>
+			<type>2</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/build/calliope-mini-classic-gcc-nosd/ym/mbed-classic</location>
+		</link>
+		<link>
+			<name>[Subprojects]/microbit</name>
+			<type>2</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/build/calliope-mini-classic-gcc-nosd/ym/microbit</location>
+		</link>
+		<link>
+			<name>[Subprojects]/microbit-dal</name>
+			<type>2</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/build/calliope-mini-classic-gcc-nosd/ym/microbit-dal</location>
+		</link>
+		<link>
+			<name>[Subprojects]/nrf51-sdk</name>
+			<type>2</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/build/calliope-mini-classic-gcc-nosd/ym/nrf51-sdk</location>
+		</link>
+		<link>
+			<name>[Targets]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic//startup_NRF51822.S</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/cmsis/TARGET_NORDIC/TARGET_MCU_NRF51822/TOOLCHAIN_GCC_ARM/startup_NRF51822.S</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/FilePath.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/FilePath.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/RawSerial.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/RawSerial.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/Ethernet.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/Ethernet.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/Stream.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/Stream.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/I2C.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/I2C.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/BusOut.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/BusOut.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/BusIn.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/BusIn.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/BusInOut.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/BusInOut.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/I2CSlave.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/I2CSlave.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/SerialBase.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/SerialBase.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/TimerEvent.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/TimerEvent.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/FileBase.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/FileBase.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/SPI.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/SPI.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/Timeout.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/Timeout.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/InterruptIn.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/InterruptIn.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/Serial.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/Serial.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/FileLike.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/FileLike.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/CAN.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/CAN.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/Ticker.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/Ticker.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/LocalFileSystem.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/LocalFileSystem.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/SPISlave.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/SPISlave.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/CallChain.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/CallChain.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/InterruptManager.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/InterruptManager.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/Timer.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/Timer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/FileSystemLike.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/FileSystemLike.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/retarget.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/retarget.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/us_ticker_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/us_ticker_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/assert.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/assert.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/ticker_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/ticker_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/error.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/error.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/wait_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/wait_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/semihost_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/semihost_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/pinmap_common.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/pinmap_common.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/lp_ticker_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/lp_ticker_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/mbed_interface.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/mbed_interface.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/gpio.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/gpio.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/board.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/board.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/rtc_time.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/common/rtc_time.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/pinmap.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/pinmap.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/gpio_irq_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/gpio_irq_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/gpio_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/gpio_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/sleep.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/sleep.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/analogin_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/analogin_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/twi_master.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/twi_master.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/port_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/port_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/us_ticker.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/us_ticker.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/serial_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/serial_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/pwmout_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/pwmout_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/i2c_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/i2c_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/spi_api.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/hal/TARGET_NORDIC/TARGET_MCU_NRF51822/spi_api.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/cmsis_nvic.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/cmsis/TARGET_NORDIC/TARGET_MCU_NRF51822/cmsis_nvic.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Source Files/system_nrf51.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/mbed-classic/targets/cmsis/TARGET_NORDIC/TARGET_MCU_NRF51822/system_nrf51.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] mbed-classic/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Source Files/URIBeaconConfigService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/source/services/URIBeaconConfigService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Source Files/GapScanningParams.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/source/GapScanningParams.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Source Files/UARTService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/source/services/UARTService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Source Files/BLE.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/source/BLE.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Source Files/DFUService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/source/services/DFUService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Source Files/DiscoveredCharacteristic.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/source/DiscoveredCharacteristic.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/GattService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/GattService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/URIBeaconConfigService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/URIBeaconConfigService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/ServiceDiscovery.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/ServiceDiscovery.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/deprecate.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/deprecate.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/GapEvents.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/GapEvents.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/GapAdvertisingData.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/GapAdvertisingData.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/GattClient.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/GattClient.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/EnvironmentalService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/EnvironmentalService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/GapScanningParams.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/GapScanningParams.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/GattServerEvents.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/GattServerEvents.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/GattCharacteristic.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/GattCharacteristic.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/LinkLossService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/LinkLossService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/BLE.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/BLE.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/Gap.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/Gap.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/DFUService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/DFUService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/CharacteristicDescriptorDiscovery.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/CharacteristicDescriptorDiscovery.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/UARTService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/UARTService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/HeartRateService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/HeartRateService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/GattCallbackParamTypes.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/GattCallbackParamTypes.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/HealthThermometerService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/HealthThermometerService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/GapAdvertisingParams.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/GapAdvertisingParams.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/DiscoveredCharacteristic.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/DiscoveredCharacteristic.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/DiscoveredService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/DiscoveredService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/DeviceInformationService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/DeviceInformationService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/EddystoneConfigService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/EddystoneConfigService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/UUID.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/UUID.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/SecurityManager.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/SecurityManager.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/blecommon.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/blecommon.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/BatteryService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/BatteryService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/SafeBool.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/SafeBool.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/EddystoneService.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/EddystoneService.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/BLEProtocol.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/BLEProtocol.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/iBeacon.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/services/iBeacon.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/GattAttribute.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/GattAttribute.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/BLEInstanceBase.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/BLEInstanceBase.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/CallChainOfFunctionPointersWithContext.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/CallChainOfFunctionPointersWithContext.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/GattServer.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/GattServer.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/FunctionPointerWithContext.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/FunctionPointerWithContext.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Header Files/DiscoveredCharacteristicDescriptor.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble/ble/DiscoveredCharacteristicDescriptor.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/nRF5xServiceDiscovery.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xServiceDiscovery.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/btle.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/btle.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/nRF5xGap.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xGap.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/custom_helper.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/custom/custom_helper.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/nRF5xGattServer.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xGattServer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/nRF5xDiscoveredCharacteristic.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xDiscoveredCharacteristic.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/btle_discovery.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/btle_discovery.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/btle_gap.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/btle_gap.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/nRF5xCharacteristicDescriptorDiscoverer.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xCharacteristicDescriptorDiscoverer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/nRF5xn.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xn.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/btle_security.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/btle_security.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/nRF5xGattClient.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xGattClient.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Source Files/btle_advertising.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/btle_advertising.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/nRF5xServiceDiscovery.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xServiceDiscovery.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/nRF5xGattServer.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xGattServer.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/ansi_escape.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/common/ansi_escape.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/common.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/common/common.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/nRF5xGap.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xGap.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/btle_security.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/btle_security.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/custom_helper.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/custom/custom_helper.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/binary.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/common/binary.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/ble_error.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/common/ble_error.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/btle_gap.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/btle_gap.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/projectconfig.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/projectconfig.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/compiler.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/common/compiler.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/nRF5xCharacteristicDescriptorDiscoverer.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xCharacteristicDescriptorDiscoverer.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/nRF5xn.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xn.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/btle.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/btle.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/nRF5xDiscoveredCharacteristic.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xDiscoveredCharacteristic.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/btle_discovery.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/btle_discovery.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/nRF5xSecurityManager.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xSecurityManager.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/assertion.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/common/assertion.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/btle_advertising.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/btle/btle_advertising.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Header Files/nRF5xGattClient.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/ble-nrf51822/source/nRF5xGattClient.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] ble-nrf51822/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/nrf_ecb.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/hal/nrf_ecb.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/bootloader_util.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/bootloader_util.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/dfu_app_handler.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/dfu_app_handler.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/peer_data_storage.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/peer_data_storage.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/peer_id.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/peer_id.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/fstorage.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/fstorage/fstorage.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/ble_dfu.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/ble_services/ble_dfu/ble_dfu.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/dfu_init_template.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/dfu_init_template.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/crc16.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/crc16/crc16.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/app_util_platform.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/app_util_platform.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/nrf_delay.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/delay/nrf_delay.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/ble_conn_params.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/common/ble_conn_params.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/ble_flash.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/ble_flash/ble_flash.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/device_manager_peripheral.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/device_manager/device_manager_peripheral.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/ble_advdata.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/common/ble_advdata.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/pm_mutex.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/pm_mutex.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/pstorage.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/pstorage/pstorage.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/pm_buffer.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/pm_buffer.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/nrf_assert.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/nrf_assert.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/ble_radio_notification.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/ble_radio_notification/ble_radio_notification.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/nrf_nvmc.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/hal/nrf_nvmc.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/peer_data.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/peer_data.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/softdevice_handler.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/common/softdevice_handler/softdevice_handler.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/fstorage_nosd.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/fstorage/fstorage_nosd.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/softdevice_handler_appsh.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/common/softdevice_handler/softdevice_handler_appsh.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/ble_conn_state.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/common/ble_conn_state.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/id_manager.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/id_manager.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/app_error.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/app_error.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/hci_mem_pool.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/hci/hci_mem_pool.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/sdk_mapped_flags.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/sdk_mapped_flags.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/ble_srv_common.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/common/ble_srv_common.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/fds.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/fds/fds.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/peer_database.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/peer_database.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Source Files/app_scheduler.c</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/scheduler/app_scheduler.c</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/dfu_transport.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/dfu_transport.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/dfu_init.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/dfu_init.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/sdk_mapped_flags.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/sdk_mapped_flags.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_flash.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/ble_flash/ble_flash.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_sdm.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/nrf_sdm.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/app_util_platform.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/app_util_platform.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/ble.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/peer_database.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/peer_database.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf51.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/device/nrf51.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_wdt.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/hal/nrf_wdt.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_l2cap.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/ble_l2cap.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/device_manager.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/device_manager/device_manager.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_nvmc.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/hal/nrf_nvmc.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/pstorage_platform.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/pstorage/config/pstorage_platform.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_dfu.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/ble_services/ble_dfu/ble_dfu.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_srv_common.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/common/ble_srv_common.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/id_manager.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/id_manager.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/softdevice_assert.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/softdevice_assert.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/hci_mem_pool.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/hci/hci_mem_pool.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/fstorage_config.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/fstorage/fstorage_config.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_ecb.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/hal/nrf_ecb.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/dfu_ble_svc_internal.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/dfu_ble_svc_internal.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_svc.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/nrf_svc.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/pm_buffer.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/pm_buffer.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/softdevice_handler_appsh.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/common/softdevice_handler/softdevice_handler_appsh.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_temp.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/hal/nrf_temp.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_delay.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/delay/nrf_delay.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_conn_params.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/common/ble_conn_params.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_stack_handler_types.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/common/softdevice_handler/ble_stack_handler_types.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/dfu_ble_svc.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/dfu_ble_svc.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_gatt_db.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/common/ble_gatt_db.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_gap.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/ble_gap.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nordic_common.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/nordic_common.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/peer_id.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/peer_id.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_gpio.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/hal/nrf_gpio.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_date_time.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/common/ble_date_time.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/bootloader.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/bootloader.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/device_manager_cnfg.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/device_manager/config/device_manager_cnfg.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/hci_mem_pool_internal.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/hci_transport/hci_mem_pool_internal.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/fds_config.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/fds/fds_config.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/app_error.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/app_error.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_sensor_location.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/common/ble_sensor_location.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_gatt.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/ble_gatt.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/dfu_app_handler.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/dfu_app_handler.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/device/nrf.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/app_util.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/app_util.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/fstorage.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/fstorage/fstorage.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/dfu_bank_internal.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/dfu_bank_internal.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_conn_state.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/common/ble_conn_state.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/dfu.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/dfu.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_gpiote.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/hal/nrf_gpiote.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/softdevice_handler.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/common/softdevice_handler/softdevice_handler.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_soc.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/nrf_soc.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/compiler_abstraction.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/device/compiler_abstraction.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_hci.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/ble_hci.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/section_vars.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/experimental_section_vars/section_vars.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf51_deprecated.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/device/nrf51_deprecated.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/crc16.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/crc16/crc16.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/bootloader_util.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/bootloader_util.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/peer_data.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/peer_data.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/fds.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/fds/fds.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_assert.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/nrf_assert.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_mbr.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/nrf_mbr.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_error_sdm.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/nrf_error_sdm.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/bootloader_types.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/bootloader_types.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/pstorage.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/drivers_nrf/pstorage/pstorage.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf51_bitfields.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/device/nrf51_bitfields.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_types.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/ble_types.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_advdata.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/common/ble_advdata.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/sdk_errors.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/sdk_errors.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/common.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/common.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_ranges.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/ble_ranges.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_error_soc.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/nrf_error_soc.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_err.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/ble_err.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/peer_data_storage.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/peer_data_storage.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ant_stack_handler_types.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/common/softdevice_handler/ant_stack_handler_types.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/sdk_common.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/sdk_common.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/fds_types_internal.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/fds/fds_types_internal.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/pm_mutex.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/pm_mutex.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_gatts.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/ble_gatts.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/dfu_types.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/bootloader_dfu/dfu_types.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/sdk_os.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/util/sdk_os.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/app_timer.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/timer/app_timer.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_gattc.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/ble_gattc.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/app_scheduler.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/libraries/scheduler/app_scheduler.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/nrf_error.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/softdevice/s130/headers/nrf_error.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/ble_radio_notification.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/ble_radio_notification/ble_radio_notification.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Header Files/peer_manager_types.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/nrf51-sdk/source/nordic_sdk/components/ble/peer_manager/peer_manager_types.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] nrf51-sdk/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal//CortexContextSwitch.s</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/build/calliope-mini-classic-gcc-nosd/ym/microbit-dal/source/asm/CortexContextSwitch.s</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MemberFunctionCallback.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/core/MemberFunctionCallback.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitCompat.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/core/MicroBitCompat.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitDevice.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/core/MicroBitDevice.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitFiber.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/core/MicroBitFiber.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitFont.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/core/MicroBitFont.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitHeapAllocator.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/core/MicroBitHeapAllocator.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitListener.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/core/MicroBitListener.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitSystemTimer.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/core/MicroBitSystemTimer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/ManagedString.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/types/ManagedString.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/Matrix4.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/types/Matrix4.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitEvent.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/types/MicroBitEvent.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitImage.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/types/MicroBitImage.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/PacketBuffer.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/types/PacketBuffer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/RefCounted.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/types/RefCounted.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/DynamicPwm.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/DynamicPwm.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitAccelerometer.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitAccelerometer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitAccelerometer-bmx.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitAccelerometer-bmx.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitButton.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitButton.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitCompass.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitCompass.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitCompass-bmx.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitCompass-bmx.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitCompassCalibrator.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitCompassCalibrator.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitDisplay.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitDisplay.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitI2C.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitI2C.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitIO.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitIO.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitLightSensor.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitLightSensor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitMessageBus.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitMessageBus.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitMultiButton.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitMultiButton.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitPin.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitPin.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitQuadratureDecoder.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitQuadratureDecoder.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitRadio.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitRadio.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitRadioDatagram.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitRadioDatagram.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitRadioEvent.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitRadioEvent.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitSerial.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitSerial.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitStorage.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitStorage.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitThermometer.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitThermometer.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/TimedInterruptIn.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/TimedInterruptIn.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitFlash.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitFlash.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitFile.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitFile.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitFileSystem.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/MicroBitFileSystem.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/CalliopeSoundMotor.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/CalliopeSoundMotor.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/CalliopeRGB.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/drivers/CalliopeRGB.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitAccelerometerService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/bluetooth/MicroBitAccelerometerService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitBLEManager.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/bluetooth/MicroBitBLEManager.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitButtonService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/bluetooth/MicroBitButtonService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitDFUService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/bluetooth/MicroBitDFUService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitEddystone.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/bluetooth/MicroBitEddystone.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitEventService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/bluetooth/MicroBitEventService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitIOPinService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/bluetooth/MicroBitIOPinService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitLEDService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/bluetooth/MicroBitLEDService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitMagnetometerService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/bluetooth/MicroBitMagnetometerService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitTemperatureService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/bluetooth/MicroBitTemperatureService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Source Files/MicroBitUARTService.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit-dal/source/bluetooth/MicroBitUARTService.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit-dal/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit/Source Files/MicroBit.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit/source/MicroBit.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] microbit/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calliope-project-template</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calliope-project-template/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calliope-project-template/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calliope-project-template/Source Files/cereal.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calliope-project-template/Source Files/main.cpp</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/main.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calliope-project-template/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calliope-project-template/Header Files/cereal.h</name>
+			<type>1</type>
+			<location>/home/cmaier/Hackerspaces/calliope/calliope-project-template/source/cereal.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calliope-project-template/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calliope-project-template/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] calliope-project-template/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

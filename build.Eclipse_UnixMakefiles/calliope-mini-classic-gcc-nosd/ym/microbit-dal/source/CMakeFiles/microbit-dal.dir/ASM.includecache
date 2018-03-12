@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cmaier/Hackerspaces/calliope/calliope-project-template/build/calliope-mini-classic-gcc-nosd/ym/microbit-dal/source/asm/CortexContextSwitch.s
+

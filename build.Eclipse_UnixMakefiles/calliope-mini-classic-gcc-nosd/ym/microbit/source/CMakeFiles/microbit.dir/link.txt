@@ -1,0 +1,1 @@
+/usr/bin/arm-none-eabi-ar -cr  microbit.a CMakeFiles/microbit.dir/home/cmaier/Hackerspaces/calliope/calliope-project-template/yotta_modules/microbit/source/MicroBit.cpp.o
