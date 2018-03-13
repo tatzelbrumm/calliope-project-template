@@ -116,3 +116,27 @@ i.e., extra `.cproject` and `.project` files.
     drwxrwxr-x 3 cmaier cmaier    4096 Mär 12 02:25 source
     -rw-rw-r-- 1 cmaier cmaier   24014 Mär 12 02:25 .ninja_log
 
+Eclipse project from one of the `build` directories doesn't work.
+
+So some files need to be copied from `build` to the top level directory:
+
+    .project
+    .cproject
+
+Try with the ninja variant:
+
+In `eclipse`, build in [Targets][exe] - works!
+
+Cleaning up doesn't seem to work that well.
+
+This may require
+
+    find build -name '*.a' -type f -delete
+    find build -name '*.o' -type f -delete
+    find build -name '*.obj' -type f -delete
+
+No success with debug so far.
+Connecting seems to work, but I get the error message
+
+    Warn : WARNING! The target is already running. All changes GDB did to registers will be discarded! Waiting for target to halt.
+
