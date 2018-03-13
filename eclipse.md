@@ -116,8 +116,7 @@ i.e., extra `.cproject` and `.project` files.
     drwxrwxr-x 3 cmaier cmaier    4096 Mär 12 02:25 source
     -rw-rw-r-- 1 cmaier cmaier   24014 Mär 12 02:25 .ninja_log
 
-Eclipse project from one of the `build` directories doesn't work.
-
+Eclipse project from one of the `build` directories doesn't work.  
 So some files need to be copied from `build` to the top level directory:
 
     .project
@@ -127,8 +126,7 @@ Try with the ninja variant:
 
 In `eclipse`, build in [Targets][exe] - works!
 
-Cleaning up doesn't seem to work that well.
-
+Cleaning up doesn't seem to work that well.  
 This may require
 
     find build -name '*.a' -type f -delete
@@ -140,3 +138,34 @@ Connecting seems to work, but I get the error message
 
     Warn : WARNING! The target is already running. All changes GDB did to registers will be discarded! Waiting for target to halt.
 
+Try with the Unix-Makefiles variant:
+
+    .project
+    .cproject
+    Makefile
+
+need to be copied from the `build/.../ ` directory to top level.
+
+[Targets][clean] works.
+[Targets][build] works.
+
+Debug works with the settings:
+
+### OpenOCD setup
+Executable: `${openocd_path}/${openocd_executable}`  
+GDB port `3333` Telnet port `4444` Config options `-f openocd.cfg`
+
+### GDB Client setup
+Executable: `${cross_prefix}`gdb`${cross_suffix}`  
+Other options: (none) Commands: `target remote localhost:3333`  
+
+### Startup 
+Initial reset type `init`  
+`monitor reset init`  
+Enable ARM semihosting  
+
+### Run/restart commands
+Pre-run/Restart reset. type `halt`  
+`monitor reset halt`  
+Set breakpoint at `main`  
+Continue  
