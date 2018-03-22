@@ -32,7 +32,7 @@ void onData(MicroBitEvent e)
     PacketBuffer b=uBit.radio.datagram.recv();
     omCount= b[0];
     uBit.serial.send("\r\nReceived ");
-    uBit.serial.send('0'+omCount);
+    uBit.serial.send(omCount);
     uBit.serial.send("\r\n");
     if (4 > omCount)
         uBit.display.scroll(meditations[omCount]);
