@@ -46,9 +46,11 @@ int main(void) {
 
     uBit.radio.datagram.send(b);
 
+    uBit.serial.send(meditations[count]);
+
     uBit.display.scroll(meditations[count]);
 
-    uBit.serial.send(meditations[count]);
+    dumpRadioRegisters();
 
     uBit.sleep(680);
     goto considered_harmful;
