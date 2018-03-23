@@ -44,6 +44,9 @@ int main(void) {
     uBit.radio.enable();
     uBit.serial.baud(115200);
 
+    printf("\r\nClock registers\r\n");
+    dumpClockRegisters();
+    printf("\r\nRadio registers\r\n");
     dumpRadioRegisters();
 
     release_fiber();
