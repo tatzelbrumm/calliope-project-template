@@ -44,5 +44,7 @@ int main(void) {
     uBit.radio.enable();
     uBit.serial.baud(115200);
 
+    dumpRadioRegisters();
+
     release_fiber();
 }
