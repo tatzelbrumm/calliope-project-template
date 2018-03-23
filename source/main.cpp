@@ -50,6 +50,9 @@ int main(void) {
 
     uBit.display.scroll(meditations[count]);
 
+    printf("\r\nClock registers\r\n");
+    dumpClockRegisters();
+    printf("\r\nRadio registers\r\n");
     dumpRadioRegisters();
 
     uBit.sleep(680);
