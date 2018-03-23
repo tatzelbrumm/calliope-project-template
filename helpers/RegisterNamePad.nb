@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     63477,       1284]
-NotebookOptionsPosition[     61990,       1227]
-NotebookOutlinePosition[     62361,       1243]
-CellTagsIndexPosition[     62318,       1240]
+NotebookDataLength[     23103,        534]
+NotebookOptionsPosition[     21863,        485]
+NotebookOutlinePosition[     22233,        501]
+CellTagsIndexPosition[     22190,        498]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -25,224 +25,69 @@ Cell[BoxData[
  CellChangeTimes->{{3.73082688792507*^9, 3.730826889725719*^9}}],
 
 Cell[BoxData["\<\"/home/cmaier\"\>"], "Output",
- CellChangeTimes->{3.730826890457509*^9}]
+ CellChangeTimes->{3.730826890457509*^9, 3.730834121496766*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"filename", "=", 
-  "\"\</home/cmaier/Hackerspaces/calliope/calliope-project-template/source/\
-registerdump.cpp\>\""}]], "Input",
- CellChangeTimes->{{3.730826900484536*^9, 3.7308269311594048`*^9}}],
+  "\"\</home/cmaier/Hackerspaces/calliope/calliope-project-template/helpers/\
+clockdump.c\>\""}]], "Input",
+ CellChangeTimes->{{3.730826900484536*^9, 3.7308269311594048`*^9}, {
+  3.7308341353559732`*^9, 3.7308341844023952`*^9}}],
 
 Cell[BoxData["\<\"/home/cmaier/Hackerspaces/calliope/calliope-project-\
-template/source/registerdump.cpp\"\>"], "Output",
- CellChangeTimes->{3.730826931767207*^9}]
+template/helpers/clockdump.c\"\>"], "Output",
+ CellChangeTimes->{
+  3.730826931767207*^9, {3.7308341648371077`*^9, 3.730834184822485*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"feile", "=", 
-  RowBox[{"Import", "[", "filename", "]"}]}]], "Input",
- CellChangeTimes->{{3.730826937422875*^9, 3.7308269433685503`*^9}}],
+  RowBox[{"Import", "[", 
+   RowBox[{"filename", ",", "\"\<Text\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.730826937422875*^9, 3.7308269433685503`*^9}, {
+  3.7308341946339483`*^9, 3.73083419770537*^9}}],
 
-Cell[BoxData["\<\"/*\\n * Dump registers for diagnostic purposes\\n \
-*/\\n\\n#include <registerdump.h>\\n#include <nrf51.h>\\n#include \
-<stdio.h>\\n\\nvoid putreg(volatile void *reg, const char *name)\\n{\\n    \
-uint32_t *ptr= (uint32_t *)reg;\\n    printf(\\\"%s %08x: %08x\\\\r\\\\n\\\", \
-name, uint32_t(ptr), *ptr);\\n}\\n\\nvoid dumpRadioRegisters(void)\\n{\\n    \
-putreg(&NRF_RADIO->TASKS_TXEN, \\\"NRF_RADIO->TASKS_TXEN\\\"); /*!< Enable \
-radio in TX mode. */\\n    putreg(&NRF_RADIO->TASKS_RXEN, \
-\\\"NRF_RADIO->TASKS_RXEN\\\"); /*!< Enable radio in RX mode. */\\n    \
-putreg(&NRF_RADIO->TASKS_START, \\\"NRF_RADIO->TASKS_START\\\"); /*!< Start \
-radio. */\\n    putreg(&NRF_RADIO->TASKS_STOP, \
-\\\"NRF_RADIO->TASKS_STOP\\\"); /*!< Stop radio. */\\n    \
-putreg(&NRF_RADIO->TASKS_DISABLE, \\\"NRF_RADIO->TASKS_DISABLE\\\"); /*!< \
-Disable radio. */\\n    putreg(&NRF_RADIO->TASKS_RSSISTART, \
-\\\"NRF_RADIO->TASKS_RSSISTART\\\"); /*!< Start the RSSI and take one sample \
-of the receive signal strength. */\\n    putreg(&NRF_RADIO->TASKS_RSSISTOP, \
-\\\"NRF_RADIO->TASKS_RSSISTOP\\\"); /*!< Stop the RSSI measurement. */\\n    \
-putreg(&NRF_RADIO->TASKS_BCSTART, \\\"NRF_RADIO->TASKS_BCSTART\\\"); /*!< \
-Start the bit counter. */\\n    putreg(&NRF_RADIO->TASKS_BCSTOP, \
-\\\"NRF_RADIO->TASKS_BCSTOP\\\"); /*!< Stop the bit counter. */\\n    \
-putreg(&NRF_RADIO->EVENTS_READY, \\\"NRF_RADIO->EVENTS_READY\\\"); /*!< Ready \
-event. */\\n    putreg(&NRF_RADIO->EVENTS_ADDRESS, \
-\\\"NRF_RADIO->EVENTS_ADDRESS\\\"); /*!< Address event. */\\n    \
-putreg(&NRF_RADIO->EVENTS_PAYLOAD, \\\"NRF_RADIO->EVENTS_PAYLOAD\\\"); /*!< \
-Payload event. */\\n    putreg(&NRF_RADIO->EVENTS_END, \
-\\\"NRF_RADIO->EVENTS_END\\\"); /*!< End event. */\\n    \
-putreg(&NRF_RADIO->EVENTS_DISABLED, \\\"NRF_RADIO->EVENTS_DISABLED\\\"); /*!< \
-Disable event. */\\n    putreg(&NRF_RADIO->EVENTS_DEVMATCH, \
-\\\"NRF_RADIO->EVENTS_DEVMATCH\\\"); /*!< A device address match occurred on \
-the last received packet. */\\n    putreg(&NRF_RADIO->EVENTS_DEVMISS, \
-\\\"NRF_RADIO->EVENTS_DEVMISS\\\"); /*!< No device address match occurred on \
-the last received packet. */\\n    putreg(&NRF_RADIO->EVENTS_RSSIEND, \
-\\\"NRF_RADIO->EVENTS_RSSIEND\\\"); /*!< Sampling of the receive signal \
-strength complete. A new RSSI sample is ready for readout at the RSSISAMPLE \
-register. */\\n    putreg(&NRF_RADIO->EVENTS_BCMATCH, \
-\\\"NRF_RADIO->EVENTS_BCMATCH\\\"); /*!< Bit counter reached bit count value \
-specified in BCC register.*/\\n    putreg(&NRF_RADIO->SHORTS, \
-\\\"NRF_RADIO->SHORTS\\\"); /*!< Shortcuts for the radio. */\\n    \
-putreg(&NRF_RADIO->INTENSET, \\\"NRF_RADIO->INTENSET\\\"); /*!< Interrupt \
-enable set register.*/\\n    putreg(&NRF_RADIO->INTENCLR, \
-\\\"NRF_RADIO->INTENCLR\\\"); /*!< Interrupt enable clear register. */\\n    \
-putreg(&NRF_RADIO->CRCSTATUS, \\\"NRF_RADIO->CRCSTATUS\\\"); /*!< CRC status \
-of received packet. */\\n    putreg(&NRF_RADIO->RXMATCH, \
-\\\"NRF_RADIO->RXMATCH\\\"); /*!< Received address. */\\n    \
-putreg(&NRF_RADIO->RXCRC, \\\"NRF_RADIO->RXCRC\\\"); /*!< Received CRC. */\\n \
-   putreg(&NRF_RADIO->DAI, \\\"NRF_RADIO->DAI\\\"); /*!< Device address match \
-index. */\\n    putreg(&NRF_RADIO->PACKETPTR, \\\"NRF_RADIO->PACKETPTR\\\"); \
-/*!< Packet pointer. Decision point: START task. */\\n    \
-putreg(&NRF_RADIO->FREQUENCY, \\\"NRF_RADIO->FREQUENCY\\\"); /*!< Frequency. \
-*/\\n    putreg(&NRF_RADIO->TXPOWER, \\\"NRF_RADIO->TXPOWER\\\"); /*!< Output \
-power. */\\n    putreg(&NRF_RADIO->MODE, \\\"NRF_RADIO->MODE\\\"); /*!< Data \
-rate and modulation. */\\n    putreg(&NRF_RADIO->PCNF0, \
-\\\"NRF_RADIO->PCNF0\\\"); /*!< Packet configuration 0. */\\n    \
-putreg(&NRF_RADIO->PCNF1, \\\"NRF_RADIO->PCNF1\\\"); /*!< Packet \
-configuration 1. */\\n    putreg(&NRF_RADIO->BASE0, \
-\\\"NRF_RADIO->BASE0\\\"); /*!< Radio base address 0. Decision point: START \
-task. */\\n    putreg(&NRF_RADIO->BASE1, \\\"NRF_RADIO->BASE1\\\"); /*!< \
-Radio base address 1. Decision point: START task. */\\n    \
-putreg(&NRF_RADIO->PREFIX0, \\\"NRF_RADIO->PREFIX0\\\"); /*!< Prefixes bytes \
-for logical addresses 0 to 3. */\\n    putreg(&NRF_RADIO->PREFIX1, \
-\\\"NRF_RADIO->PREFIX1\\\"); /*!< Prefixes bytes for logical addresses 4 to \
-7. */\\n    putreg(&NRF_RADIO->TXADDRESS, \\\"NRF_RADIO->TXADDRESS\\\"); /*!< \
-Transmit address select. */\\n    putreg(&NRF_RADIO->RXADDRESSES, \
-\\\"NRF_RADIO->RXADDRESSES\\\"); /*!< Receive address select. */\\n    \
-putreg(&NRF_RADIO->CRCCNF, \\\"NRF_RADIO->CRCCNF\\\"); /*!< CRC \
-configuration. */\\n    putreg(&NRF_RADIO->CRCPOLY, \
-\\\"NRF_RADIO->CRCPOLY\\\"); /*!< CRC polynomial. */\\n    \
-putreg(&NRF_RADIO->CRCINIT, \\\"NRF_RADIO->CRCINIT\\\"); /*!< CRC initial \
-value. */\\n    putreg(&NRF_RADIO->TEST, \\\"NRF_RADIO->TEST\\\"); /*!< Test \
-features enable register.*/\\n    putreg(&NRF_RADIO->TIFS, \
-\\\"NRF_RADIO->TIFS\\\"); /*!< Inter Frame Spacing in microseconds. */\\n    \
-putreg(&NRF_RADIO->RSSISAMPLE, \\\"NRF_RADIO->RSSISAMPLE\\\"); /*!< RSSI \
-sample. */\\n    putreg(&NRF_RADIO->STATE, \\\"NRF_RADIO->STATE\\\"); /*!< \
-Current radio state. */\\n    putreg(&NRF_RADIO->DATAWHITEIV, \
-\\\"NRF_RADIO->DATAWHITEIV\\\"); /*!< Data whitening initial value. */\\n    \
-putreg(&NRF_RADIO->BCC, \\\"NRF_RADIO->BCC\\\"); /*!< Bit counter compare. */\
-\\n    putreg(&NRF_RADIO->DAB[8], \\\"NRF_RADIO->DAB[8]\\\"); /*!< Device \
-address base segment. */\\n    putreg(&NRF_RADIO->DAP[8], \
-\\\"NRF_RADIO->DAP[8]\\\"); /*!< Device address prefix. */\\n    \
-putreg(&NRF_RADIO->DACNF, \\\"NRF_RADIO->DACNF\\\"); /*!< Device address \
-match configuration. */\\n    putreg(&NRF_RADIO->OVERRIDE0, \
-\\\"NRF_RADIO->OVERRIDE0\\\"); /*!< Trim value override register 0. */\\n    \
-putreg(&NRF_RADIO->OVERRIDE1, \\\"NRF_RADIO->OVERRIDE1\\\"); /*!< Trim value \
-override register 1. */\\n    putreg(&NRF_RADIO->OVERRIDE2, \
-\\\"NRF_RADIO->OVERRIDE2\\\"); /*!< Trim value override register 2. */\\n    \
-putreg(&NRF_RADIO->OVERRIDE3, \\\"NRF_RADIO->OVERRIDE3\\\"); /*!< Trim value \
-override register 3. */\\n    putreg(&NRF_RADIO->OVERRIDE4, \
-\\\"NRF_RADIO->OVERRIDE4\\\"); /*!< Trim value override register 4. */\\n    \
-putreg(&NRF_RADIO->POWER, \\\"NRF_RADIO->POWER\\\"); /*!< Peripheral power \
-control. */\\n}\"\>"], "Output",
- CellChangeTimes->{3.73082694425132*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"FullForm", "[", "feile", "]"}]], "Input",
- CellChangeTimes->{{3.7308269751590767`*^9, 3.7308269824766073`*^9}}],
-
-Cell[BoxData[
- TagBox[
-  StyleBox[
-   "\"\</*\\n * Dump registers for diagnostic purposes\\n */\\n\\n#include \
-<registerdump.h>\\n#include <nrf51.h>\\n#include <stdio.h>\\n\\nvoid \
-putreg(volatile void *reg, const char *name)\\n{\\n    uint32_t *ptr= \
-(uint32_t *)reg;\\n    printf(\\\"%s %08x: %08x\\\\r\\\\n\\\", name, \
-uint32_t(ptr), *ptr);\\n}\\n\\nvoid dumpRadioRegisters(void)\\n{\\n    \
-putreg(&NRF_RADIO->TASKS_TXEN, \\\"NRF_RADIO->TASKS_TXEN\\\"); /*!< Enable \
-radio in TX mode. */\\n    putreg(&NRF_RADIO->TASKS_RXEN, \
-\\\"NRF_RADIO->TASKS_RXEN\\\"); /*!< Enable radio in RX mode. */\\n    \
-putreg(&NRF_RADIO->TASKS_START, \\\"NRF_RADIO->TASKS_START\\\"); /*!< Start \
-radio. */\\n    putreg(&NRF_RADIO->TASKS_STOP, \
-\\\"NRF_RADIO->TASKS_STOP\\\"); /*!< Stop radio. */\\n    \
-putreg(&NRF_RADIO->TASKS_DISABLE, \\\"NRF_RADIO->TASKS_DISABLE\\\"); /*!< \
-Disable radio. */\\n    putreg(&NRF_RADIO->TASKS_RSSISTART, \
-\\\"NRF_RADIO->TASKS_RSSISTART\\\"); /*!< Start the RSSI and take one sample \
-of the receive signal strength. */\\n    putreg(&NRF_RADIO->TASKS_RSSISTOP, \
-\\\"NRF_RADIO->TASKS_RSSISTOP\\\"); /*!< Stop the RSSI measurement. */\\n    \
-putreg(&NRF_RADIO->TASKS_BCSTART, \\\"NRF_RADIO->TASKS_BCSTART\\\"); /*!< \
-Start the bit counter. */\\n    putreg(&NRF_RADIO->TASKS_BCSTOP, \
-\\\"NRF_RADIO->TASKS_BCSTOP\\\"); /*!< Stop the bit counter. */\\n    \
-putreg(&NRF_RADIO->EVENTS_READY, \\\"NRF_RADIO->EVENTS_READY\\\"); /*!< Ready \
-event. */\\n    putreg(&NRF_RADIO->EVENTS_ADDRESS, \
-\\\"NRF_RADIO->EVENTS_ADDRESS\\\"); /*!< Address event. */\\n    \
-putreg(&NRF_RADIO->EVENTS_PAYLOAD, \\\"NRF_RADIO->EVENTS_PAYLOAD\\\"); /*!< \
-Payload event. */\\n    putreg(&NRF_RADIO->EVENTS_END, \
-\\\"NRF_RADIO->EVENTS_END\\\"); /*!< End event. */\\n    \
-putreg(&NRF_RADIO->EVENTS_DISABLED, \\\"NRF_RADIO->EVENTS_DISABLED\\\"); /*!< \
-Disable event. */\\n    putreg(&NRF_RADIO->EVENTS_DEVMATCH, \
-\\\"NRF_RADIO->EVENTS_DEVMATCH\\\"); /*!< A device address match occurred on \
-the last received packet. */\\n    putreg(&NRF_RADIO->EVENTS_DEVMISS, \
-\\\"NRF_RADIO->EVENTS_DEVMISS\\\"); /*!< No device address match occurred on \
-the last received packet. */\\n    putreg(&NRF_RADIO->EVENTS_RSSIEND, \
-\\\"NRF_RADIO->EVENTS_RSSIEND\\\"); /*!< Sampling of the receive signal \
-strength complete. A new RSSI sample is ready for readout at the RSSISAMPLE \
-register. */\\n    putreg(&NRF_RADIO->EVENTS_BCMATCH, \
-\\\"NRF_RADIO->EVENTS_BCMATCH\\\"); /*!< Bit counter reached bit count value \
-specified in BCC register.*/\\n    putreg(&NRF_RADIO->SHORTS, \
-\\\"NRF_RADIO->SHORTS\\\"); /*!< Shortcuts for the radio. */\\n    \
-putreg(&NRF_RADIO->INTENSET, \\\"NRF_RADIO->INTENSET\\\"); /*!< Interrupt \
-enable set register.*/\\n    putreg(&NRF_RADIO->INTENCLR, \
-\\\"NRF_RADIO->INTENCLR\\\"); /*!< Interrupt enable clear register. */\\n    \
-putreg(&NRF_RADIO->CRCSTATUS, \\\"NRF_RADIO->CRCSTATUS\\\"); /*!< CRC status \
-of received packet. */\\n    putreg(&NRF_RADIO->RXMATCH, \
-\\\"NRF_RADIO->RXMATCH\\\"); /*!< Received address. */\\n    \
-putreg(&NRF_RADIO->RXCRC, \\\"NRF_RADIO->RXCRC\\\"); /*!< Received CRC. */\\n \
-   putreg(&NRF_RADIO->DAI, \\\"NRF_RADIO->DAI\\\"); /*!< Device address match \
-index. */\\n    putreg(&NRF_RADIO->PACKETPTR, \\\"NRF_RADIO->PACKETPTR\\\"); \
-/*!< Packet pointer. Decision point: START task. */\\n    \
-putreg(&NRF_RADIO->FREQUENCY, \\\"NRF_RADIO->FREQUENCY\\\"); /*!< Frequency. \
-*/\\n    putreg(&NRF_RADIO->TXPOWER, \\\"NRF_RADIO->TXPOWER\\\"); /*!< Output \
-power. */\\n    putreg(&NRF_RADIO->MODE, \\\"NRF_RADIO->MODE\\\"); /*!< Data \
-rate and modulation. */\\n    putreg(&NRF_RADIO->PCNF0, \
-\\\"NRF_RADIO->PCNF0\\\"); /*!< Packet configuration 0. */\\n    \
-putreg(&NRF_RADIO->PCNF1, \\\"NRF_RADIO->PCNF1\\\"); /*!< Packet \
-configuration 1. */\\n    putreg(&NRF_RADIO->BASE0, \
-\\\"NRF_RADIO->BASE0\\\"); /*!< Radio base address 0. Decision point: START \
-task. */\\n    putreg(&NRF_RADIO->BASE1, \\\"NRF_RADIO->BASE1\\\"); /*!< \
-Radio base address 1. Decision point: START task. */\\n    \
-putreg(&NRF_RADIO->PREFIX0, \\\"NRF_RADIO->PREFIX0\\\"); /*!< Prefixes bytes \
-for logical addresses 0 to 3. */\\n    putreg(&NRF_RADIO->PREFIX1, \
-\\\"NRF_RADIO->PREFIX1\\\"); /*!< Prefixes bytes for logical addresses 4 to \
-7. */\\n    putreg(&NRF_RADIO->TXADDRESS, \\\"NRF_RADIO->TXADDRESS\\\"); /*!< \
-Transmit address select. */\\n    putreg(&NRF_RADIO->RXADDRESSES, \
-\\\"NRF_RADIO->RXADDRESSES\\\"); /*!< Receive address select. */\\n    \
-putreg(&NRF_RADIO->CRCCNF, \\\"NRF_RADIO->CRCCNF\\\"); /*!< CRC \
-configuration. */\\n    putreg(&NRF_RADIO->CRCPOLY, \
-\\\"NRF_RADIO->CRCPOLY\\\"); /*!< CRC polynomial. */\\n    \
-putreg(&NRF_RADIO->CRCINIT, \\\"NRF_RADIO->CRCINIT\\\"); /*!< CRC initial \
-value. */\\n    putreg(&NRF_RADIO->TEST, \\\"NRF_RADIO->TEST\\\"); /*!< Test \
-features enable register.*/\\n    putreg(&NRF_RADIO->TIFS, \
-\\\"NRF_RADIO->TIFS\\\"); /*!< Inter Frame Spacing in microseconds. */\\n    \
-putreg(&NRF_RADIO->RSSISAMPLE, \\\"NRF_RADIO->RSSISAMPLE\\\"); /*!< RSSI \
-sample. */\\n    putreg(&NRF_RADIO->STATE, \\\"NRF_RADIO->STATE\\\"); /*!< \
-Current radio state. */\\n    putreg(&NRF_RADIO->DATAWHITEIV, \
-\\\"NRF_RADIO->DATAWHITEIV\\\"); /*!< Data whitening initial value. */\\n    \
-putreg(&NRF_RADIO->BCC, \\\"NRF_RADIO->BCC\\\"); /*!< Bit counter compare. */\
-\\n    putreg(&NRF_RADIO->DAB[8], \\\"NRF_RADIO->DAB[8]\\\"); /*!< Device \
-address base segment. */\\n    putreg(&NRF_RADIO->DAP[8], \
-\\\"NRF_RADIO->DAP[8]\\\"); /*!< Device address prefix. */\\n    \
-putreg(&NRF_RADIO->DACNF, \\\"NRF_RADIO->DACNF\\\"); /*!< Device address \
-match configuration. */\\n    putreg(&NRF_RADIO->OVERRIDE0, \
-\\\"NRF_RADIO->OVERRIDE0\\\"); /*!< Trim value override register 0. */\\n    \
-putreg(&NRF_RADIO->OVERRIDE1, \\\"NRF_RADIO->OVERRIDE1\\\"); /*!< Trim value \
-override register 1. */\\n    putreg(&NRF_RADIO->OVERRIDE2, \
-\\\"NRF_RADIO->OVERRIDE2\\\"); /*!< Trim value override register 2. */\\n    \
-putreg(&NRF_RADIO->OVERRIDE3, \\\"NRF_RADIO->OVERRIDE3\\\"); /*!< Trim value \
-override register 3. */\\n    putreg(&NRF_RADIO->OVERRIDE4, \
-\\\"NRF_RADIO->OVERRIDE4\\\"); /*!< Trim value override register 4. */\\n    \
-putreg(&NRF_RADIO->POWER, \\\"NRF_RADIO->POWER\\\"); /*!< Peripheral power \
-control. */\\n}\>\"",
-   ShowSpecialCharacters->False,
-   ShowStringCharacters->True,
-   NumberMarks->True],
-  FullForm]], "Output",
- CellChangeTimes->{3.730826982914467*^9}]
+Cell[BoxData["\<\"putreg(&NRF_CLOCK->TASKS_HFCLKSTART, \
+\\\"NRF_CLOCK->TASKS_HFCLKSTART\\\"); /*!< Start HFCLK clock source. \
+*/\\nputreg(&NRF_CLOCK->TASKS_HFCLKSTOP, \\\"NRF_CLOCK->TASKS_HFCLKSTOP\\\"); \
+/*!< Stop HFCLK clock source. */\\nputreg(&NRF_CLOCK->TASKS_LFCLKSTART, \
+\\\"NRF_CLOCK->TASKS_LFCLKSTART\\\"); /*!< Start LFCLK clock source. \
+*/\\nputreg(&NRF_CLOCK->TASKS_LFCLKSTOP, \\\"NRF_CLOCK->TASKS_LFCLKSTOP\\\"); \
+/*!< Stop LFCLK clock source. */\\nputreg(&NRF_CLOCK->TASKS_CAL, \
+\\\"NRF_CLOCK->TASKS_CAL\\\"); /*!< Start calibration of LFCLK RC oscillator. \
+*/\\nputreg(&NRF_CLOCK->TASKS_CTSTART, \\\"NRF_CLOCK->TASKS_CTSTART\\\"); \
+/*!< Start calibration timer. */\\nputreg(&NRF_CLOCK->TASKS_CTSTOP, \
+\\\"NRF_CLOCK->TASKS_CTSTOP\\\"); /*!< Stop calibration timer. \
+*/\\nputreg(&NRF_CLOCK->EVENTS_HFCLKSTARTED, \
+\\\"NRF_CLOCK->EVENTS_HFCLKSTARTED\\\"); /*!< HFCLK oscillator started. \
+*/\\nputreg(&NRF_CLOCK->EVENTS_LFCLKSTARTED, \
+\\\"NRF_CLOCK->EVENTS_LFCLKSTARTED\\\"); /*!< LFCLK oscillator started. \
+*/\\nputreg(&NRF_CLOCK->EVENTS_DONE, \\\"NRF_CLOCK->EVENTS_DONE\\\"); /*!< \
+Calibration of LFCLK RC oscillator completed. \
+*/\\nputreg(&NRF_CLOCK->EVENTS_CTTO, \\\"NRF_CLOCK->EVENTS_CTTO\\\"); /*!< \
+Calibration timer timeout. */\\nputreg(&NRF_CLOCK->INTENSET, \
+\\\"NRF_CLOCK->INTENSET\\\"); /*!< Interrupt enable set register. \
+*/\\nputreg(&NRF_CLOCK->INTENCLR, \\\"NRF_CLOCK->INTENCLR\\\"); /*!< \
+Interrupt enable clear register. */\\nputreg(&NRF_CLOCK->HFCLKRUN, \
+\\\"NRF_CLOCK->HFCLKRUN\\\"); /*!< Task HFCLKSTART trigger status. \
+*/\\nputreg(&NRF_CLOCK->HFCLKSTAT, \\\"NRF_CLOCK->HFCLKSTAT\\\"); /*!< High \
+frequency clock status. */\\nputreg(&NRF_CLOCK->LFCLKRUN, \
+\\\"NRF_CLOCK->LFCLKRUN\\\"); /*!< Task LFCLKSTART triggered status. \
+*/\\nputreg(&NRF_CLOCK->LFCLKSTAT, \\\"NRF_CLOCK->LFCLKSTAT\\\"); /*!< Low \
+frequency clock status. */\\nputreg(&NRF_CLOCK->LFCLKSRCCOPY, \
+\\\"NRF_CLOCK->LFCLKSRCCOPY\\\"); /*!< Clock source for the LFCLK clock, set \
+when task LKCLKSTART is triggered. */\\nputreg(&NRF_CLOCK->LFCLKSRC, \
+\\\"NRF_CLOCK->LFCLKSRC\\\"); /*!< Clock source for the LFCLK clock. \
+*/\\nputreg(&NRF_CLOCK->CTIV, \\\"NRF_CLOCK->CTIV\\\"); /*!< Calibration \
+timer interval. */\\nputreg(&NRF_CLOCK->XTALFREQ, \
+\\\"NRF_CLOCK->XTALFREQ\\\"); /*!< Crystal frequency. */\\n\"\>"], "Output",
+ CellChangeTimes->{
+  3.73082694425132*^9, {3.730834170317203*^9, 3.730834198412446*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -255,134 +100,51 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{"\<\"/*\"\>", 
-   ",", "\<\" * Dump registers for diagnostic purposes\"\>", 
-   ",", "\<\" */\"\>", ",", "\<\"\"\>", 
-   ",", "\<\"#include <registerdump.h>\"\>", 
-   ",", "\<\"#include <nrf51.h>\"\>", ",", "\<\"#include <stdio.h>\"\>", 
-   ",", "\<\"\"\>", 
-   ",", "\<\"void putreg(volatile void *reg, const char *name)\"\>", 
-   ",", "\<\"{\"\>", ",", "\<\"    uint32_t *ptr= (uint32_t *)reg;\"\>", 
-   ",", "\<\"    printf(\\\"%s %08x: %08x\\\\r\\\\n\\\", name, uint32_t(ptr), \
-*ptr);\"\>", ",", "\<\"}\"\>", ",", "\<\"\"\>", 
-   ",", "\<\"void dumpRadioRegisters(void)\"\>", ",", "\<\"{\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TASKS_TXEN, \
-\\\"NRF_RADIO->TASKS_TXEN\\\"); /*!< Enable radio in TX mode. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TASKS_RXEN, \
-\\\"NRF_RADIO->TASKS_RXEN\\\"); /*!< Enable radio in RX mode. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TASKS_START, \\\"NRF_RADIO->TASKS_START\\\
-\"); /*!< Start radio. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TASKS_STOP, \
-\\\"NRF_RADIO->TASKS_STOP\\\"); /*!< Stop radio. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TASKS_DISABLE, \
-\\\"NRF_RADIO->TASKS_DISABLE\\\"); /*!< Disable radio. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TASKS_RSSISTART, \
-\\\"NRF_RADIO->TASKS_RSSISTART\\\"); /*!< Start the RSSI and take one sample \
-of the receive signal strength. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TASKS_RSSISTOP, \
-\\\"NRF_RADIO->TASKS_RSSISTOP\\\"); /*!< Stop the RSSI measurement. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TASKS_BCSTART, \
-\\\"NRF_RADIO->TASKS_BCSTART\\\"); /*!< Start the bit counter. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TASKS_BCSTOP, \\\"NRF_RADIO->TASKS_BCSTOP\
-\\\"); /*!< Stop the bit counter. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->EVENTS_READY, \\\"NRF_RADIO->EVENTS_READY\
-\\\"); /*!< Ready event. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->EVENTS_ADDRESS, \
-\\\"NRF_RADIO->EVENTS_ADDRESS\\\"); /*!< Address event. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->EVENTS_PAYLOAD, \
-\\\"NRF_RADIO->EVENTS_PAYLOAD\\\"); /*!< Payload event. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->EVENTS_END, \
-\\\"NRF_RADIO->EVENTS_END\\\"); /*!< End event. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->EVENTS_DISABLED, \
-\\\"NRF_RADIO->EVENTS_DISABLED\\\"); /*!< Disable event. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->EVENTS_DEVMATCH, \
-\\\"NRF_RADIO->EVENTS_DEVMATCH\\\"); /*!< A device address match occurred on \
-the last received packet. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->EVENTS_DEVMISS, \
-\\\"NRF_RADIO->EVENTS_DEVMISS\\\"); /*!< No device address match occurred on \
-the last received packet. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->EVENTS_RSSIEND, \
-\\\"NRF_RADIO->EVENTS_RSSIEND\\\"); /*!< Sampling of the receive signal \
-strength complete. A new RSSI sample is ready for readout at the RSSISAMPLE \
-register. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->EVENTS_BCMATCH, \
-\\\"NRF_RADIO->EVENTS_BCMATCH\\\"); /*!< Bit counter reached bit count value \
-specified in BCC register.*/\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->SHORTS, \\\"NRF_RADIO->SHORTS\\\"); /*!< \
-Shortcuts for the radio. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->INTENSET, \\\"NRF_RADIO->INTENSET\\\"); \
-/*!< Interrupt enable set register.*/\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->INTENCLR, \\\"NRF_RADIO->INTENCLR\\\"); \
-/*!< Interrupt enable clear register. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->CRCSTATUS, \\\"NRF_RADIO->CRCSTATUS\\\"); \
-/*!< CRC status of received packet. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->RXMATCH, \\\"NRF_RADIO->RXMATCH\\\"); \
-/*!< Received address. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->RXCRC, \\\"NRF_RADIO->RXCRC\\\"); /*!< \
-Received CRC. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->DAI, \\\"NRF_RADIO->DAI\\\"); /*!< Device \
-address match index. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->PACKETPTR, \\\"NRF_RADIO->PACKETPTR\\\"); \
-/*!< Packet pointer. Decision point: START task. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->FREQUENCY, \\\"NRF_RADIO->FREQUENCY\\\"); \
-/*!< Frequency. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TXPOWER, \\\"NRF_RADIO->TXPOWER\\\"); \
-/*!< Output power. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->MODE, \\\"NRF_RADIO->MODE\\\"); /*!< Data \
-rate and modulation. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->PCNF0, \\\"NRF_RADIO->PCNF0\\\"); /*!< \
-Packet configuration 0. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->PCNF1, \\\"NRF_RADIO->PCNF1\\\"); /*!< \
-Packet configuration 1. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->BASE0, \\\"NRF_RADIO->BASE0\\\"); /*!< \
-Radio base address 0. Decision point: START task. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->BASE1, \\\"NRF_RADIO->BASE1\\\"); /*!< \
-Radio base address 1. Decision point: START task. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->PREFIX0, \\\"NRF_RADIO->PREFIX0\\\"); \
-/*!< Prefixes bytes for logical addresses 0 to 3. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->PREFIX1, \\\"NRF_RADIO->PREFIX1\\\"); \
-/*!< Prefixes bytes for logical addresses 4 to 7. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TXADDRESS, \\\"NRF_RADIO->TXADDRESS\\\"); \
-/*!< Transmit address select. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->RXADDRESSES, \\\"NRF_RADIO->RXADDRESSES\\\
-\"); /*!< Receive address select. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->CRCCNF, \\\"NRF_RADIO->CRCCNF\\\"); /*!< \
-CRC configuration. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->CRCPOLY, \\\"NRF_RADIO->CRCPOLY\\\"); \
-/*!< CRC polynomial. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->CRCINIT, \\\"NRF_RADIO->CRCINIT\\\"); \
-/*!< CRC initial value. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TEST, \\\"NRF_RADIO->TEST\\\"); /*!< Test \
-features enable register.*/\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->TIFS, \\\"NRF_RADIO->TIFS\\\"); /*!< \
-Inter Frame Spacing in microseconds. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->RSSISAMPLE, \
-\\\"NRF_RADIO->RSSISAMPLE\\\"); /*!< RSSI sample. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->STATE, \\\"NRF_RADIO->STATE\\\"); /*!< \
-Current radio state. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->DATAWHITEIV, \\\"NRF_RADIO->DATAWHITEIV\\\
-\"); /*!< Data whitening initial value. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->BCC, \\\"NRF_RADIO->BCC\\\"); /*!< Bit \
-counter compare. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->DAB[8], \\\"NRF_RADIO->DAB[8]\\\"); /*!< \
-Device address base segment. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->DAP[8], \\\"NRF_RADIO->DAP[8]\\\"); /*!< \
-Device address prefix. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->DACNF, \\\"NRF_RADIO->DACNF\\\"); /*!< \
-Device address match configuration. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->OVERRIDE0, \\\"NRF_RADIO->OVERRIDE0\\\"); \
-/*!< Trim value override register 0. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->OVERRIDE1, \\\"NRF_RADIO->OVERRIDE1\\\"); \
-/*!< Trim value override register 1. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->OVERRIDE2, \\\"NRF_RADIO->OVERRIDE2\\\"); \
-/*!< Trim value override register 2. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->OVERRIDE3, \\\"NRF_RADIO->OVERRIDE3\\\"); \
-/*!< Trim value override register 3. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->OVERRIDE4, \\\"NRF_RADIO->OVERRIDE4\\\"); \
-/*!< Trim value override register 4. */\"\>", 
-   ",", "\<\"    putreg(&NRF_RADIO->POWER, \\\"NRF_RADIO->POWER\\\"); /*!< \
-Peripheral power control. */\"\>", ",", "\<\"}\"\>"}], "}"}]], "Output",
- CellChangeTimes->{{3.730827197454495*^9, 3.730827227110647*^9}}]
+  RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_HFCLKSTART, \
+\\\"NRF_CLOCK->TASKS_HFCLKSTART\\\"); /*!< Start HFCLK clock source. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->TASKS_HFCLKSTOP, \
+\\\"NRF_CLOCK->TASKS_HFCLKSTOP\\\"); /*!< Stop HFCLK clock source. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->TASKS_LFCLKSTART, \
+\\\"NRF_CLOCK->TASKS_LFCLKSTART\\\"); /*!< Start LFCLK clock source. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->TASKS_LFCLKSTOP, \
+\\\"NRF_CLOCK->TASKS_LFCLKSTOP\\\"); /*!< Stop LFCLK clock source. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->TASKS_CAL, \\\"NRF_CLOCK->TASKS_CAL\\\"); \
+/*!< Start calibration of LFCLK RC oscillator. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->TASKS_CTSTART, \\\"NRF_CLOCK->TASKS_CTSTART\\\
+\"); /*!< Start calibration timer. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->TASKS_CTSTOP, \
+\\\"NRF_CLOCK->TASKS_CTSTOP\\\"); /*!< Stop calibration timer. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->EVENTS_HFCLKSTARTED, \
+\\\"NRF_CLOCK->EVENTS_HFCLKSTARTED\\\"); /*!< HFCLK oscillator started. \
+*/\"\>", ",", "\<\"putreg(&NRF_CLOCK->EVENTS_LFCLKSTARTED, \
+\\\"NRF_CLOCK->EVENTS_LFCLKSTARTED\\\"); /*!< LFCLK oscillator started. \
+*/\"\>", ",", "\<\"putreg(&NRF_CLOCK->EVENTS_DONE, \\\"NRF_CLOCK->EVENTS_DONE\
+\\\"); /*!< Calibration of LFCLK RC oscillator completed. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->EVENTS_CTTO, \\\"NRF_CLOCK->EVENTS_CTTO\\\"); \
+/*!< Calibration timer timeout. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->INTENSET, \\\"NRF_CLOCK->INTENSET\\\"); /*!< \
+Interrupt enable set register. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->INTENCLR, \\\"NRF_CLOCK->INTENCLR\\\"); /*!< \
+Interrupt enable clear register. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->HFCLKRUN, \\\"NRF_CLOCK->HFCLKRUN\\\"); /*!< \
+Task HFCLKSTART trigger status. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->HFCLKSTAT, \\\"NRF_CLOCK->HFCLKSTAT\\\"); \
+/*!< High frequency clock status. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->LFCLKRUN, \\\"NRF_CLOCK->LFCLKRUN\\\"); /*!< \
+Task LFCLKSTART triggered status. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->LFCLKSTAT, \\\"NRF_CLOCK->LFCLKSTAT\\\"); \
+/*!< Low frequency clock status. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->LFCLKSRCCOPY, \
+\\\"NRF_CLOCK->LFCLKSRCCOPY\\\"); /*!< Clock source for the LFCLK clock, set \
+when task LKCLKSTART is triggered. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->LFCLKSRC, \\\"NRF_CLOCK->LFCLKSRC\\\"); /*!< \
+Clock source for the LFCLK clock. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->CTIV, \\\"NRF_CLOCK->CTIV\\\"); /*!< \
+Calibration timer interval. */\"\>", 
+   ",", "\<\"putreg(&NRF_CLOCK->XTALFREQ, \\\"NRF_CLOCK->XTALFREQ\\\"); /*!< \
+Crystal frequency. */\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.730827197454495*^9, 3.730827227110647*^9}, 
+   3.7308342151276217`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -400,267 +162,99 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   RowBox[{"{", "\<\"/*\"\>", "}"}], ",", 
-   RowBox[{"{", "\<\" * Dump registers for diagnostic purposes\"\>", "}"}], 
-   ",", 
-   RowBox[{"{", "\<\" */\"\>", "}"}], ",", 
-   RowBox[{"{", "}"}], ",", 
-   RowBox[{"{", "\<\"#include <registerdump.h>\"\>", "}"}], ",", 
-   RowBox[{"{", "\<\"#include <nrf51.h>\"\>", "}"}], ",", 
-   RowBox[{"{", "\<\"#include <stdio.h>\"\>", "}"}], ",", 
-   RowBox[{"{", "}"}], ",", 
-   RowBox[{
-   "{", "\<\"void putreg(volatile void *reg, const char *name)\"\>", "}"}], 
-   ",", 
-   RowBox[{"{", "\<\"{\"\>", "}"}], ",", 
-   RowBox[{"{", "\<\"    uint32_t *ptr= (uint32_t *)reg;\"\>", "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    printf(\"\>", ",", "\<\"%s %08x: %08x\\\\r\\\\n\"\>", 
-     ",", "\<\", name, uint32_t(ptr), *ptr);\"\>"}], "}"}], ",", 
-   RowBox[{"{", "\<\"}\"\>", "}"}], ",", 
-   RowBox[{"{", "}"}], ",", 
-   RowBox[{"{", "\<\"void dumpRadioRegisters(void)\"\>", "}"}], ",", 
-   RowBox[{"{", "\<\"{\"\>", "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_HFCLKSTART, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_HFCLKSTART\"\>", 
+     ",", "\<\"); /*!< Start HFCLK clock source. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_TXEN, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_TXEN\"\>", 
-     ",", "\<\"); /*!< Enable radio in TX mode. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_HFCLKSTOP, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_HFCLKSTOP\"\>", 
+     ",", "\<\"); /*!< Stop HFCLK clock source. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_RXEN, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_RXEN\"\>", 
-     ",", "\<\"); /*!< Enable radio in RX mode. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_LFCLKSTART, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_LFCLKSTART\"\>", 
+     ",", "\<\"); /*!< Start LFCLK clock source. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_START, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_START\"\>", 
-     ",", "\<\"); /*!< Start radio. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_LFCLKSTOP, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_LFCLKSTOP\"\>", 
+     ",", "\<\"); /*!< Stop LFCLK clock source. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_STOP, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_STOP\"\>", 
-     ",", "\<\"); /*!< Stop radio. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_DISABLE, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_DISABLE\"\>", 
-     ",", "\<\"); /*!< Disable radio. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_RSSISTART, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_RSSISTART\"\>", 
-     ",", "\<\"); /*!< Start the RSSI and take one sample of the receive \
-signal strength. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_RSSISTOP, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_RSSISTOP\"\>", 
-     ",", "\<\"); /*!< Stop the RSSI measurement. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_BCSTART, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_BCSTART\"\>", 
-     ",", "\<\"); /*!< Start the bit counter. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_BCSTOP, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_BCSTOP\"\>", 
-     ",", "\<\"); /*!< Stop the bit counter. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_READY, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_READY\"\>", 
-     ",", "\<\"); /*!< Ready event. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_ADDRESS, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_ADDRESS\"\>", 
-     ",", "\<\"); /*!< Address event. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_PAYLOAD, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_PAYLOAD\"\>", 
-     ",", "\<\"); /*!< Payload event. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_END, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_END\"\>", 
-     ",", "\<\"); /*!< End event. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_DISABLED, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_DISABLED\"\>", 
-     ",", "\<\"); /*!< Disable event. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_DEVMATCH, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_DEVMATCH\"\>", 
-     ",", "\<\"); /*!< A device address match occurred on the last received \
-packet. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_DEVMISS, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_DEVMISS\"\>", 
-     ",", "\<\"); /*!< No device address match occurred on the last received \
-packet. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_RSSIEND, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_RSSIEND\"\>", 
-     ",", "\<\"); /*!< Sampling of the receive signal strength complete. A \
-new RSSI sample is ready for readout at the RSSISAMPLE register. */\"\>"}], 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_CAL, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_CAL\"\>", 
+     ",", "\<\"); /*!< Start calibration of LFCLK RC oscillator. */\"\>"}], 
     "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_BCMATCH, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_BCMATCH\"\>", 
-     ",", "\<\"); /*!< Bit counter reached bit count value specified in BCC \
-register.*/\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_CTSTART, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_CTSTART\"\>", 
+     ",", "\<\"); /*!< Start calibration timer. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->SHORTS, \"\>", 
-     ",", "\<\"NRF_RADIO->SHORTS\"\>", 
-     ",", "\<\"); /*!< Shortcuts for the radio. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_CTSTOP, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_CTSTOP\"\>", 
+     ",", "\<\"); /*!< Stop calibration timer. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->INTENSET, \"\>", 
-     ",", "\<\"NRF_RADIO->INTENSET\"\>", 
-     ",", "\<\"); /*!< Interrupt enable set register.*/\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->EVENTS_HFCLKSTARTED, \"\>", 
+     ",", "\<\"NRF_CLOCK->EVENTS_HFCLKSTARTED\"\>", 
+     ",", "\<\"); /*!< HFCLK oscillator started. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->INTENCLR, \"\>", 
-     ",", "\<\"NRF_RADIO->INTENCLR\"\>", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->EVENTS_LFCLKSTARTED, \"\>", 
+     ",", "\<\"NRF_CLOCK->EVENTS_LFCLKSTARTED\"\>", 
+     ",", "\<\"); /*!< LFCLK oscillator started. */\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->EVENTS_DONE, \"\>", 
+     ",", "\<\"NRF_CLOCK->EVENTS_DONE\"\>", 
+     ",", "\<\"); /*!< Calibration of LFCLK RC oscillator completed. \
+*/\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->EVENTS_CTTO, \"\>", 
+     ",", "\<\"NRF_CLOCK->EVENTS_CTTO\"\>", 
+     ",", "\<\"); /*!< Calibration timer timeout. */\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->INTENSET, \"\>", 
+     ",", "\<\"NRF_CLOCK->INTENSET\"\>", 
+     ",", "\<\"); /*!< Interrupt enable set register. */\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->INTENCLR, \"\>", 
+     ",", "\<\"NRF_CLOCK->INTENCLR\"\>", 
      ",", "\<\"); /*!< Interrupt enable clear register. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->CRCSTATUS, \"\>", 
-     ",", "\<\"NRF_RADIO->CRCSTATUS\"\>", 
-     ",", "\<\"); /*!< CRC status of received packet. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->HFCLKRUN, \"\>", 
+     ",", "\<\"NRF_CLOCK->HFCLKRUN\"\>", 
+     ",", "\<\"); /*!< Task HFCLKSTART trigger status. */\"\>"}], "}"}], ",", 
+   
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->RXMATCH, \"\>", 
-     ",", "\<\"NRF_RADIO->RXMATCH\"\>", 
-     ",", "\<\"); /*!< Received address. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->HFCLKSTAT, \"\>", 
+     ",", "\<\"NRF_CLOCK->HFCLKSTAT\"\>", 
+     ",", "\<\"); /*!< High frequency clock status. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->RXCRC, \"\>", 
-     ",", "\<\"NRF_RADIO->RXCRC\"\>", 
-     ",", "\<\"); /*!< Received CRC. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->DAI, \"\>", 
-     ",", "\<\"NRF_RADIO->DAI\"\>", 
-     ",", "\<\"); /*!< Device address match index. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->PACKETPTR, \"\>", 
-     ",", "\<\"NRF_RADIO->PACKETPTR\"\>", 
-     ",", "\<\"); /*!< Packet pointer. Decision point: START task. */\"\>"}], 
-    "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->FREQUENCY, \"\>", 
-     ",", "\<\"NRF_RADIO->FREQUENCY\"\>", 
-     ",", "\<\"); /*!< Frequency. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TXPOWER, \"\>", 
-     ",", "\<\"NRF_RADIO->TXPOWER\"\>", 
-     ",", "\<\"); /*!< Output power. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->MODE, \"\>", 
-     ",", "\<\"NRF_RADIO->MODE\"\>", 
-     ",", "\<\"); /*!< Data rate and modulation. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->PCNF0, \"\>", 
-     ",", "\<\"NRF_RADIO->PCNF0\"\>", 
-     ",", "\<\"); /*!< Packet configuration 0. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->PCNF1, \"\>", 
-     ",", "\<\"NRF_RADIO->PCNF1\"\>", 
-     ",", "\<\"); /*!< Packet configuration 1. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->BASE0, \"\>", 
-     ",", "\<\"NRF_RADIO->BASE0\"\>", 
-     ",", "\<\"); /*!< Radio base address 0. Decision point: START task. */\"\
-\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->BASE1, \"\>", 
-     ",", "\<\"NRF_RADIO->BASE1\"\>", 
-     ",", "\<\"); /*!< Radio base address 1. Decision point: START task. */\"\
-\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->PREFIX0, \"\>", 
-     ",", "\<\"NRF_RADIO->PREFIX0\"\>", 
-     ",", "\<\"); /*!< Prefixes bytes for logical addresses 0 to 3. */\"\>"}],
-     "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->PREFIX1, \"\>", 
-     ",", "\<\"NRF_RADIO->PREFIX1\"\>", 
-     ",", "\<\"); /*!< Prefixes bytes for logical addresses 4 to 7. */\"\>"}],
-     "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TXADDRESS, \"\>", 
-     ",", "\<\"NRF_RADIO->TXADDRESS\"\>", 
-     ",", "\<\"); /*!< Transmit address select. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->RXADDRESSES, \"\>", 
-     ",", "\<\"NRF_RADIO->RXADDRESSES\"\>", 
-     ",", "\<\"); /*!< Receive address select. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->CRCCNF, \"\>", 
-     ",", "\<\"NRF_RADIO->CRCCNF\"\>", 
-     ",", "\<\"); /*!< CRC configuration. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->CRCPOLY, \"\>", 
-     ",", "\<\"NRF_RADIO->CRCPOLY\"\>", 
-     ",", "\<\"); /*!< CRC polynomial. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->CRCINIT, \"\>", 
-     ",", "\<\"NRF_RADIO->CRCINIT\"\>", 
-     ",", "\<\"); /*!< CRC initial value. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TEST, \"\>", 
-     ",", "\<\"NRF_RADIO->TEST\"\>", 
-     ",", "\<\"); /*!< Test features enable register.*/\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TIFS, \"\>", 
-     ",", "\<\"NRF_RADIO->TIFS\"\>", 
-     ",", "\<\"); /*!< Inter Frame Spacing in microseconds. */\"\>"}], "}"}], 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->LFCLKRUN, \"\>", 
+     ",", "\<\"NRF_CLOCK->LFCLKRUN\"\>", 
+     ",", "\<\"); /*!< Task LFCLKSTART triggered status. */\"\>"}], "}"}], 
    ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->RSSISAMPLE, \"\>", 
-     ",", "\<\"NRF_RADIO->RSSISAMPLE\"\>", 
-     ",", "\<\"); /*!< RSSI sample. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->LFCLKSTAT, \"\>", 
+     ",", "\<\"NRF_CLOCK->LFCLKSTAT\"\>", 
+     ",", "\<\"); /*!< Low frequency clock status. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->STATE, \"\>", 
-     ",", "\<\"NRF_RADIO->STATE\"\>", 
-     ",", "\<\"); /*!< Current radio state. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->LFCLKSRCCOPY, \"\>", 
+     ",", "\<\"NRF_CLOCK->LFCLKSRCCOPY\"\>", 
+     ",", "\<\"); /*!< Clock source for the LFCLK clock, set when task \
+LKCLKSTART is triggered. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->DATAWHITEIV, \"\>", 
-     ",", "\<\"NRF_RADIO->DATAWHITEIV\"\>", 
-     ",", "\<\"); /*!< Data whitening initial value. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->BCC, \"\>", 
-     ",", "\<\"NRF_RADIO->BCC\"\>", 
-     ",", "\<\"); /*!< Bit counter compare. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->DAB[8], \"\>", 
-     ",", "\<\"NRF_RADIO->DAB[8]\"\>", 
-     ",", "\<\"); /*!< Device address base segment. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->DAP[8], \"\>", 
-     ",", "\<\"NRF_RADIO->DAP[8]\"\>", 
-     ",", "\<\"); /*!< Device address prefix. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->DACNF, \"\>", 
-     ",", "\<\"NRF_RADIO->DACNF\"\>", 
-     ",", "\<\"); /*!< Device address match configuration. */\"\>"}], "}"}], 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->LFCLKSRC, \"\>", 
+     ",", "\<\"NRF_CLOCK->LFCLKSRC\"\>", 
+     ",", "\<\"); /*!< Clock source for the LFCLK clock. */\"\>"}], "}"}], 
    ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->OVERRIDE0, \"\>", 
-     ",", "\<\"NRF_RADIO->OVERRIDE0\"\>", 
-     ",", "\<\"); /*!< Trim value override register 0. */\"\>"}], "}"}], ",", 
-   
+    RowBox[{"\<\"putreg(&NRF_CLOCK->CTIV, \"\>", 
+     ",", "\<\"NRF_CLOCK->CTIV\"\>", 
+     ",", "\<\"); /*!< Calibration timer interval. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->OVERRIDE1, \"\>", 
-     ",", "\<\"NRF_RADIO->OVERRIDE1\"\>", 
-     ",", "\<\"); /*!< Trim value override register 1. */\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->OVERRIDE2, \"\>", 
-     ",", "\<\"NRF_RADIO->OVERRIDE2\"\>", 
-     ",", "\<\"); /*!< Trim value override register 2. */\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->OVERRIDE3, \"\>", 
-     ",", "\<\"NRF_RADIO->OVERRIDE3\"\>", 
-     ",", "\<\"); /*!< Trim value override register 3. */\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->OVERRIDE4, \"\>", 
-     ",", "\<\"NRF_RADIO->OVERRIDE4\"\>", 
-     ",", "\<\"); /*!< Trim value override register 4. */\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->POWER, \"\>", 
-     ",", "\<\"NRF_RADIO->POWER\"\>", 
-     ",", "\<\"); /*!< Peripheral power control. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", "\<\"}\"\>", "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.730827259026276*^9, 3.730827350268827*^9}]
+    RowBox[{"\<\"putreg(&NRF_CLOCK->XTALFREQ, \"\>", 
+     ",", "\<\"NRF_CLOCK->XTALFREQ\"\>", 
+     ",", "\<\"); /*!< Crystal frequency. */\"\>"}], "}"}]}], "}"}]], "Output",\
+
+ CellChangeTimes->{3.730827259026276*^9, 3.730827350268827*^9, 
+  3.73083422084837*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -672,22 +266,6 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   RowBox[{"{", "1", "}"}], ",", 
-   RowBox[{"{", "1", "}"}], ",", 
-   RowBox[{"{", "1", "}"}], ",", 
-   RowBox[{"{", "0", "}"}], ",", 
-   RowBox[{"{", "1", "}"}], ",", 
-   RowBox[{"{", "1", "}"}], ",", 
-   RowBox[{"{", "1", "}"}], ",", 
-   RowBox[{"{", "0", "}"}], ",", 
-   RowBox[{"{", "1", "}"}], ",", 
-   RowBox[{"{", "1", "}"}], ",", 
-   RowBox[{"{", "1", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "1", "}"}], ",", 
-   RowBox[{"{", "0", "}"}], ",", 
-   RowBox[{"{", "1", "}"}], ",", 
-   RowBox[{"{", "1", "}"}], ",", 
    RowBox[{"{", "3", "}"}], ",", 
    RowBox[{"{", "3", "}"}], ",", 
    RowBox[{"{", "3", "}"}], ",", 
@@ -708,43 +286,8 @@ Cell[BoxData[
    RowBox[{"{", "3", "}"}], ",", 
    RowBox[{"{", "3", "}"}], ",", 
    RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "3", "}"}], ",", 
-   RowBox[{"{", "1", "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.7308273596516733`*^9}]
+   RowBox[{"{", "3", "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7308273596516733`*^9, 3.730834226825205*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -764,281 +307,112 @@ Cell[BoxData[
         RowBox[{"StringPadRight", "[", 
          RowBox[{
           RowBox[{"#", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}],
-           ",", "28"}], "]"}], ",", 
+           ",", "32"}], "]"}], ",", 
         RowBox[{"#", "\[LeftDoubleBracket]", "3", "\[RightDoubleBracket]"}]}],
         "}"}], ",", "#"}], "]"}], "&"}], "/@", "splits"}]}]], "Input",
  CellChangeTimes->{{3.7308274658711576`*^9, 3.7308274914655657`*^9}, {
   3.73082757455049*^9, 3.730827589848681*^9}, {3.730827657339322*^9, 
-  3.73082770687661*^9}, {3.730827753053008*^9, 3.730827786595808*^9}}],
+  3.73082770687661*^9}, {3.730827753053008*^9, 3.730827786595808*^9}, {
+  3.7308342530624332`*^9, 3.7308342545498962`*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   RowBox[{"{", "\<\"/*\"\>", "}"}], ",", 
-   RowBox[{"{", "\<\" * Dump registers for diagnostic purposes\"\>", "}"}], 
-   ",", 
-   RowBox[{"{", "\<\" */\"\>", "}"}], ",", 
-   RowBox[{"{", "}"}], ",", 
-   RowBox[{"{", "\<\"#include <registerdump.h>\"\>", "}"}], ",", 
-   RowBox[{"{", "\<\"#include <nrf51.h>\"\>", "}"}], ",", 
-   RowBox[{"{", "\<\"#include <stdio.h>\"\>", "}"}], ",", 
-   RowBox[{"{", "}"}], ",", 
-   RowBox[{
-   "{", "\<\"void putreg(volatile void *reg, const char *name)\"\>", "}"}], 
-   ",", 
-   RowBox[{"{", "\<\"{\"\>", "}"}], ",", 
-   RowBox[{"{", "\<\"    uint32_t *ptr= (uint32_t *)reg;\"\>", "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    printf(\"\>", 
-     ",", "\<\"%s %08x: %08x\\\\r\\\\n           \"\>", 
-     ",", "\<\", name, uint32_t(ptr), *ptr);\"\>"}], "}"}], ",", 
-   RowBox[{"{", "\<\"}\"\>", "}"}], ",", 
-   RowBox[{"{", "}"}], ",", 
-   RowBox[{"{", "\<\"void dumpRadioRegisters(void)\"\>", "}"}], ",", 
-   RowBox[{"{", "\<\"{\"\>", "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_HFCLKSTART, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_HFCLKSTART     \"\>", 
+     ",", "\<\"); /*!< Start HFCLK clock source. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_TXEN, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_TXEN       \"\>", 
-     ",", "\<\"); /*!< Enable radio in TX mode. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_HFCLKSTOP, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_HFCLKSTOP      \"\>", 
+     ",", "\<\"); /*!< Stop HFCLK clock source. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_RXEN, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_RXEN       \"\>", 
-     ",", "\<\"); /*!< Enable radio in RX mode. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_LFCLKSTART, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_LFCLKSTART     \"\>", 
+     ",", "\<\"); /*!< Start LFCLK clock source. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_START, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_START      \"\>", 
-     ",", "\<\"); /*!< Start radio. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_LFCLKSTOP, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_LFCLKSTOP      \"\>", 
+     ",", "\<\"); /*!< Stop LFCLK clock source. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_STOP, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_STOP       \"\>", 
-     ",", "\<\"); /*!< Stop radio. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_DISABLE, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_DISABLE    \"\>", 
-     ",", "\<\"); /*!< Disable radio. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_RSSISTART, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_RSSISTART  \"\>", 
-     ",", "\<\"); /*!< Start the RSSI and take one sample of the receive \
-signal strength. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_RSSISTOP, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_RSSISTOP   \"\>", 
-     ",", "\<\"); /*!< Stop the RSSI measurement. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_BCSTART, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_BCSTART    \"\>", 
-     ",", "\<\"); /*!< Start the bit counter. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TASKS_BCSTOP, \"\>", 
-     ",", "\<\"NRF_RADIO->TASKS_BCSTOP     \"\>", 
-     ",", "\<\"); /*!< Stop the bit counter. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_READY, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_READY     \"\>", 
-     ",", "\<\"); /*!< Ready event. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_ADDRESS, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_ADDRESS   \"\>", 
-     ",", "\<\"); /*!< Address event. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_PAYLOAD, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_PAYLOAD   \"\>", 
-     ",", "\<\"); /*!< Payload event. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_END, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_END       \"\>", 
-     ",", "\<\"); /*!< End event. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_DISABLED, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_DISABLED  \"\>", 
-     ",", "\<\"); /*!< Disable event. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_DEVMATCH, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_DEVMATCH  \"\>", 
-     ",", "\<\"); /*!< A device address match occurred on the last received \
-packet. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_DEVMISS, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_DEVMISS   \"\>", 
-     ",", "\<\"); /*!< No device address match occurred on the last received \
-packet. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_RSSIEND, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_RSSIEND   \"\>", 
-     ",", "\<\"); /*!< Sampling of the receive signal strength complete. A \
-new RSSI sample is ready for readout at the RSSISAMPLE register. */\"\>"}], 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_CAL, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_CAL            \"\>", 
+     ",", "\<\"); /*!< Start calibration of LFCLK RC oscillator. */\"\>"}], 
     "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->EVENTS_BCMATCH, \"\>", 
-     ",", "\<\"NRF_RADIO->EVENTS_BCMATCH   \"\>", 
-     ",", "\<\"); /*!< Bit counter reached bit count value specified in BCC \
-register.*/\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_CTSTART, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_CTSTART        \"\>", 
+     ",", "\<\"); /*!< Start calibration timer. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->SHORTS, \"\>", 
-     ",", "\<\"NRF_RADIO->SHORTS           \"\>", 
-     ",", "\<\"); /*!< Shortcuts for the radio. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->TASKS_CTSTOP, \"\>", 
+     ",", "\<\"NRF_CLOCK->TASKS_CTSTOP         \"\>", 
+     ",", "\<\"); /*!< Stop calibration timer. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->INTENSET, \"\>", 
-     ",", "\<\"NRF_RADIO->INTENSET         \"\>", 
-     ",", "\<\"); /*!< Interrupt enable set register.*/\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->EVENTS_HFCLKSTARTED, \"\>", 
+     ",", "\<\"NRF_CLOCK->EVENTS_HFCLKSTARTED  \"\>", 
+     ",", "\<\"); /*!< HFCLK oscillator started. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->INTENCLR, \"\>", 
-     ",", "\<\"NRF_RADIO->INTENCLR         \"\>", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->EVENTS_LFCLKSTARTED, \"\>", 
+     ",", "\<\"NRF_CLOCK->EVENTS_LFCLKSTARTED  \"\>", 
+     ",", "\<\"); /*!< LFCLK oscillator started. */\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->EVENTS_DONE, \"\>", 
+     ",", "\<\"NRF_CLOCK->EVENTS_DONE          \"\>", 
+     ",", "\<\"); /*!< Calibration of LFCLK RC oscillator completed. \
+*/\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->EVENTS_CTTO, \"\>", 
+     ",", "\<\"NRF_CLOCK->EVENTS_CTTO          \"\>", 
+     ",", "\<\"); /*!< Calibration timer timeout. */\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->INTENSET, \"\>", 
+     ",", "\<\"NRF_CLOCK->INTENSET             \"\>", 
+     ",", "\<\"); /*!< Interrupt enable set register. */\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->INTENCLR, \"\>", 
+     ",", "\<\"NRF_CLOCK->INTENCLR             \"\>", 
      ",", "\<\"); /*!< Interrupt enable clear register. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->CRCSTATUS, \"\>", 
-     ",", "\<\"NRF_RADIO->CRCSTATUS        \"\>", 
-     ",", "\<\"); /*!< CRC status of received packet. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->HFCLKRUN, \"\>", 
+     ",", "\<\"NRF_CLOCK->HFCLKRUN             \"\>", 
+     ",", "\<\"); /*!< Task HFCLKSTART trigger status. */\"\>"}], "}"}], ",", 
+   
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->RXMATCH, \"\>", 
-     ",", "\<\"NRF_RADIO->RXMATCH          \"\>", 
-     ",", "\<\"); /*!< Received address. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->HFCLKSTAT, \"\>", 
+     ",", "\<\"NRF_CLOCK->HFCLKSTAT            \"\>", 
+     ",", "\<\"); /*!< High frequency clock status. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->RXCRC, \"\>", 
-     ",", "\<\"NRF_RADIO->RXCRC            \"\>", 
-     ",", "\<\"); /*!< Received CRC. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->DAI, \"\>", 
-     ",", "\<\"NRF_RADIO->DAI              \"\>", 
-     ",", "\<\"); /*!< Device address match index. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->PACKETPTR, \"\>", 
-     ",", "\<\"NRF_RADIO->PACKETPTR        \"\>", 
-     ",", "\<\"); /*!< Packet pointer. Decision point: START task. */\"\>"}], 
-    "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->FREQUENCY, \"\>", 
-     ",", "\<\"NRF_RADIO->FREQUENCY        \"\>", 
-     ",", "\<\"); /*!< Frequency. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TXPOWER, \"\>", 
-     ",", "\<\"NRF_RADIO->TXPOWER          \"\>", 
-     ",", "\<\"); /*!< Output power. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->MODE, \"\>", 
-     ",", "\<\"NRF_RADIO->MODE             \"\>", 
-     ",", "\<\"); /*!< Data rate and modulation. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->PCNF0, \"\>", 
-     ",", "\<\"NRF_RADIO->PCNF0            \"\>", 
-     ",", "\<\"); /*!< Packet configuration 0. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->PCNF1, \"\>", 
-     ",", "\<\"NRF_RADIO->PCNF1            \"\>", 
-     ",", "\<\"); /*!< Packet configuration 1. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->BASE0, \"\>", 
-     ",", "\<\"NRF_RADIO->BASE0            \"\>", 
-     ",", "\<\"); /*!< Radio base address 0. Decision point: START task. */\"\
-\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->BASE1, \"\>", 
-     ",", "\<\"NRF_RADIO->BASE1            \"\>", 
-     ",", "\<\"); /*!< Radio base address 1. Decision point: START task. */\"\
-\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->PREFIX0, \"\>", 
-     ",", "\<\"NRF_RADIO->PREFIX0          \"\>", 
-     ",", "\<\"); /*!< Prefixes bytes for logical addresses 0 to 3. */\"\>"}],
-     "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->PREFIX1, \"\>", 
-     ",", "\<\"NRF_RADIO->PREFIX1          \"\>", 
-     ",", "\<\"); /*!< Prefixes bytes for logical addresses 4 to 7. */\"\>"}],
-     "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TXADDRESS, \"\>", 
-     ",", "\<\"NRF_RADIO->TXADDRESS        \"\>", 
-     ",", "\<\"); /*!< Transmit address select. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->RXADDRESSES, \"\>", 
-     ",", "\<\"NRF_RADIO->RXADDRESSES      \"\>", 
-     ",", "\<\"); /*!< Receive address select. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->CRCCNF, \"\>", 
-     ",", "\<\"NRF_RADIO->CRCCNF           \"\>", 
-     ",", "\<\"); /*!< CRC configuration. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->CRCPOLY, \"\>", 
-     ",", "\<\"NRF_RADIO->CRCPOLY          \"\>", 
-     ",", "\<\"); /*!< CRC polynomial. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->CRCINIT, \"\>", 
-     ",", "\<\"NRF_RADIO->CRCINIT          \"\>", 
-     ",", "\<\"); /*!< CRC initial value. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TEST, \"\>", 
-     ",", "\<\"NRF_RADIO->TEST             \"\>", 
-     ",", "\<\"); /*!< Test features enable register.*/\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->TIFS, \"\>", 
-     ",", "\<\"NRF_RADIO->TIFS             \"\>", 
-     ",", "\<\"); /*!< Inter Frame Spacing in microseconds. */\"\>"}], "}"}], 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->LFCLKRUN, \"\>", 
+     ",", "\<\"NRF_CLOCK->LFCLKRUN             \"\>", 
+     ",", "\<\"); /*!< Task LFCLKSTART triggered status. */\"\>"}], "}"}], 
    ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->RSSISAMPLE, \"\>", 
-     ",", "\<\"NRF_RADIO->RSSISAMPLE       \"\>", 
-     ",", "\<\"); /*!< RSSI sample. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->LFCLKSTAT, \"\>", 
+     ",", "\<\"NRF_CLOCK->LFCLKSTAT            \"\>", 
+     ",", "\<\"); /*!< Low frequency clock status. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->STATE, \"\>", 
-     ",", "\<\"NRF_RADIO->STATE            \"\>", 
-     ",", "\<\"); /*!< Current radio state. */\"\>"}], "}"}], ",", 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->LFCLKSRCCOPY, \"\>", 
+     ",", "\<\"NRF_CLOCK->LFCLKSRCCOPY         \"\>", 
+     ",", "\<\"); /*!< Clock source for the LFCLK clock, set when task \
+LKCLKSTART is triggered. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->DATAWHITEIV, \"\>", 
-     ",", "\<\"NRF_RADIO->DATAWHITEIV      \"\>", 
-     ",", "\<\"); /*!< Data whitening initial value. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->BCC, \"\>", 
-     ",", "\<\"NRF_RADIO->BCC              \"\>", 
-     ",", "\<\"); /*!< Bit counter compare. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->DAB[8], \"\>", 
-     ",", "\<\"NRF_RADIO->DAB[8]           \"\>", 
-     ",", "\<\"); /*!< Device address base segment. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->DAP[8], \"\>", 
-     ",", "\<\"NRF_RADIO->DAP[8]           \"\>", 
-     ",", "\<\"); /*!< Device address prefix. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->DACNF, \"\>", 
-     ",", "\<\"NRF_RADIO->DACNF            \"\>", 
-     ",", "\<\"); /*!< Device address match configuration. */\"\>"}], "}"}], 
+    RowBox[{"\<\"putreg(&NRF_CLOCK->LFCLKSRC, \"\>", 
+     ",", "\<\"NRF_CLOCK->LFCLKSRC             \"\>", 
+     ",", "\<\"); /*!< Clock source for the LFCLK clock. */\"\>"}], "}"}], 
    ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->OVERRIDE0, \"\>", 
-     ",", "\<\"NRF_RADIO->OVERRIDE0        \"\>", 
-     ",", "\<\"); /*!< Trim value override register 0. */\"\>"}], "}"}], ",", 
-   
+    RowBox[{"\<\"putreg(&NRF_CLOCK->CTIV, \"\>", 
+     ",", "\<\"NRF_CLOCK->CTIV                 \"\>", 
+     ",", "\<\"); /*!< Calibration timer interval. */\"\>"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->OVERRIDE1, \"\>", 
-     ",", "\<\"NRF_RADIO->OVERRIDE1        \"\>", 
-     ",", "\<\"); /*!< Trim value override register 1. */\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->OVERRIDE2, \"\>", 
-     ",", "\<\"NRF_RADIO->OVERRIDE2        \"\>", 
-     ",", "\<\"); /*!< Trim value override register 2. */\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->OVERRIDE3, \"\>", 
-     ",", "\<\"NRF_RADIO->OVERRIDE3        \"\>", 
-     ",", "\<\"); /*!< Trim value override register 3. */\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->OVERRIDE4, \"\>", 
-     ",", "\<\"NRF_RADIO->OVERRIDE4        \"\>", 
-     ",", "\<\"); /*!< Trim value override register 4. */\"\>"}], "}"}], ",", 
-   
-   RowBox[{"{", 
-    RowBox[{"\<\"    putreg(&NRF_RADIO->POWER, \"\>", 
-     ",", "\<\"NRF_RADIO->POWER            \"\>", 
-     ",", "\<\"); /*!< Peripheral power control. */\"\>"}], "}"}], ",", 
-   RowBox[{"{", "\<\"}\"\>", "}"}]}], "}"}]], "Output",
+    RowBox[{"\<\"putreg(&NRF_CLOCK->XTALFREQ, \"\>", 
+     ",", "\<\"NRF_CLOCK->XTALFREQ             \"\>", 
+     ",", "\<\"); /*!< Crystal frequency. */\"\>"}], "}"}]}], "}"}]], "Output",\
+
  CellChangeTimes->{
   3.7308274921304617`*^9, 3.730827591169325*^9, 3.730827669090514*^9, {
    3.7308276997813063`*^9, 3.730827707588381*^9}, {3.730827760922183*^9, 
-   3.7308277874038477`*^9}}]
+   3.7308277874038477`*^9}, {3.730834236047226*^9, 3.730834254997739*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1054,101 +428,46 @@ Cell[BoxData[
     ",", "\"\<\\n\>\""}], "]"}]}]], "Input",
  CellChangeTimes->{{3.7308278335860987`*^9, 3.7308279021924458`*^9}}],
 
-Cell[BoxData["\<\"/*\\n * Dump registers for diagnostic purposes\\n \
-*/\\n\\n#include <registerdump.h>\\n#include <nrf51.h>\\n#include \
-<stdio.h>\\n\\nvoid putreg(volatile void *reg, const char *name)\\n{\\n    \
-uint32_t *ptr= (uint32_t *)reg;\\n    printf(\\\"%s %08x: %08x\\\\r\\\\n      \
-     \\\", name, uint32_t(ptr), *ptr);\\n}\\n\\nvoid dumpRadioRegisters(void)\
-\\n{\\n    putreg(&NRF_RADIO->TASKS_TXEN, \\\"NRF_RADIO->TASKS_TXEN       \
-\\\"); /*!< Enable radio in TX mode. */\\n    putreg(&NRF_RADIO->TASKS_RXEN, \
-\\\"NRF_RADIO->TASKS_RXEN       \\\"); /*!< Enable radio in RX mode. */\\n    \
-putreg(&NRF_RADIO->TASKS_START, \\\"NRF_RADIO->TASKS_START      \\\"); /*!< \
-Start radio. */\\n    putreg(&NRF_RADIO->TASKS_STOP, \
-\\\"NRF_RADIO->TASKS_STOP       \\\"); /*!< Stop radio. */\\n    \
-putreg(&NRF_RADIO->TASKS_DISABLE, \\\"NRF_RADIO->TASKS_DISABLE    \\\"); /*!< \
-Disable radio. */\\n    putreg(&NRF_RADIO->TASKS_RSSISTART, \
-\\\"NRF_RADIO->TASKS_RSSISTART  \\\"); /*!< Start the RSSI and take one \
-sample of the receive signal strength. */\\n    \
-putreg(&NRF_RADIO->TASKS_RSSISTOP, \\\"NRF_RADIO->TASKS_RSSISTOP   \\\"); \
-/*!< Stop the RSSI measurement. */\\n    putreg(&NRF_RADIO->TASKS_BCSTART, \\\
-\"NRF_RADIO->TASKS_BCSTART    \\\"); /*!< Start the bit counter. */\\n    \
-putreg(&NRF_RADIO->TASKS_BCSTOP, \\\"NRF_RADIO->TASKS_BCSTOP     \\\"); /*!< \
-Stop the bit counter. */\\n    putreg(&NRF_RADIO->EVENTS_READY, \
-\\\"NRF_RADIO->EVENTS_READY     \\\"); /*!< Ready event. */\\n    \
-putreg(&NRF_RADIO->EVENTS_ADDRESS, \\\"NRF_RADIO->EVENTS_ADDRESS   \\\"); \
-/*!< Address event. */\\n    putreg(&NRF_RADIO->EVENTS_PAYLOAD, \
-\\\"NRF_RADIO->EVENTS_PAYLOAD   \\\"); /*!< Payload event. */\\n    \
-putreg(&NRF_RADIO->EVENTS_END, \\\"NRF_RADIO->EVENTS_END       \\\"); /*!< \
-End event. */\\n    putreg(&NRF_RADIO->EVENTS_DISABLED, \
-\\\"NRF_RADIO->EVENTS_DISABLED  \\\"); /*!< Disable event. */\\n    \
-putreg(&NRF_RADIO->EVENTS_DEVMATCH, \\\"NRF_RADIO->EVENTS_DEVMATCH  \\\"); \
-/*!< A device address match occurred on the last received packet. */\\n    \
-putreg(&NRF_RADIO->EVENTS_DEVMISS, \\\"NRF_RADIO->EVENTS_DEVMISS   \\\"); \
-/*!< No device address match occurred on the last received packet. */\\n    \
-putreg(&NRF_RADIO->EVENTS_RSSIEND, \\\"NRF_RADIO->EVENTS_RSSIEND   \\\"); \
-/*!< Sampling of the receive signal strength complete. A new RSSI sample is \
-ready for readout at the RSSISAMPLE register. */\\n    \
-putreg(&NRF_RADIO->EVENTS_BCMATCH, \\\"NRF_RADIO->EVENTS_BCMATCH   \\\"); \
-/*!< Bit counter reached bit count value specified in BCC register.*/\\n    \
-putreg(&NRF_RADIO->SHORTS, \\\"NRF_RADIO->SHORTS           \\\"); /*!< \
-Shortcuts for the radio. */\\n    putreg(&NRF_RADIO->INTENSET, \
-\\\"NRF_RADIO->INTENSET         \\\"); /*!< Interrupt enable set \
-register.*/\\n    putreg(&NRF_RADIO->INTENCLR, \\\"NRF_RADIO->INTENCLR        \
- \\\"); /*!< Interrupt enable clear register. */\\n    \
-putreg(&NRF_RADIO->CRCSTATUS, \\\"NRF_RADIO->CRCSTATUS        \\\"); /*!< CRC \
-status of received packet. */\\n    putreg(&NRF_RADIO->RXMATCH, \
-\\\"NRF_RADIO->RXMATCH          \\\"); /*!< Received address. */\\n    \
-putreg(&NRF_RADIO->RXCRC, \\\"NRF_RADIO->RXCRC            \\\"); /*!< \
-Received CRC. */\\n    putreg(&NRF_RADIO->DAI, \\\"NRF_RADIO->DAI             \
- \\\"); /*!< Device address match index. */\\n    \
-putreg(&NRF_RADIO->PACKETPTR, \\\"NRF_RADIO->PACKETPTR        \\\"); /*!< \
-Packet pointer. Decision point: START task. */\\n    \
-putreg(&NRF_RADIO->FREQUENCY, \\\"NRF_RADIO->FREQUENCY        \\\"); /*!< \
-Frequency. */\\n    putreg(&NRF_RADIO->TXPOWER, \\\"NRF_RADIO->TXPOWER        \
-  \\\"); /*!< Output power. */\\n    putreg(&NRF_RADIO->MODE, \
-\\\"NRF_RADIO->MODE             \\\"); /*!< Data rate and modulation. */\\n   \
- putreg(&NRF_RADIO->PCNF0, \\\"NRF_RADIO->PCNF0            \\\"); /*!< Packet \
-configuration 0. */\\n    putreg(&NRF_RADIO->PCNF1, \\\"NRF_RADIO->PCNF1      \
-      \\\"); /*!< Packet configuration 1. */\\n    putreg(&NRF_RADIO->BASE0, \
-\\\"NRF_RADIO->BASE0            \\\"); /*!< Radio base address 0. Decision \
-point: START task. */\\n    putreg(&NRF_RADIO->BASE1, \\\"NRF_RADIO->BASE1    \
-        \\\"); /*!< Radio base address 1. Decision point: START task. */\\n   \
- putreg(&NRF_RADIO->PREFIX0, \\\"NRF_RADIO->PREFIX0          \\\"); /*!< \
-Prefixes bytes for logical addresses 0 to 3. */\\n    \
-putreg(&NRF_RADIO->PREFIX1, \\\"NRF_RADIO->PREFIX1          \\\"); /*!< \
-Prefixes bytes for logical addresses 4 to 7. */\\n    \
-putreg(&NRF_RADIO->TXADDRESS, \\\"NRF_RADIO->TXADDRESS        \\\"); /*!< \
-Transmit address select. */\\n    putreg(&NRF_RADIO->RXADDRESSES, \
-\\\"NRF_RADIO->RXADDRESSES      \\\"); /*!< Receive address select. */\\n    \
-putreg(&NRF_RADIO->CRCCNF, \\\"NRF_RADIO->CRCCNF           \\\"); /*!< CRC \
-configuration. */\\n    putreg(&NRF_RADIO->CRCPOLY, \\\"NRF_RADIO->CRCPOLY    \
-      \\\"); /*!< CRC polynomial. */\\n    putreg(&NRF_RADIO->CRCINIT, \
-\\\"NRF_RADIO->CRCINIT          \\\"); /*!< CRC initial value. */\\n    \
-putreg(&NRF_RADIO->TEST, \\\"NRF_RADIO->TEST             \\\"); /*!< Test \
-features enable register.*/\\n    putreg(&NRF_RADIO->TIFS, \
-\\\"NRF_RADIO->TIFS             \\\"); /*!< Inter Frame Spacing in \
-microseconds. */\\n    putreg(&NRF_RADIO->RSSISAMPLE, \
-\\\"NRF_RADIO->RSSISAMPLE       \\\"); /*!< RSSI sample. */\\n    \
-putreg(&NRF_RADIO->STATE, \\\"NRF_RADIO->STATE            \\\"); /*!< Current \
-radio state. */\\n    putreg(&NRF_RADIO->DATAWHITEIV, \
-\\\"NRF_RADIO->DATAWHITEIV      \\\"); /*!< Data whitening initial value. \
-*/\\n    putreg(&NRF_RADIO->BCC, \\\"NRF_RADIO->BCC              \\\"); /*!< \
-Bit counter compare. */\\n    putreg(&NRF_RADIO->DAB[8], \
-\\\"NRF_RADIO->DAB[8]           \\\"); /*!< Device address base segment. \
-*/\\n    putreg(&NRF_RADIO->DAP[8], \\\"NRF_RADIO->DAP[8]           \\\"); \
-/*!< Device address prefix. */\\n    putreg(&NRF_RADIO->DACNF, \
-\\\"NRF_RADIO->DACNF            \\\"); /*!< Device address match \
-configuration. */\\n    putreg(&NRF_RADIO->OVERRIDE0, \
-\\\"NRF_RADIO->OVERRIDE0        \\\"); /*!< Trim value override register 0. \
-*/\\n    putreg(&NRF_RADIO->OVERRIDE1, \\\"NRF_RADIO->OVERRIDE1        \\\"); \
-/*!< Trim value override register 1. */\\n    putreg(&NRF_RADIO->OVERRIDE2, \
-\\\"NRF_RADIO->OVERRIDE2        \\\"); /*!< Trim value override register 2. \
-*/\\n    putreg(&NRF_RADIO->OVERRIDE3, \\\"NRF_RADIO->OVERRIDE3        \\\"); \
-/*!< Trim value override register 3. */\\n    putreg(&NRF_RADIO->OVERRIDE4, \
-\\\"NRF_RADIO->OVERRIDE4        \\\"); /*!< Trim value override register 4. \
-*/\\n    putreg(&NRF_RADIO->POWER, \\\"NRF_RADIO->POWER            \\\"); \
-/*!< Peripheral power control. */\\n}\"\>"], "Output",
- CellChangeTimes->{3.730827856070505*^9, 3.7308279027196493`*^9}]
+Cell[BoxData["\<\"putreg(&NRF_CLOCK->TASKS_HFCLKSTART, \
+\\\"NRF_CLOCK->TASKS_HFCLKSTART     \\\"); /*!< Start HFCLK clock source. \
+*/\\nputreg(&NRF_CLOCK->TASKS_HFCLKSTOP, \\\"NRF_CLOCK->TASKS_HFCLKSTOP      \
+\\\"); /*!< Stop HFCLK clock source. \
+*/\\nputreg(&NRF_CLOCK->TASKS_LFCLKSTART, \\\"NRF_CLOCK->TASKS_LFCLKSTART     \
+\\\"); /*!< Start LFCLK clock source. \
+*/\\nputreg(&NRF_CLOCK->TASKS_LFCLKSTOP, \\\"NRF_CLOCK->TASKS_LFCLKSTOP      \
+\\\"); /*!< Stop LFCLK clock source. */\\nputreg(&NRF_CLOCK->TASKS_CAL, \
+\\\"NRF_CLOCK->TASKS_CAL            \\\"); /*!< Start calibration of LFCLK RC \
+oscillator. */\\nputreg(&NRF_CLOCK->TASKS_CTSTART, \
+\\\"NRF_CLOCK->TASKS_CTSTART        \\\"); /*!< Start calibration timer. \
+*/\\nputreg(&NRF_CLOCK->TASKS_CTSTOP, \\\"NRF_CLOCK->TASKS_CTSTOP         \
+\\\"); /*!< Stop calibration timer. \
+*/\\nputreg(&NRF_CLOCK->EVENTS_HFCLKSTARTED, \
+\\\"NRF_CLOCK->EVENTS_HFCLKSTARTED  \\\"); /*!< HFCLK oscillator started. \
+*/\\nputreg(&NRF_CLOCK->EVENTS_LFCLKSTARTED, \
+\\\"NRF_CLOCK->EVENTS_LFCLKSTARTED  \\\"); /*!< LFCLK oscillator started. \
+*/\\nputreg(&NRF_CLOCK->EVENTS_DONE, \\\"NRF_CLOCK->EVENTS_DONE          \
+\\\"); /*!< Calibration of LFCLK RC oscillator completed. \
+*/\\nputreg(&NRF_CLOCK->EVENTS_CTTO, \\\"NRF_CLOCK->EVENTS_CTTO          \
+\\\"); /*!< Calibration timer timeout. */\\nputreg(&NRF_CLOCK->INTENSET, \
+\\\"NRF_CLOCK->INTENSET             \\\"); /*!< Interrupt enable set \
+register. */\\nputreg(&NRF_CLOCK->INTENCLR, \\\"NRF_CLOCK->INTENCLR           \
+  \\\"); /*!< Interrupt enable clear register. \
+*/\\nputreg(&NRF_CLOCK->HFCLKRUN, \\\"NRF_CLOCK->HFCLKRUN             \\\"); \
+/*!< Task HFCLKSTART trigger status. */\\nputreg(&NRF_CLOCK->HFCLKSTAT, \
+\\\"NRF_CLOCK->HFCLKSTAT            \\\"); /*!< High frequency clock status. \
+*/\\nputreg(&NRF_CLOCK->LFCLKRUN, \\\"NRF_CLOCK->LFCLKRUN             \\\"); \
+/*!< Task LFCLKSTART triggered status. */\\nputreg(&NRF_CLOCK->LFCLKSTAT, \
+\\\"NRF_CLOCK->LFCLKSTAT            \\\"); /*!< Low frequency clock status. \
+*/\\nputreg(&NRF_CLOCK->LFCLKSRCCOPY, \\\"NRF_CLOCK->LFCLKSRCCOPY         \
+\\\"); /*!< Clock source for the LFCLK clock, set when task LKCLKSTART is \
+triggered. */\\nputreg(&NRF_CLOCK->LFCLKSRC, \\\"NRF_CLOCK->LFCLKSRC          \
+   \\\"); /*!< Clock source for the LFCLK clock. \
+*/\\nputreg(&NRF_CLOCK->CTIV, \\\"NRF_CLOCK->CTIV                 \\\"); /*!< \
+Calibration timer interval. */\\nputreg(&NRF_CLOCK->XTALFREQ, \
+\\\"NRF_CLOCK->XTALFREQ             \\\"); /*!< Crystal frequency. */\"\>"], \
+"Output",
+ CellChangeTimes->{3.730827856070505*^9, 3.7308279027196493`*^9, 
+  3.730834271381651*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1159,74 +478,13 @@ Cell[BoxData[
  CellChangeTimes->{{3.730827924167194*^9, 3.730827967836999*^9}}],
 
 Cell[BoxData["\<\"/home/cmaier/Hackerspaces/calliope/calliope-project-\
-template/source/registerdump.cpp\"\>"], "Output",
- CellChangeTimes->{3.730827930631822*^9, 3.730827983764371*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["$ExportFormats"], "Input",
- CellChangeTimes->{{3.730827952927121*^9, 3.730827955640161*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"\<\"3DS\"\>", ",", "\<\"ACO\"\>", ",", "\<\"AIFF\"\>", 
-   ",", "\<\"AU\"\>", ",", "\<\"AVI\"\>", ",", "\<\"Base64\"\>", 
-   ",", "\<\"Binary\"\>", ",", "\<\"Bit\"\>", ",", "\<\"BMP\"\>", 
-   ",", "\<\"Byte\"\>", ",", "\<\"BYU\"\>", ",", "\<\"BZIP2\"\>", 
-   ",", "\<\"C\"\>", ",", "\<\"CDF\"\>", ",", "\<\"Character16\"\>", 
-   ",", "\<\"Character8\"\>", ",", "\<\"Complex128\"\>", 
-   ",", "\<\"Complex256\"\>", ",", "\<\"Complex64\"\>", ",", "\<\"CSV\"\>", 
-   ",", "\<\"CUR\"\>", ",", "\<\"DAE\"\>", ",", "\<\"DICOM\"\>", 
-   ",", "\<\"DIF\"\>", ",", "\<\"DIMACS\"\>", ",", "\<\"DOT\"\>", 
-   ",", "\<\"DXF\"\>", ",", "\<\"EMF\"\>", ",", "\<\"EPS\"\>", 
-   ",", "\<\"ExpressionJSON\"\>", ",", "\<\"ExpressionML\"\>", 
-   ",", "\<\"FASTA\"\>", ",", "\<\"FASTQ\"\>", ",", "\<\"FCS\"\>", 
-   ",", "\<\"FITS\"\>", ",", "\<\"FLAC\"\>", ",", "\<\"FLV\"\>", 
-   ",", "\<\"GIF\"\>", ",", "\<\"Graph6\"\>", ",", "\<\"Graphlet\"\>", 
-   ",", "\<\"GraphML\"\>", ",", "\<\"GXL\"\>", ",", "\<\"GZIP\"\>", 
-   ",", "\<\"HarwellBoeing\"\>", ",", "\<\"HDF\"\>", ",", "\<\"HDF5\"\>", 
-   ",", "\<\"HTML\"\>", ",", "\<\"HTMLFragment\"\>", ",", "\<\"ICNS\"\>", 
-   ",", "\<\"ICO\"\>", ",", "\<\"Integer128\"\>", ",", "\<\"Integer16\"\>", 
-   ",", "\<\"Integer24\"\>", ",", "\<\"Integer32\"\>", 
-   ",", "\<\"Integer64\"\>", ",", "\<\"Integer8\"\>", ",", "\<\"JPEG\"\>", 
-   ",", "\<\"JPEG2000\"\>", ",", "\<\"JSON\"\>", ",", "\<\"JVX\"\>", 
-   ",", "\<\"KML\"\>", ",", "\<\"LEDA\"\>", ",", "\<\"List\"\>", 
-   ",", "\<\"LWO\"\>", ",", "\<\"MAT\"\>", ",", "\<\"MathML\"\>", 
-   ",", "\<\"Maya\"\>", ",", "\<\"MGF\"\>", ",", "\<\"MIDI\"\>", 
-   ",", "\<\"MOL\"\>", ",", "\<\"MOL2\"\>", ",", "\<\"MP3\"\>", 
-   ",", "\<\"MTX\"\>", ",", "\<\"MX\"\>", ",", "\<\"NASACDF\"\>", 
-   ",", "\<\"NB\"\>", ",", "\<\"NetCDF\"\>", ",", "\<\"NEXUS\"\>", 
-   ",", "\<\"NOFF\"\>", ",", "\<\"OBJ\"\>", ",", "\<\"OFF\"\>", 
-   ",", "\<\"OGG\"\>", ",", "\<\"Package\"\>", ",", "\<\"Pajek\"\>", 
-   ",", "\<\"PBM\"\>", ",", "\<\"PCX\"\>", ",", "\<\"PDB\"\>", 
-   ",", "\<\"PDF\"\>", ",", "\<\"PGM\"\>", ",", "\<\"PLY\"\>", 
-   ",", "\<\"PNG\"\>", ",", "\<\"PNM\"\>", ",", "\<\"POV\"\>", 
-   ",", "\<\"PPM\"\>", ",", "\<\"PXR\"\>", ",", "\<\"RawBitmap\"\>", 
-   ",", "\<\"RawJSON\"\>", ",", "\<\"Real128\"\>", ",", "\<\"Real32\"\>", 
-   ",", "\<\"Real64\"\>", ",", "\<\"RIB\"\>", ",", "\<\"RTF\"\>", 
-   ",", "\<\"SCT\"\>", ",", "\<\"SDF\"\>", ",", "\<\"SND\"\>", 
-   ",", "\<\"Sparse6\"\>", ",", "\<\"STL\"\>", ",", "\<\"String\"\>", 
-   ",", "\<\"SurferGrid\"\>", ",", "\<\"SVG\"\>", ",", "\<\"SWF\"\>", 
-   ",", "\<\"Table\"\>", ",", "\<\"TAR\"\>", ",", "\<\"TerminatedString\"\>", 
-   ",", "\<\"TeX\"\>", ",", "\<\"TeXFragment\"\>", ",", "\<\"Text\"\>", 
-   ",", "\<\"TGA\"\>", ",", "\<\"TGF\"\>", ",", "\<\"TIFF\"\>", 
-   ",", "\<\"TSV\"\>", ",", "\<\"UnsignedInteger128\"\>", 
-   ",", "\<\"UnsignedInteger16\"\>", ",", "\<\"UnsignedInteger24\"\>", 
-   ",", "\<\"UnsignedInteger32\"\>", ",", "\<\"UnsignedInteger64\"\>", 
-   ",", "\<\"UnsignedInteger8\"\>", ",", "\<\"UUE\"\>", 
-   ",", "\<\"VideoFrames\"\>", ",", "\<\"VRML\"\>", ",", "\<\"VTK\"\>", 
-   ",", "\<\"WAV\"\>", ",", "\<\"Wave64\"\>", ",", "\<\"WDX\"\>", 
-   ",", "\<\"WebP\"\>", ",", "\<\"WLNet\"\>", ",", "\<\"X3D\"\>", 
-   ",", "\<\"XBM\"\>", ",", "\<\"XHTML\"\>", ",", "\<\"XHTMLMathML\"\>", 
-   ",", "\<\"XLS\"\>", ",", "\<\"XLSX\"\>", ",", "\<\"XML\"\>", 
-   ",", "\<\"XYZ\"\>", ",", "\<\"ZIP\"\>", ",", "\<\"ZPR\"\>"}], 
-  "}"}]], "Output",
- CellChangeTimes->{3.73082795605617*^9}]
+template/helpers/clockdump.c\"\>"], "Output",
+ CellChangeTimes->{3.730827930631822*^9, 3.730827983764371*^9, 
+  3.7308343723273163`*^9}]
 }, Open  ]]
 },
 WindowSize->{808, 911},
-WindowMargins->{{Automatic, 555}, {33, Automatic}},
+WindowMargins->{{Automatic, 554}, {5, Automatic}},
 Magnification:>1.25 Inherited,
 FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
 StyleDefinitions->"Default.nb"
@@ -1244,51 +502,41 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 122, 2, 40, "Input"],
-Cell[705, 26, 89, 1, 40, "Output"]
+Cell[705, 26, 111, 1, 40, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[831, 32, 220, 4, 97, "Input"],
-Cell[1054, 38, 163, 2, 69, "Output"]
+Cell[853, 32, 269, 5, 97, "Input"],
+Cell[1125, 39, 210, 3, 69, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1254, 45, 161, 3, 40, "Input"],
-Cell[1418, 50, 6337, 89, 3933, "Output"]
+Cell[1372, 47, 246, 5, 40, "Input"],
+Cell[1621, 54, 2439, 35, 1469, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7792, 144, 135, 2, 40, "Input"],
-Cell[7930, 148, 6463, 96, 3391, "Output"]
+Cell[4097, 94, 198, 4, 40, "Input"],
+Cell[4298, 100, 2809, 46, 1525, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14430, 249, 198, 4, 40, "Input"],
-Cell[14631, 255, 7595, 129, 3849, "Output"]
+Cell[7144, 151, 300, 8, 40, "Input"],
+Cell[7447, 161, 4323, 95, 1497, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22263, 389, 300, 8, 40, "Input"],
-Cell[22566, 399, 11941, 263, 3681, "Output"]
+Cell[11807, 261, 132, 2, 40, "Input"],
+Cell[11942, 265, 833, 24, 69, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34544, 667, 132, 2, 40, "Input"],
-Cell[34679, 671, 2545, 75, 181, "Output"]
+Cell[12812, 294, 898, 21, 97, "Input"],
+Cell[13713, 317, 4679, 97, 1805, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[37261, 751, 845, 20, 97, "Input"],
-Cell[38109, 773, 12541, 267, 4549, "Output"]
+Cell[18429, 419, 337, 9, 69, "Input"],
+Cell[18769, 430, 2648, 39, 1777, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[50687, 1045, 337, 9, 69, "Input"],
-Cell[51027, 1056, 6835, 94, 4521, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[57899, 1155, 182, 3, 40, "Input"],
-Cell[58084, 1160, 185, 2, 126, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[58306, 1167, 106, 1, 40, "Input"],
-Cell[58415, 1170, 3559, 54, 545, "Output"]
+Cell[21454, 474, 182, 3, 40, "Input"],
+Cell[21639, 479, 208, 3, 126, "Output"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
