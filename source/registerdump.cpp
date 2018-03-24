@@ -12,6 +12,52 @@ void putreg(volatile void *reg, const char *name)
     printf("%s %08x: %08x\r\n", name, uint32_t(ptr), *ptr);
 }
 
+void dumpIrqEnables(void) {
+    putreg(&NVIC->ISER, "NVIC->ISER\t");
+    putreg(&NVIC->ICER, "NVIC->ICER\t");
+    putreg(&NVIC->ISPR, "NVIC->ISPR\t");
+    putreg(&NVIC->ICPR, "NVIC->ICPR\t");
+    char nvic_ip[]= "NVIC->IP[@]\t"; 
+    for (int b= 0; b<8; b++) {
+        nvic_ip[9]= '0'+b;
+        putreg(&NVIC->IP[b], nvic_ip);
+    }
+
+    putreg(&SCB->CPUID, "SCB->CPUID\t");
+    putreg(&SCB->ICSR, "SCB->ICSR\t");
+    putreg(&SCB->AIRCR, "SCB->AIRCR\t");
+    putreg(&SCB->SCR, "SCB->SCR\t");
+    putreg(&SCB->CCR, "SCB->CCR\t");
+    putreg(&SCB->SHP[1], "SCB->SHP[1]\t");
+    putreg(&SCB->SHCSR, "SCB->SHCSR\t");
+
+    putreg(&NRF_POWER->INTENCLR, "NRF_POWER->INTENCLR\t");
+    putreg(&NRF_CLOCK->INTENCLR, "NRF_CLOCK->INTENCLR\t");
+    putreg(&NRF_RADIO->INTENCLR, "NRF_RADIO->INTENCLR\t");
+    putreg(&NRF_UART0->INTENCLR, "NRF_UART0->INTENCLR\t");
+    putreg(&NRF_SPI0->INTENCLR, "NRF_SPI0->INTENCLR\t");
+    putreg(&NRF_TWI0->INTENCLR, "NRF_TWI0->INTENCLR\t");
+    putreg(&NRF_SPI1->INTENCLR, "NRF_SPI1->INTENCLR\t");
+    putreg(&NRF_TWI1->INTENCLR, "NRF_TWI1->INTENCLR\t");
+    putreg(&NRF_SPIS1->INTENCLR, "NRF_SPIS1->INTENCLR\t");
+    putreg(&NRF_SPIM1->INTENCLR, "NRF_SPIM1->INTENCLR\t");
+    putreg(&NRF_GPIOTE->INTENCLR, "NRF_GPIOTE->INTENCLR\t");
+    putreg(&NRF_ADC->INTENCLR, "NRF_ADC->INTENCLR\t");
+    putreg(&NRF_TIMER0->INTENCLR, "NRF_TIMER0->INTENCLR\t");
+    putreg(&NRF_TIMER1->INTENCLR, "NRF_TIMER1->INTENCLR\t");
+    putreg(&NRF_TIMER2->INTENCLR, "NRF_TIMER2->INTENCLR\t");
+    putreg(&NRF_RTC0->INTENCLR, "NRF_RTC0->INTENCLR\t");
+    putreg(&NRF_TEMP->INTENCLR, "NRF_TEMP->INTENCLR\t");
+    putreg(&NRF_RNG->INTENCLR, "NRF_RNG->INTENCLR\t");
+    putreg(&NRF_ECB->INTENCLR, "NRF_ECB->INTENCLR\t");
+    putreg(&NRF_AAR->INTENCLR, "NRF_AAR->INTENCLR\t");
+    putreg(&NRF_CCM->INTENCLR, "NRF_CCM->INTENCLR\t");
+    putreg(&NRF_WDT->INTENCLR, "NRF_WDT->INTENCLR\t");
+    putreg(&NRF_RTC1->INTENCLR, "NRF_RTC1->INTENCLR\t");
+    putreg(&NRF_QDEC->INTENCLR, "NRF_QDEC->INTENCLR\t");
+    putreg(&NRF_LPCOMP->INTENCLR,"NRF_LPCOMP->INTENCLR\t");
+}
+
 void dumpClockRegisters(void)
 {
     putreg(&NRF_CLOCK->TASKS_HFCLKSTART, "NRF_CLOCK->TASKS_HFCLKSTART     "); /*!< Start HFCLK clock source. */
