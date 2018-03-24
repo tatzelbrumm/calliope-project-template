@@ -131,8 +131,16 @@ void dumpRadioRegisters(void)
     putreg(&NRF_RADIO->STATE, "NRF_RADIO->STATE            "); /*!< Current radio state. */
     putreg(&NRF_RADIO->DATAWHITEIV, "NRF_RADIO->DATAWHITEIV      "); /*!< Data whitening initial value. */
     putreg(&NRF_RADIO->BCC, "NRF_RADIO->BCC              "); /*!< Bit counter compare. */
-    putreg(&NRF_RADIO->DAB[8], "NRF_RADIO->DAB[8]           "); /*!< Device address base segment. */
-    putreg(&NRF_RADIO->DAP[8], "NRF_RADIO->DAP[8]           "); /*!< Device address prefix. */
+    char radio_dab[]= "NRF_RADIO->DAB[@]           ";
+    for (int b= 0; b<8; b++) {
+        radio_dab[15]= '0'+b;
+        putreg(&NRF_RADIO->DAB[b], radio_dab); /*!< Device address base segment. */
+    }
+    char radio_dap[]= "NRF_RADIO->DAP[@]           ";
+    for (int b= 0; b<8; b++) {
+        radio_dap[15]= '0'+b;
+        putreg(&NRF_RADIO->DAP[b], radio_dap); /*!< Device address prefix. */
+    }
     putreg(&NRF_RADIO->DACNF, "NRF_RADIO->DACNF            "); /*!< Device address match configuration. */
     putreg(&NRF_RADIO->OVERRIDE0, "NRF_RADIO->OVERRIDE0        "); /*!< Trim value override register 0. */
     putreg(&NRF_RADIO->OVERRIDE1, "NRF_RADIO->OVERRIDE1        "); /*!< Trim value override register 1. */
