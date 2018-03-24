@@ -50,6 +50,8 @@ int main(void) {
 
     uBit.display.scroll(meditations[count]);
 
+    printf("\r\nInterrupt registers\r\n");
+    dumpIrqEnables();
     printf("\r\nClock registers\r\n");
     dumpClockRegisters();
     printf("\r\nRadio registers\r\n");
