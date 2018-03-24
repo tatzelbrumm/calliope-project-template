@@ -16,8 +16,10 @@ MicroBit uBit;
 int main(void) {
     uBit.init();
     uBit.serial.baud(115200);
-    uBit.serial.send("Calliope mini template v1.0\r\n");
+    printf("\r\nInterrupt registers\r\n");
+    dumpIrqEnables();
+    printf("\r\nClock registers\r\n");
     dumpClockRegisters();
-    uBit.serial.send("Hello world!\r\n");
+    printf("\r\nRadio registers\r\n");
     dumpRadioRegisters();
 }
