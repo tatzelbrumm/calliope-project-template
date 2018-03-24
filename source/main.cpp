@@ -44,6 +44,8 @@ int main(void) {
     uBit.radio.enable();
     uBit.serial.baud(115200);
 
+    printf("\r\nInterrupt registers\r\n");
+    dumpIrqEnables();
     printf("\r\nClock registers\r\n");
     dumpClockRegisters();
     printf("\r\nRadio registers\r\n");
