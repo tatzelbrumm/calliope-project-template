@@ -1,10 +1,14 @@
-/**
- * This is a simple template for use with Calliope mini.
+/*
+ * radio.cpp
+ * =========
+ * Receiver side
  *
- * @copyright (c) Calliope gGmbH.
- * @author Matthias L. Jugel.
+ * Compile with 
+ * #define MICROBIT_BLE_ENABLED      0
+ * #define MICROBIT_BLE_PAIRING_MODE 0
+ * in yotta_modules/microbit-dal/inc/core/MicroBitConfig.h
  *
- * Licensed under the Apache License 2.0
+ * see https://lancaster-university.github.io/microbit-docs/ubit/radio/# for details
  */
 
 #include <MicroBit.h>
@@ -12,14 +16,34 @@
 
 MicroBit uBit;
 
+const char OM[]="OM",
+  MANI[]= "MANI",
+  PADME[]= "PADME",
+  HUM[]= "HUM";
+
+static const char *meditations[4]= {
+  OM, MANI, PADME, HUM
+};
+
+static volatile uint8_t omCount;
+
+void onData(MicroBitEvent e)
+{
+    PacketBuffer b=uBit.radio.datagram.recv();
+    omCount= b[0];
+    uBit.serial.send("\r\nReceived ");
+    uBit.serial.send('0'+omCount);
+    uBit.serial.send("\r\n");
+    if (4 > omCount)
+        uBit.display.scroll(meditations[omCount]);
+}
 
 int main(void) {
     uBit.init();
+    uBit.messageBus.listen(MICROBIT_ID_RADIO, MICROBIT_RADIO_EVT_DATAGRAM, onData);
+    uBit.radio.enable();
     uBit.serial.baud(115200);
-    printf("\r\nInterrupt registers\r\n");
-    dumpIrqEnables();
-    printf("\r\nClock registers\r\n");
-    dumpClockRegisters();
-    printf("\r\nRadio registers\r\n");
-    dumpRadioRegisters();
+ considered_harmful:
+    uBit.sleep(1680);
+    goto considered_harmful;
 }
