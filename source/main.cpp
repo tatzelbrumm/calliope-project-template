@@ -13,6 +13,7 @@
 
 #include <MicroBit.h>
 #include <registerdump.h>
+#include <nrf51_bitfields.h>
 
 MicroBit uBit;
 
@@ -25,6 +26,25 @@ static const char *meditations[4]= {
   OM, MANI, PADME, HUM
 };
 
+void send_continuously(uint8_t channel)
+{
+    NRF_RADIO->FREQUENCY= channel < 100 ? channel : 100;
+    NRF_RADIO->TEST= RADIO_TEST_PLLLOCK_Msk | RADIO_TEST_CONSTCARRIER_Msk;
+
+    // Firstly, disable the Radio interrupt. We want to wait until the transmission completes.
+    NVIC_DisableIRQ(RADIO_IRQn);
+
+    // Turn off the transceiver.
+    NRF_RADIO->EVENTS_DISABLED = 0;
+    NRF_RADIO->TASKS_DISABLE = 1;
+    while(NRF_RADIO->EVENTS_DISABLED == 0);
+
+    // Turn on the transmitter, and wait for it to signal that it's ready to use.
+    NRF_RADIO->EVENTS_READY = 0;
+    NRF_RADIO->TASKS_TXEN = 1;
+    while (NRF_RADIO->EVENTS_READY == 0);
+}
+
 int main(void) {
     uBit.init();
     uBit.serial.baud(115200);
@@ -32,24 +52,10 @@ int main(void) {
     uBit.radio.enable();
     PacketBuffer b(1);
     unsigned char count=0;
+    send_continuously(7);
  considered_harmful:
-    if (uBit.buttonA.isPressed()) {
-        count++;
-    }
-    else if (uBit.buttonB.isPressed()) {
-        count--;
-    }
-    else
-        goto considered_harmful;
-    count%=4;
-    b[0]= count;
-
-    uBit.radio.datagram.send(b);
-
-    uBit.serial.send(meditations[count]);
-
-    uBit.display.scroll(meditations[count]);
-
+    printf("\r\nInterrupt registers\r\n");
+    dumpIrqEnables();
     printf("\r\nClock registers\r\n");
     dumpClockRegisters();
     printf("\r\nRadio registers\r\n");
