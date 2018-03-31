@@ -50,10 +50,24 @@ int main(void) {
     uBit.serial.baud(115200);
 
     uBit.radio.enable();
-    PacketBuffer b(1);
-    unsigned char count=0;
-    send_continuously(7);
+    unsigned char channel=0;
  considered_harmful:
+    if (uBit.buttonA.isPressed()) {
+        channel++;
+    }
+    else if (uBit.buttonB.isPressed()) {
+        channel--;
+    }
+    else
+        goto considered_harmful;
+    channel%=100;
+
+    send_continuously(channel);
+
+    printf("\r\nChannel: %03d\r\n", channel);
+
+    uBit.display.scroll(channel);
+
     printf("\r\nInterrupt registers\r\n");
     dumpIrqEnables();
     printf("\r\nClock registers\r\n");
