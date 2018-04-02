@@ -1,6 +1,12 @@
 #MicroBit radio
 The behavior of the radio is defined in `MicroBitRadio.*`  
 
+##Strategy to communicate with r0ket
+
+  * turn off CRC in communication between calliope and sino:bit
+  * have r0ket send packets without CRC continuously
+  * record RSSI irrespective of address match if possible
+
 ##Register settings
 
 ###after MicroBitRadio::enable()
