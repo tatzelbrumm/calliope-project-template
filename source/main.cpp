@@ -104,7 +104,7 @@ int main(void) {
   WriteGlyph(glyph[ofs]);
 
   cereal.crlf();
-  cereal.puthex(ofs++);
+  cereal.putdigits(++ofs,10);
   cereal.crlf();
   ofs%=8105;
 
