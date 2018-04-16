@@ -18,60 +18,6 @@
 
 Cereal cereal(USBTX, USBRX);
 
-static uint16_t om[3][12] = {
-{
-0b0011111100000000,
-0b0100000010000000,
-0b1000000001010000,
-0b1000000001010000,
-0b1000000001110000,
-0b1000000000000000,
-0b1000000000000000,
-0b1000000001110000,
-0b1000000001010000,
-0b1000000001010000,
-0b0100000010000000,
-0b0011111100000000
-},
-{
-0b0011111100000000,
-0b0100000010000000,
-0b1010001001010000,
-0b1010100101010000,
-0b1001011001110000,
-0b1100010000000000,
-0b0010100000000000,
-0b1010101001110000,
-0b0010100101010000,
-0b1100011001010000,
-0b0100000010000000,
-0b0011111100000000
-},
-{
-0b0000000000000000,
-0b0000000000000000,
-0b0010001000000000,
-0b0010100100000000,
-0b0001011000000000,
-0b1100010000000000,
-0b0010100000000000,
-0b1010101000000000,
-0b0010100100000000,
-0b1100011000000000,
-0b0000000000000000,
-0b0000000000000000
-}
-};
-
-const char OM[]="\nOM\n",
-  MANI[]= "\nMANI\n",
-  PADME[]= "\nPADME\n",
-  HUM[]= "\nHUM\n";
-
-static uint16_t *show[]= {om[0], om[1], om[2], om[1]};
-static const char *meditations[4]= {
-  OM, MANI, PADME, HUM
-};
 
 uint16_t readpattern[12]; // pattern read back
 
@@ -136,38 +82,39 @@ int main(void) {
   NRF_GPIO_Type *gpiobase= (NRF_GPIO_Type *)NRF_GPIO_BASE;
 
   cereal.baud(115200);
-  cereal.puts("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
-  cereal.putreg(&gpiobase->DIR, "Dir  ");
-  cereal.putreg(&gpiobase->IN, "In   ");
+  //cereal.puts("Wenn ist das Nurnstuck git und Slotermeyer?\r\n");
+  //cereal.putreg(&gpiobase->DIR, "Dir  ");
+  //cereal.putreg(&gpiobase->IN, "In   ");
 
   HT1632C_Init();
 
-  cereal.putreg(&gpiobase->DIR, "Dir  ");
-  cereal.putreg(&gpiobase->IN, "In   ");
+  //cereal.putreg(&gpiobase->DIR, "Dir  ");
+  //cereal.putreg(&gpiobase->IN, "In   ");
 
   HT1632C_clr();
 
-  cereal.putreg(&gpiobase->DIR, "Dir  ");
-  cereal.putreg(&gpiobase->IN, "In   ");
+  //cereal.putreg(&gpiobase->DIR, "Dir  ");
+  //cereal.putreg(&gpiobase->IN, "In   ");
 
-  cereal.puts("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
-  putIRQenables();
+  //cereal.puts("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
+  //putIRQenables();
 
   unsigned int ofs=0;
  considered_harmful:
-  HT1632C_Write_Pattern(show[ofs]);
-  cereal.puts(meditations[ofs++]);
-  //cereal.puthex(ofs++);
-  //cereal.crlf();
-  ofs%=4;
+  WriteGlyph(glyph[ofs]);
+
+  cereal.crlf();
+  cereal.puthex(ofs++);
+  cereal.crlf();
+  ofs%=8105;
 
   HT1632C_Read_Pattern(readpattern);
   printpattern(readpattern);
 
-  delay(1<<22);
+  delay(1<<20);
 
-  cereal.putreg(&gpiobase->DIR, "Dir  ");
-  cereal.putreg(&gpiobase->IN, "In   ");
+  //cereal.putreg(&gpiobase->DIR, "Dir  ");
+  //cereal.putreg(&gpiobase->IN, "In   ");
 
   goto considered_harmful;
 }
