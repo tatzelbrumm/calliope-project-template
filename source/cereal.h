@@ -20,6 +20,7 @@ public:
 
   void puts(const char* string);
   void puthex(uint32_t datum, unsigned int digits=1);
+  void putdigits(uint32_t datum, unsigned int base, unsigned int digits=1);
   void putreg(volatile void *reg, const char* name);
   void crlf(void);
 };

@@ -34,6 +34,21 @@ void Cereal::puthex(uint32_t datum, unsigned int digits)
   }
 }
 
+void Cereal::putdigits(uint32_t datum, unsigned int base, unsigned int digits)
+{
+  char dig[32];
+  unsigned int d= 0;
+  while (d < digits || datum) {
+    char c= datum % base;
+    c+= c<10? '0' : 'A'-10;
+    dig[d++]= c;
+    datum /= base;
+  }
+  while (d-- > 0) {
+    _base_putc(dig[d]);
+  }
+}
+
 void Cereal::putreg(volatile void *reg, const char* name) {
   uint32_t *ptr= (uint32_t *)reg;
   puts(name);
