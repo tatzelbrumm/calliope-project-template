@@ -11,6 +11,7 @@
  */
 
 #include <cereal.h>
+#include <font.h>
 #include <LED-Matrix.h>
 //#include <nrf51.h> // redundant, just to make Eclipse happy
 //#include <core_cm0.h> // redundant, just to make Eclipse happy
