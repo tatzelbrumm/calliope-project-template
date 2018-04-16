@@ -6,7 +6,7 @@
 /*
  * character code of font glyphs
  */
-const uint16_t charcode[]= {
+const uint32_t charcode[]= {
     0x4e00,
     0x4e59,
     0x4e8c,
