@@ -104,8 +104,11 @@ int main(void) {
   WriteGlyph(glyph[ofs]);
 
   cereal.crlf();
-  cereal.putdigits(++ofs,10);
+  cereal.putdigits(ofs,10);
   cereal.crlf();
+  for (int b=0; b<3; cereal.puthex(charcode[ofs][b++],2));
+  cereal.crlf();
+  ++ofs;
   ofs%=8105;
 
   HT1632C_Read_Pattern(readpattern);
