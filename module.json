@@ -4,7 +4,7 @@
   "description": "Calliope Project Template",
   "license": "Apache 2.0",
   "dependencies": {
-    "microbit": "calliope-mini/microbit#v2.0.0-rc8-calliope-1.0.3"
+    "microbit": "tatzelbrumm/microbit#calliope-tatzelbrumm-radio"
   },
   "targetDependencies": {},
   "bin": "./source"
