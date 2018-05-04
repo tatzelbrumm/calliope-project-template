@@ -135,6 +135,18 @@ void HT1632C_Write_Pattern(const uint16_t pattern[])
   }
 }
 
+/*
+ * Write pattern to display from cyclic buffer
+ */
+void HT1632C_Write_Pattern(const uint16_t pattern[], uint16_t start_col, uint16_t max_col)
+{
+  uint16_t col= start_col;
+  for (int c=0; c<12; c++) {
+    HT1632C_Write_DAT(com[c],pattern,col++);
+    if (col >= max_col) col=0;
+  }
+}
+
 void HT1632C_Read_Pattern(uint16_t pattern[])
 {
   for (int col=0; col<12; col++) {

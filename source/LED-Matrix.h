@@ -5,4 +5,5 @@ void HT1632C_clr(void); //Clear function
 void HT1632C_Init(void); //HT1632C Init Function
 void HT1632C_Read_DATA(unsigned char Addr);
 void HT1632C_Write_Pattern(const uint16_t pattern[]);
+void HT1632C_Write_Pattern(const uint16_t pattern[], uint16_t start_col, uint16_t max_col);
 void HT1632C_Read_Pattern(uint16_t pattern[]);
