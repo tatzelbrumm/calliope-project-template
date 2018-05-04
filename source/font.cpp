@@ -34,7 +34,7 @@ void WriteGlyph(const uint8_t glyph[18])
     HT1632C_Write_Pattern(bitmap);
 }
 
-void ScrollText(const uint8_t font[][18], const uint16_t text[], uint32_t length, uint32_t delay)
+void ScrollText(const uint8_t font[][18], const uint16_t text[], uint32_t length, uint32_t scroll_delay, uint32_t char_delay)
 {
     static uint16_t bitmap[24]; // double width buffer
     static uint16_t column= 0;
@@ -50,22 +50,27 @@ void ScrollText(const uint8_t font[][18], const uint16_t text[], uint32_t length
             ExpandGlyph(font[text[letter++]], bitmap+column);
             column= 12-column;
         }
-        HT1632C_Write_Pattern(bitmap, col++, 24);
+        HT1632C_Write_Pattern(bitmap, col, 24);
+        busy_wait(col++ % 12 ? scroll_delay : char_delay);
         if (col > 23) col= 0;
-        busy_wait(delay);
     }
     for (int c= 0; c < 12; c++) { // display the last glyph
-        HT1632C_Write_Pattern(bitmap, col++, 24);
-        col%= 24;
-        busy_wait(delay);
+        HT1632C_Write_Pattern(bitmap, col, 24);
+        busy_wait(col++ % 12 ? scroll_delay : char_delay);
+        if (col > 23) col= 0;
     }
     for (int c= 0; c < 12; c++) { // clear final display
         bitmap[column++]= 0;
         if (column > 23) column= 0;
     }
     for (int c= 0; c < 12; c++) { // shift out the last glyph
-        HT1632C_Write_Pattern(bitmap, col++, 24);
-        col%= 24;
-        busy_wait(delay);
+        HT1632C_Write_Pattern(bitmap, col, 24);
+        busy_wait(col++ % 12 ? scroll_delay : char_delay);
+        if (col > 23) col= 0;
     }
+}
+
+void ScrollText(const uint8_t font[][18], const uint16_t text[], uint32_t length, uint32_t delay)
+{
+    ScrollText(font, text, length, delay, delay);
 }
