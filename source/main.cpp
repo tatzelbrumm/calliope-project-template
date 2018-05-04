@@ -16,8 +16,35 @@
 //#include <nrf51.h> // redundant, just to make Eclipse happy
 //#include <core_cm0.h> // redundant, just to make Eclipse happy
 
-Cereal cereal(USBTX, USBRX);
+const uint16_t pattern[]= {
+    0b0000000000000000,
+    0b0000000000010000,
+    0b0000000000110000,
+    0b0000000001110000,
+    0b0000000011110000,
+    0b0000000111110000,
+    0b0000001111110000,
+    0b0000011111110000,
+    0b0000111111110000,
+    0b0001111111110000,
+    0b0011111111110000,
+    0b0111111111110000,
+    0b1111111111110000,
+    0b1111111111100000,
+    0b1111111111000000,
+    0b1111111110000000,
+    0b1111111100000000,
+    0b1111111000000000,
+    0b1111110000000000,
+    0b1111100000000000,
+    0b1111000000000000,
+    0b1110000000000000,
+    0b1100000000000000,
+    0b1000000000000000
+};
+const uint16_t patternlength= sizeof(pattern)/sizeof(uint16_t);
 
+Cereal cereal(USBTX, USBRX);
 
 uint16_t readpattern[12]; // pattern read back
 
@@ -99,25 +126,17 @@ int main(void) {
   //cereal.puts("Ja! Beiherhundt das oder die Flipperwaldt gersput!\r\n");
   //putIRQenables();
 
-  unsigned int ofs=0;
  considered_harmful:
-  WriteGlyph(glyph[ofs]);
+  cereal.puts("Scrolling message\r\n");
+  for (int16_t c= 0; c<patternlength; c++) {
+      HT1632C_Write_Pattern(pattern, c, patternlength);
+      cereal.putdigits(c,10,2);
+      cereal.crlf();
+      delay(1<<20);
+  }
+  cereal.puts("Scrolling done\r\n");
 
-  cereal.crlf();
-  cereal.putdigits(ofs,10);
-  cereal.crlf();
-  for (int b=0; b<3; cereal.puthex(charcode[ofs][b++],2));
-  cereal.crlf();
-  ++ofs;
-  ofs%=8105;
-
-  HT1632C_Read_Pattern(readpattern);
-  printpattern(readpattern);
-
-  delay(1<<20);
-
-  //cereal.putreg(&gpiobase->DIR, "Dir  ");
-  //cereal.putreg(&gpiobase->IN, "In   ");
+  //delay(1<<20);
 
   goto considered_harmful;
 }
