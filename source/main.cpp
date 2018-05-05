@@ -16,11 +16,9 @@
 //#include <nrf51.h> // redundant, just to make Eclipse happy
 //#include <core_cm0.h> // redundant, just to make Eclipse happy
 
-const uint16_t sinotext[]= {21, 8};
+//const uint16_t sinotext[]= {71, 674, 1499, 299, 56, 1478, 80, 1163, 90, 2145, 1154, 429, 164, 313, 1478, 1831, 1284, 1154};
+const uint16_t sinotext[]= {484, 205, 1495, 80, 521, 968, 2543, 487, 1788, 706};
 const uint16_t sinolength= sizeof(sinotext)/sizeof(uint16_t);
-
-const uint16_t blktext[]= {2654, 1572};
-const uint16_t blklength= sizeof(blktext)/sizeof(uint16_t);
 
 Cereal cereal(USBTX, USBRX);
 
@@ -105,10 +103,8 @@ int main(void) {
   //putIRQenables();
 
  considered_harmful:
-  cereal.puts("Scrolling message 1\r\n");
+  cereal.puts("Scrolling message\r\n");
   ScrollText(glyph, sinotext, sinolength, 1<<18, 1<<20);
-  cereal.puts("Scrolling message 2\r\n");
-  ScrollText(glyph, blktext, blklength, 1<<18, 1<<20);
   cereal.puts("Scrolling done\r\n");
   delay(1<<20);
   goto considered_harmful;
